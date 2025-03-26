@@ -5,37 +5,37 @@ import { useState } from 'react';
 import { BookOpenIcon, TagIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { PostMetadata } from '@/lib/markdown';
 
-// Table of contents data
-const tableOfContents = [
-  {
-    title: "The Beginning",
-    description: "Introduction to AI Operations and the SHAIPE framework",
-    slug: "chapter-1-the-beginning",
+// Function to generate table of contents from posts
+const generateTableOfContents = (posts: PostMetadata[]) => {
+  // Get all available chapters from posts
+  const availableChapters = posts.map(post => ({
+    title: post.title,
+    description: post.description || '',
+    slug: post.slug,
     available: true
-  },
-  {
-    title: "The Revelation",
-    description: "How AI is transforming enterprise operations",
-    slug: "chapter-2-the-revelation",
-    available: true
-  },
-  {
-    title: "Building Superhuman Capabilities",
-    description: "Coming soon...",
-    slug: "",
-    available: false
-  },
-  {
-    title: "Implementing SHAIPE in Your Organization",
-    description: "Coming soon...",
-    slug: "",
-    available: false
-  }
-];
+  }));
+  
+  // Return only the actual chapters from markdown files
+  return availableChapters;
+};
+
+// Define the type for table of contents items
+type TableOfContentsItem = {
+  title: string;
+  description: string;
+  slug: string;
+  available: boolean;
+};
 
 export default function BookContent({ posts }: { posts: PostMetadata[] }) {
   // State for mobile TOC dropdown
   const [tocOpen, setTocOpen] = useState(false);
+  
+  // Debug: Log posts data to see if summary is included
+  console.log('Posts data:', posts);
+  
+  // Generate the table of contents
+  const tableOfContents: TableOfContentsItem[] = generateTableOfContents(posts);
 
   return (
     <div>
@@ -53,7 +53,7 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
         
         {/* Content */}
         <div className="max-w-3xl mx-auto text-center relative z-20">
-          <h1 className="text-6xl font-bold text-white mb-4">S.H.A.I.P.E</h1>
+          <h1 className="text-6xl font-bold text-white mb-4">SHAIPE</h1>
           <h2 className="text-2xl font-medium text-emerald-300 mb-4">A guide to creating superhuman AI-powered employees through AI Operations in the enterprise</h2>
           <p className="text-lg text-slate-200 mb-8">
             By Brandon Gadoci, VP of AI Operations at data.world
@@ -81,7 +81,7 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
         {/* Mobile TOC Dropdown */}
         {tocOpen && (
           <div className="mt-2 p-4 bg-white dark:bg-slate-700 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
-            <ol className="list-decimal list-inside space-y-4 ml-2">
+            <ul className="list-none space-y-4 ml-2">
               {tableOfContents.map((chapter, index) => (
                 <li key={index} className={`text-base ${!chapter.available ? 'text-slate-500 dark:text-slate-500' : ''}`}>
                   {chapter.available ? (
@@ -91,12 +91,12 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
                   ) : (
                     <span>{chapter.title}</span>
                   )}
-                  <p className={`text-sm ml-6 mt-1 ${!chapter.available ? 'text-slate-500 dark:text-slate-500' : 'text-slate-600 dark:text-slate-400'}`}>
+                  <p className={`text-sm mt-1 ${!chapter.available ? 'text-slate-500 dark:text-slate-500' : 'text-slate-600 dark:text-slate-400'}`}>
                     {chapter.description}
                   </p>
                 </li>
               ))}
-            </ol>
+            </ul>
           </div>
         )}
       </div>
@@ -110,7 +110,7 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
               <BookOpenIcon className="h-5 w-5 text-emerald-500 dark:text-emerald-400" />
               <span>Table of Contents</span>
             </h2>
-            <ol className="list-decimal list-inside space-y-4 ml-2">
+            <ul className="list-none space-y-4 ml-2">
               {tableOfContents.map((chapter, index) => (
                 <li key={index} className={`text-sm ${!chapter.available ? 'text-slate-500 dark:text-slate-500' : ''}`}>
                   {chapter.available ? (
@@ -120,12 +120,12 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
                   ) : (
                     <span>{chapter.title}</span>
                   )}
-                  <p className={`text-xs ml-5 mt-1 ${!chapter.available ? 'text-slate-500 dark:text-slate-500' : 'text-slate-600 dark:text-slate-400'}`}>
+                  <p className={`text-xs mt-1 ${!chapter.available ? 'text-slate-500 dark:text-slate-500' : 'text-slate-600 dark:text-slate-400'}`}>
                     {chapter.description}
                   </p>
                 </li>
               ))}
-            </ol>
+            </ul>
           </div>
         </aside>
 
@@ -156,11 +156,20 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
                         })}
                       </p>
                     </div>
-                    <div className="flex items-center gap-1.5 text-emerald-500 dark:text-emerald-400 font-medium">
-                      <span>Read chapter</span>
-                      <span aria-hidden="true">→</span>
-                    </div>
                   </div>
+                  
+                  {/* Display chapter summary if available */}
+                  {post.summary ? (
+                    <div className="mt-2 mb-4 p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-md border-l-4 border-emerald-500">
+                      <p className="text-slate-700 dark:text-slate-200 text-sm">
+                        <span className="font-semibold">Summary:</span> {post.summary}
+                      </p>
+                    </div>
+                  ) : (
+                    <p className="text-amber-600 dark:text-amber-400 text-sm mt-2 mb-4">
+                      No summary available
+                    </p>
+                  )}
                   
                   {post.status === 'draft' && (
                     <div className="inline-block bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 text-xs font-medium px-2 py-1 rounded mt-2 mb-2">

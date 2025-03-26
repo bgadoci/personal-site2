@@ -22,6 +22,8 @@ export type PostMetadata = {
   excerpt?: string; // Short excerpt for previews and search
   searchableContent?: string; // Plain text content for search indexing
   fullContent?: string; // Full raw content of the markdown file
+  description?: string; // One-line description for table of contents
+  summary?: string; // Longer summary for chapter listings
 };
 
 export type Post = PostMetadata & {
@@ -34,6 +36,9 @@ export async function getPostBySlug(slug: string, category: string, includeUnpub
     const filenames = fs.readdirSync(categoryPath);
     
     for (const filename of filenames) {
+      // Skip non-markdown files
+      if (!filename.endsWith('.md')) continue;
+      
       const filePath = path.join(categoryPath, filename);
       const fileContents = fs.readFileSync(filePath, 'utf8');
       const { data, content } = matter(fileContents);
@@ -110,6 +115,8 @@ export async function getPostBySlug(slug: string, category: string, includeUnpub
             path: filePath,
             status: data.status || 'published',
             coverImage: data.coverImage,
+            description: data.description || '',
+            summary: data.summary || '',
             content: contentHtml
           };
           
@@ -126,6 +133,8 @@ export async function getPostBySlug(slug: string, category: string, includeUnpub
             path: filePath,
             status: data.status || 'published',
             coverImage: data.coverImage,
+            description: data.description || '',
+            summary: data.summary || '',
             content: `<p>Error processing markdown content: ${error.message}</p>`
           };
         }
@@ -157,6 +166,9 @@ export function getAllPosts(includeUnpublished: boolean = false): PostMetadata[]
     const filenames = fs.readdirSync(categoryPath);
     
     for (const filename of filenames) {
+      // Skip non-markdown files
+      if (!filename.endsWith('.md')) continue;
+      
       const filePath = path.join(categoryPath, filename);
       const fileContents = fs.readFileSync(filePath, 'utf8');
       const { data, content } = matter(fileContents);
@@ -216,6 +228,8 @@ export function getAllPosts(includeUnpublished: boolean = false): PostMetadata[]
         path: `/${category}/${filename}`,
         status: data.status || 'published', // Default to published if not specified
         coverImage: data.coverImage || '', // Include coverImage if available
+        description: data.description || '', // One-line description for table of contents
+        summary: data.summary || '', // Longer summary for chapter listings
         excerpt,
         searchableContent: fullSearchableContent // Use the enhanced searchable content that includes frontmatter
       };
@@ -238,6 +252,9 @@ export function getPostsByCategory(category: string, includeUnpublished: boolean
     const posts: PostMetadata[] = [];
     
     for (const filename of filenames) {
+      // Skip non-markdown files
+      if (!filename.endsWith('.md')) continue;
+      
       const filePath = path.join(categoryPath, filename);
       const fileContents = fs.readFileSync(filePath, 'utf8');
       const { data } = matter(fileContents);
@@ -251,6 +268,9 @@ export function getPostsByCategory(category: string, includeUnpublished: boolean
         path: `/${category}/${filename}`,
         status: data.status || 'published', // Default to published if not specified
         coverImage: data.coverImage || '', // Include coverImage if available
+        description: data.description || '', // Include description for table of contents
+        summary: data.summary || '', // Include summary for chapter listings
+        excerpt: data.excerpt || '', // Include excerpt for blog post cards
       };
       
       // Only include published posts unless includeUnpublished is true
@@ -269,27 +289,47 @@ export function getPostsByCategory(category: string, includeUnpublished: boolean
 
 export function getPostsByTag(tag: string, includeUnpublished: boolean = false): PostMetadata[] {
   const allPosts = getAllPosts(includeUnpublished);
-  return allPosts.filter(post => post.tags.includes(tag));
+  // Use case-insensitive comparison for tag filtering
+  return allPosts.filter(post => 
+    post.tags.some(postTag => postTag.toLowerCase() === tag.toLowerCase())
+  );
 }
 
 export function getAllTags(includeUnpublished: boolean = false): { name: string; count: number }[] {
   const allPosts = getAllPosts(includeUnpublished);
-  const tagCounts: Record<string, number> = {};
+  const tagCounts: Record<string, { count: number; originalCase: string }> = {};
   
   allPosts.forEach(post => {
     post.tags.forEach(tag => {
-      if (tagCounts[tag]) {
-        tagCounts[tag]++;
+      const lowerTag = tag.toLowerCase();
+      if (tagCounts[lowerTag]) {
+        tagCounts[lowerTag].count++;
+        // Keep the version with the most consistent capitalization
+        // This prefers versions that appear more frequently
+        if (tagCounts[lowerTag].originalCase !== tag && 
+            countOccurrences(allPosts, tag) > countOccurrences(allPosts, tagCounts[lowerTag].originalCase)) {
+          tagCounts[lowerTag].originalCase = tag;
+        }
       } else {
-        tagCounts[tag] = 1;
+        tagCounts[lowerTag] = {
+          count: 1,
+          originalCase: tag
+        };
       }
     });
   });
   
-  return Object.entries(tagCounts).map(([name, count]) => ({
-    name,
-    count,
+  return Object.entries(tagCounts).map(([_, data]) => ({
+    name: data.originalCase,
+    count: data.count,
   }));
+}
+
+// Helper function to count occurrences of a specific tag case
+function countOccurrences(posts: PostMetadata[], exactTag: string): number {
+  return posts.reduce((count, post) => {
+    return count + post.tags.filter(tag => tag === exactTag).length;
+  }, 0);
 }
 
 

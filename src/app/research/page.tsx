@@ -11,16 +11,22 @@ export const metadata = {
 // Define the number of posts per page
 const POSTS_PER_PAGE = 12;
 
-type ResearchPageProps = {
-  searchParams: { page?: string }
+type SearchParams = {
+  page?: string
 };
 
-export default function ResearchPage({ searchParams }: ResearchPageProps) {
+type ResearchPageProps = {
+  searchParams: SearchParams
+};
+
+export default async function ResearchPage(props: ResearchPageProps) {
   // Only show published posts
   const allPosts = getPostsByCategory('research', false);
   
-  // Get the current page from the URL query parameters
-  const currentPage = searchParams.page ? parseInt(searchParams.page) : 1;
+  // In Next.js App Router, dynamic parameters must be awaited before accessing their properties
+  const resolvedParams = await props.searchParams;
+  const page = resolvedParams?.page || '1';
+  const currentPage = parseInt(page);
   
   // Calculate total number of pages
   const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);

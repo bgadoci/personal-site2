@@ -15,12 +15,14 @@ type BlogPageProps = {
   searchParams: { page?: string }
 };
 
-export default function BlogPage({ searchParams }: BlogPageProps) {
+export default async function BlogPage(props: BlogPageProps) {
   // Only show published posts
-  const allPosts = getPostsByCategory('blog', false);
+  const allPosts = getPostsByCategory('blog', false) || [];
   
-  // Get the current page from the URL query parameters
-  const currentPage = searchParams.page ? parseInt(searchParams.page) : 1;
+  // In Next.js App Router, dynamic parameters must be awaited before accessing their properties
+  const resolvedParams = await props.searchParams;
+  const page = resolvedParams?.page || '1';
+  const currentPage = parseInt(page);
   
   // Calculate total number of pages
   const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
@@ -36,7 +38,7 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
         <div className="flex items-center gap-3 mb-4">
           <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-50">Blog</h1>
         </div>
-        <p className="text-slate-500 dark:text-slate-400 mb-6">{allPosts.length} {allPosts.length === 1 ? 'post' : 'posts'} in total</p>
+
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -68,6 +70,11 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
                     day: 'numeric'
                   })}
                 </p>
+                {post.excerpt && (
+                  <p className="text-slate-600 dark:text-slate-300 text-sm mt-3 line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                )}
               </div>
               
               {post.status === 'draft' && (
