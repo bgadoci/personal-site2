@@ -6,7 +6,7 @@ import styles from './book-chapter.module.css';
 
 export async function generateMetadata({ params }: SlugParams) {
   // Only show published posts
-  const resolvedParams = await resolveParams(params);
+  const resolvedParams = await params;
   const { slug } = resolvedParams;
   const post = await getPostBySlug(slug, 'book', false);
   
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: SlugParams) {
 
 export default async function BookChapterPage({ params }: SlugParams) {
   // Only show published posts
-  const resolvedParams = await resolveParams(params);
+  const resolvedParams = await params;
   const { slug } = resolvedParams;
   const post = await getPostBySlug(slug, 'book', false);
   

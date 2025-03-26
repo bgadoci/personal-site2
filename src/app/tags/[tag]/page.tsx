@@ -7,7 +7,7 @@ import { DocumentTextIcon, BeakerIcon, BookOpenIcon, TagIcon } from "@heroicons/
 
 export async function generateMetadata({ params }: TagParams) {
   // Get the tag parameter directly
-  const resolvedParams = await resolveParams(params);
+  const resolvedParams = await params;
   const decodedTag = decodeURIComponent(resolvedParams.tag);
   // Only include published posts for tags
   const allTags = getAllTags(false).map(tag => tag.name.toLowerCase());
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: TagParams) {
 
 export default async function TagPage({ params }: TagParams) {
   // Get the tag parameter directly
-  const resolvedParams = await resolveParams(params);
+  const resolvedParams = await params;
   const decodedTag = decodeURIComponent(resolvedParams.tag);
   // Only include published posts for tags
   const allTags = getAllTags(false).map(tag => tag.name.toLowerCase());

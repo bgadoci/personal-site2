@@ -1,19 +1,20 @@
 /**
  * Type definitions for Next.js dynamic route params
+ * In Next.js 15, params are now Promise<...> in production builds
  */
 
 // For blog, book, and research pages
 export type SlugParams = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 // For tag pages
 export type TagParams = {
-  params: {
+  params: Promise<{
     tag: string;
-  };
+  }>;
 };
 
 /**

@@ -6,7 +6,7 @@ import styles from './research-paper.module.css';
 
 export async function generateMetadata({ params }: SlugParams) {
   // Only show published posts
-  const resolvedParams = await resolveParams(params);
+  const resolvedParams = await params;
   const { slug } = resolvedParams;
   const post = await getPostBySlug(slug, 'research', false);
   
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: SlugParams) {
 
 export default async function ResearchPostPage({ params }: SlugParams) {
   // Only show published posts
-  const resolvedParams = await resolveParams(params);
+  const resolvedParams = await params;
   const { slug } = resolvedParams;
   const post = await getPostBySlug(slug, 'research', false);
   
