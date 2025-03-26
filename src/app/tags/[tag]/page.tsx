@@ -1,15 +1,11 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPostsByTag, getAllTags } from '@/lib/markdown';
-import { resolveParams } from '@/lib/utils';
+import { resolveParams, TagParams } from '@/lib/utils';
 import TagLink from '@/components/TagLink';
 import { DocumentTextIcon, BeakerIcon, BookOpenIcon, TagIcon } from "@heroicons/react/24/outline";
 
-type PageProps = {
-  params: { tag: string }
-}
-
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({ params }: TagParams) {
   // Get the tag parameter directly
   const resolvedParams = await resolveParams(params);
   const decodedTag = decodeURIComponent(resolvedParams.tag);
@@ -28,7 +24,7 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-export default async function TagPage({ params }: PageProps) {
+export default async function TagPage({ params }: TagParams) {
   // Get the tag parameter directly
   const resolvedParams = await resolveParams(params);
   const decodedTag = decodeURIComponent(resolvedParams.tag);

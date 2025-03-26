@@ -1,14 +1,10 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPostBySlug, getAllPosts } from '@/lib/markdown';
-import { resolveParams } from '@/lib/utils';
+import { resolveParams, SlugParams } from '@/lib/utils';
 import styles from './blog-post.module.css';
 
-type PageProps = {
-  params: { slug: string }
-}
-
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({ params }: SlugParams) {
   // Only show published posts
   const resolvedParams = await resolveParams(params);
   const { slug } = resolvedParams;
@@ -61,7 +57,7 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-export default async function BlogPostPage({ params }: PageProps) {
+export default async function BlogPostPage({ params }: SlugParams) {
   // Only show published posts
   const resolvedParams = await resolveParams(params);
   const { slug } = resolvedParams;
