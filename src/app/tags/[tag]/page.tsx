@@ -8,10 +8,9 @@ type PageProps = {
   params: { tag: string }
 }
 
-export async function generateMetadata(props: PageProps) {
-  // In Next.js 15, dynamic parameters must be awaited before accessing their properties
-  const resolvedParams = await props.params;
-  const decodedTag = decodeURIComponent(resolvedParams.tag);
+export async function generateMetadata({ params }: PageProps) {
+  // Get the tag parameter directly
+  const decodedTag = decodeURIComponent(params.tag);
   // Only include published posts for tags
   const allTags = getAllTags(false).map(tag => tag.name.toLowerCase());
   
@@ -27,10 +26,9 @@ export async function generateMetadata(props: PageProps) {
   };
 }
 
-export default async function TagPage(props: PageProps) {
-  // In Next.js 15, dynamic parameters must be awaited before accessing their properties
-  const resolvedParams = await props.params;
-  const decodedTag = decodeURIComponent(resolvedParams.tag);
+export default async function TagPage({ params }: PageProps) {
+  // Get the tag parameter directly
+  const decodedTag = decodeURIComponent(params.tag);
   // Only include published posts for tags
   const allTags = getAllTags(false).map(tag => tag.name.toLowerCase());
   
