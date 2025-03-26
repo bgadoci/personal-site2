@@ -9,7 +9,7 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps) {
   // Only show published posts
-  const { slug } = params;
+  const { slug } = await Promise.resolve(params);
   const post = await getPostBySlug(slug, 'book', false);
   
   if (!post) {
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function BookChapterPage({ params }: PageProps) {
   // Only show published posts
-  const { slug } = params;
+  const { slug } = await Promise.resolve(params);
   const post = await getPostBySlug(slug, 'book', false);
   
   if (!post) {

@@ -28,7 +28,8 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function TagPage({ params }: PageProps) {
   // Get the tag parameter directly
-  const decodedTag = decodeURIComponent(params.tag);
+  const resolvedParams = await Promise.resolve(params);
+  const decodedTag = decodeURIComponent(resolvedParams.tag);
   // Only include published posts for tags
   const allTags = getAllTags(false).map(tag => tag.name.toLowerCase());
   
