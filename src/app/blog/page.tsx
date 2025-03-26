@@ -12,7 +12,7 @@ export const metadata = {
 const POSTS_PER_PAGE = 12;
 
 type BlogPageProps = {
-  searchParams: { page?: string }
+  searchParams: Promise<{ page?: string }>
 };
 
 export default async function BlogPage(props: BlogPageProps) {

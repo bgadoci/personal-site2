@@ -16,7 +16,7 @@ type SearchParams = {
 };
 
 type ResearchPageProps = {
-  searchParams: SearchParams
+  searchParams: Promise<SearchParams>
 };
 
 export default async function ResearchPage(props: ResearchPageProps) {
