@@ -20,8 +20,11 @@ export async function middleware(request: NextRequest) {
     isSyncInProgress = true; // Set flag to prevent concurrent syncs
     
     try {
-      // Use the API route we've already confirmed works
-      const baseUrl = request.nextUrl.origin;
+      // Get the base URL from the request
+      // In production, we need to ensure we're using the correct protocol and host
+      const protocol = request.headers.get('x-forwarded-proto') || 'http';
+      const host = request.headers.get('host') || request.nextUrl.host;
+      const baseUrl = `${protocol}://${host}`;
       const syncUrl = `${baseUrl}/api/sync`;
       console.log(`Calling sync API at ${syncUrl}`);
       
