@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPostsByTag, getAllTags } from '@/lib/markdown';
+import { resolveParams } from '@/lib/utils';
 import TagLink from '@/components/TagLink';
 import { DocumentTextIcon, BeakerIcon, BookOpenIcon, TagIcon } from "@heroicons/react/24/outline";
 
@@ -10,7 +11,8 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps) {
   // Get the tag parameter directly
-  const decodedTag = decodeURIComponent(params.tag);
+  const resolvedParams = await resolveParams(params);
+  const decodedTag = decodeURIComponent(resolvedParams.tag);
   // Only include published posts for tags
   const allTags = getAllTags(false).map(tag => tag.name.toLowerCase());
   
@@ -28,7 +30,7 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function TagPage({ params }: PageProps) {
   // Get the tag parameter directly
-  const resolvedParams = await Promise.resolve(params);
+  const resolvedParams = await resolveParams(params);
   const decodedTag = decodeURIComponent(resolvedParams.tag);
   // Only include published posts for tags
   const allTags = getAllTags(false).map(tag => tag.name.toLowerCase());

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPostBySlug, getAllPosts } from '@/lib/markdown';
+import { resolveParams } from '@/lib/utils';
 import styles from './research-paper.module.css';
 
 type PageProps = {
@@ -9,7 +10,8 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps) {
   // Only show published posts
-  const { slug } = await Promise.resolve(params);
+  const resolvedParams = await resolveParams(params);
+  const { slug } = resolvedParams;
   const post = await getPostBySlug(slug, 'research', false);
   
   if (!post) {
@@ -61,7 +63,8 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function ResearchPostPage({ params }: PageProps) {
   // Only show published posts
-  const { slug } = await Promise.resolve(params);
+  const resolvedParams = await resolveParams(params);
+  const { slug } = resolvedParams;
   const post = await getPostBySlug(slug, 'research', false);
   
   if (!post) {
