@@ -1,6 +1,6 @@
 ---
 category: blog
-coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/cover-images/4.png
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/rocket-ship.png
 date: '2025-03-05'
 excerpt: Leveraging AI to create long-form content has dramatically changed my writing
   process. It has significantly reduced the time spent on initial drafts—allowing
