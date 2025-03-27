@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import SafariSafeLink from './SafariSafeLink';
 
 type TagLinkProps = {
   tag: string;
@@ -10,12 +10,12 @@ type TagLinkProps = {
 
 export default function TagLink({ tag, isActive, className = '' }: TagLinkProps) {
   return (
-    <Link 
+    <SafariSafeLink 
       href={`/tags/${tag.toLowerCase()}`}
       className={className}
       onClick={(e) => e.stopPropagation()}
     >
       {tag}
-    </Link>
+    </SafariSafeLink>
   );
 }

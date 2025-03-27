@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { getPostsFromDB } from '@/lib/db';
 import { DocumentTextIcon, BeakerIcon, BookOpenIcon, TagIcon } from "@heroicons/react/24/outline";
 
@@ -23,7 +24,7 @@ export default async function SearchPage(props: SearchPageProps) {
       <div className="space-y-8">
         <div className="pb-0">
           <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-50 mb-4">Search Results</h1>
-          <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
+          <p className="text-lg text-emerald-600 dark:text-slate-300 mb-4">
             Results for "{searchQuery}"
           </p>
           
@@ -101,106 +102,17 @@ async function SearchResults({ query }: { query: string }) {
   
   console.log('Search results:', { total, postCount: posts.length });
   
-  // Highlight search terms in excerpts if they exist
-  const highlightSearchTerms = (text: string, searchTerm: string): string => {
-    if (!text) return '';
-    // Simple highlighting by adding <mark> tags
-    // In a real app, you'd want to use a more sophisticated approach
-    // that doesn't break HTML
-    return text;
-  };
+  // Import the client component to render the search results
+  // This allows us to use the SafariSafeLink in a client component
+  const SearchResultsList = dynamic(() => import('@/components/SearchResultsList'), {
+    ssr: true // We want server-side rendering for the initial load
+  });
   
-  if (posts.length === 0) {
-    return (
-      <div className="text-center py-12 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-700">
-        <p className="text-slate-500 dark:text-slate-400">No results found for "{query}".</p>
-      </div>
-    );
-  }
+  // Serialize the MongoDB objects to plain JavaScript objects
+  // This fixes the "Only plain objects can be passed to Client Components from Server Components" error
+  const serializedPosts = JSON.parse(JSON.stringify(posts));
   
-  // Group posts by category
-  const postsByCategory = posts.reduce((acc, post) => {
-    if (!acc[post.category]) {
-      acc[post.category] = [];
-    }
-    acc[post.category].push(post);
-    return acc;
-  }, {} as Record<string, typeof posts>);
-  
-  return (
-    <div className="space-y-8">
-      <p className="text-slate-700 dark:text-slate-300">
-        Found {total} {total === 1 ? 'result' : 'results'} for "{query}"
-      </p>
-      
-      {Object.entries(postsByCategory).map(([category, categoryPosts]) => (
-        <div key={category} className="space-y-6">
-          <div className="border-b border-slate-200 dark:border-slate-700 pb-4 mb-2">
-            <div className="flex items-center gap-2 mb-1">
-              {category === 'blog' && <DocumentTextIcon className="h-6 w-6 text-emerald-500 dark:text-emerald-400" />}
-              {category === 'research' && <BeakerIcon className="h-6 w-6 text-emerald-500 dark:text-emerald-400" />}
-              {category === 'book' && <BookOpenIcon className="h-6 w-6 text-emerald-500 dark:text-emerald-400" />}
-              <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-50 capitalize">{category}</h2>
-            </div>
-            <p className="text-slate-500 dark:text-slate-400 text-sm">{categoryPosts.length} {categoryPosts.length === 1 ? 'result' : 'results'}</p>
-          </div>
-          
-          <div className="divide-y divide-slate-200 dark:divide-slate-700">
-            {categoryPosts.map((post) => (
-              <div key={post.slug} className="py-4">
-                <div className="flex flex-col sm:flex-row justify-between gap-2">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-1.5 text-xs font-medium text-emerald-500 dark:text-emerald-400 uppercase tracking-wider mb-1">
-                      {post.category === 'blog' && <DocumentTextIcon className="h-4 w-4" />}
-                      {post.category === 'research' && <BeakerIcon className="h-4 w-4" />}
-                      {post.category === 'book' && <BookOpenIcon className="h-4 w-4" />}
-                      <span>{post.category}</span>
-                    </div>
-                    <Link 
-                      href={`/${post.category}/${post.slug}`}
-                      className="text-lg font-medium text-slate-900 dark:text-slate-50 hover:text-emerald-600 dark:hover:text-emerald-400 hover:underline"
-                    >
-                      {post.title}
-                    </Link>
-                    
-                    {/* Display content excerpt */}
-                    {post.excerpt && (
-                      <div className="mt-1">
-                        <p className="text-sm text-slate-600 dark:text-slate-300">
-                          {post.excerpt.length > 120 ? post.excerpt.substring(0, 120) + '...' : post.excerpt}
-                        </p>
-                      </div>
-                    )}
-                    
-                    <div className="flex flex-wrap gap-3 mt-1.5">
-                      {post.tags.map((tag: string) => (
-                        <Link 
-                          key={tag} 
-                          href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}
-                          className="flex items-center gap-1 text-xs text-slate-600 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400"
-                        >
-                          <TagIcon className="h-3 w-3" />
-                          <span>{tag}</span>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap">
-                    {new Date(post.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+  return <SearchResultsList posts={serializedPosts} query={query} total={total} />;
 }
 
 function SearchSkeleton() {

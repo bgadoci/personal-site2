@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import { TagIcon } from "@heroicons/react/24/outline";
 import TagSearch from './TagSearch';
+import SafariSafeLink from './SafariSafeLink';
+import { usePageVisibility } from '@/hooks/usePageVisibility';
 
 interface Tag {
   name: string;
@@ -16,6 +17,15 @@ interface FilterableTagsProps {
 
 export default function FilterableTags({ tags }: FilterableTagsProps) {
   const [filteredTags, setFilteredTags] = useState<Tag[]>(tags);
+  const { forceUpdate } = usePageVisibility();
+  
+  // Force re-render of tags when page becomes visible again
+  useEffect(() => {
+    if (forceUpdate > 0) {
+      // Re-apply any filters that were active
+      setFilteredTags([...filteredTags]);
+    }
+  }, [forceUpdate, filteredTags]);
   
   // Handle search
   const handleSearch = (searchTerm: string) => {
@@ -37,7 +47,7 @@ export default function FilterableTags({ tags }: FilterableTagsProps) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredTags.length > 0 ? (
           filteredTags.map((tag) => (
-            <Link 
+            <SafariSafeLink 
               key={tag.name}
               href={`/tags/${tag.name.toLowerCase()}`}
               className="bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-700 rounded-lg p-4 hover:border-emerald-500 dark:hover:border-emerald-400 hover:shadow-md transition-all"
@@ -51,7 +61,7 @@ export default function FilterableTags({ tags }: FilterableTagsProps) {
               <p className="text-slate-500 dark:text-slate-400 text-sm">
                 {tag.count} {tag.count === 1 ? 'post' : 'posts'}
               </p>
-            </Link>
+            </SafariSafeLink>
           ))
         ) : (
           <div className="text-center py-12 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-700 col-span-full">
