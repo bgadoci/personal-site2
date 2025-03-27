@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { BookOpenIcon, TagIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { PostMetadata } from '@/lib/markdown';
 
@@ -30,12 +30,22 @@ type TableOfContentsItem = {
 export default function BookContent({ posts }: { posts: PostMetadata[] }) {
   // State for mobile TOC dropdown
   const [tocOpen, setTocOpen] = useState(false);
+  const tocRef = useRef<HTMLDivElement>(null);
   
   // Debug: Log posts data to see if summary is included
   console.log('Posts data:', posts);
   
   // Generate the table of contents
   const tableOfContents: TableOfContentsItem[] = generateTableOfContents(posts);
+  
+  // Use a simpler approach with CSS only
+  useEffect(() => {
+    // Add a small padding to the top of the page to prevent content jumping when scrolling
+    const mainContent = document.querySelector('main');
+    if (mainContent) {
+      mainContent.style.scrollPaddingTop = '80px';
+    }
+  }, []);
 
   return (
     <div>
@@ -105,7 +115,7 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
       <div className="flex flex-col md:flex-row gap-8">
         {/* Sidebar TOC (desktop only) */}
         <aside className="hidden md:block w-64 flex-shrink-0">
-          <div className="sticky top-4">
+          <div className="sticky" style={{ top: '80px' }}>
             <h2 className="text-lg font-semibold mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-50">
               <BookOpenIcon className="h-5 w-5 text-emerald-500 dark:text-emerald-400" />
               <span>Table of Contents</span>

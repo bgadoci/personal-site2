@@ -63,8 +63,8 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="w-full bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-10">
-      <div className="container mx-auto px-4 sm:px-0 py-4">
+    <nav className="w-full bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
+      <div className="container mx-auto px-4 sm:px-0 py-4" style={{ maxWidth: '1350px' }}>
         <div className="flex items-center justify-between">
           {/* Logo/Brand */}
           <Link href="/" className="flex items-center gap-3">

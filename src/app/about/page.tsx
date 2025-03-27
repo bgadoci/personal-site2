@@ -1,42 +1,28 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'About Brandon Gadoci | VP of AI Operations',
-  description: 'Learn more about Brandon Gadoci, VP of AI Operations at data.world, author, and AI enthusiast.',
-  openGraph: {
-    type: 'profile',
-    locale: 'en_US',
-    url: 'https://brandongadoci.com/about',
-    title: 'About Brandon Gadoci | VP of AI Operations',
-    description: 'Learn more about Brandon Gadoci, VP of AI Operations at data.world, author, and AI enthusiast.',
-    siteName: 'Brandon Gadoci',
-    images: [
-      {
-        url: 'https://brandongadoci.com/images/website-images/avatar.png',
-        width: 1200,
-        height: 630,
-        alt: 'Brandon Gadoci',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'About Brandon Gadoci | VP of AI Operations',
-    description: 'Learn more about Brandon Gadoci, VP of AI Operations at data.world, author, and AI enthusiast.',
-    creator: '@bgadoci',
-    images: ['https://brandongadoci.com/images/website-images/avatar.png'],
-  },
-};
+// Metadata is now in a separate file: metadata.ts
 
 export default function AboutPage() {
+  const avatarContainerRef = useRef<HTMLDivElement>(null);
+  
+  // Use a simpler approach with CSS only
+  useEffect(() => {
+    // Add a small padding to the top of the page to prevent content jumping when scrolling
+    const mainContent = document.querySelector('main');
+    if (mainContent) {
+      mainContent.style.scrollPaddingTop = '80px';
+    }
+  }, []);
   return (
     <div className="max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-50 mb-8">About Me</h1>
       
       <div className="flex flex-col md:flex-row gap-8">
         {/* Left column with sticky image */}
-        <div className="md:w-1/3 md:sticky md:top-8 md:self-start">
+        <div className="md:w-1/3 md:self-start md:sticky" style={{ top: '80px' }}>
           <img 
             src="/images/website-images/avatar.png" 
             alt="Brandon Gadoci" 
