@@ -9,8 +9,6 @@ description: "Expressing gratitude to the individuals who contributed to this bo
 summary: "A heartfelt acknowledgment of the key individuals who made this book possible, including Rachel Woods who coined the term AI Operations, Brett Hurt who encouraged the writing process, and others who provided support and expertise throughout the journey."
 ---
 
-# Acknowledgments
-
 This book wouldn't exist without the support, insight, and encouragement of many individuals who have contributed in both direct and indirect ways.
 
 First, I want to express my deepest gratitude to **Rachel Woods** [1]. Rachel started as an intern of mine but quickly became a leading voice in AI for the enterprise. She had the foresight to recognize the critical role AI would play in operations and, in a post shortly after ChatGPT hit the scene, coined the term AI Operations. That insight sparked my curiosity, and her influence has shaped the broader discussion around AI in the enterprise. Rachel's contributions to this space cannot be overstated, and her impact on this book is profound.
