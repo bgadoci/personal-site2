@@ -13,8 +13,6 @@ summary: "This chapter explores how organizations can empower their teams to eng
 
 Having established how organizations can leverage their data infrastructure—however imperfect—to begin realizing AI's potential, we now turn to another critical enabler of successful AI adoption: enterprise-wide AI literacy. This chapter explores how organizations can empower their teams to engage meaningfully with AI tools, moving beyond technical implementation to foster a culture where AI becomes a trusted and effective partner in day-to-day operations.
 
-## Teaching AI Literacy
-
 AI literacy is a foundational component for successful AI Operations (AI Ops). It directly impacts operational efficiency and innovation by equipping employees to effectively interact with AI tools, ensuring even the most advanced AI initiatives deliver meaningful results. Teaching AI literacy ensures that employees across all roles—not just technical teams—are equipped to communicate with AI systems, understand their capabilities, and leverage them to enhance daily operations.
 
 This section explores how to guide employees from basic familiarity with AI to a more advanced, dialog-driven understanding. By focusing on practical skills and fostering a culture of curiosity, organizations can empower their workforce to make AI a natural extension of their work.

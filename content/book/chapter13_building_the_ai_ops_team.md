@@ -10,8 +10,6 @@ summary: "This chapter explores how to build an effective AI Operations team wit
 ---
 
 ## Key Qualities for Building an AI Operations Team
-
-## Key Qualities for Building an AI Operations Team
 Building an effective AI Operations (AI Ops) team requires a unique blend of technical expertise, strategic thinking, and adaptability. This team must bridge the gap between AI capabilities and business goals, ensuring AI initiatives are both impactful and sustainable. Remember from earlier in this book the concept that AI has been in the back office of companies and then suddenly post-2022 it's in the front office. The AI Operations team needs to be a business/operations-biased team, not just a technical one.
 
 Team building for AI Operations is going to look different based on the stage of AI Operations ("Wow," Easy Scale & Education, or AI Ready Data) and also different based on the company/industry/etc. So let's start by taking a look at the types of qualities you will need on the team instead of the actual roles and headcount.
