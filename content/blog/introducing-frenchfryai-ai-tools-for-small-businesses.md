@@ -1,17 +1,24 @@
 ---
-title: "Introducing FrenchFryAi: AI Tools for Small Businesses 🍟🤖🚀"
-slug: "introducing-frenchfryai-ai-tools-for-small-businesses"
-category: "blog"
-tags: ['ai', 'business', 'operations', 'enterprise', 'data']
-date: "2024-12-21"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/Frame-2100.png"
-excerpt: "Over the Thanksgiving break, I wanted to work on something separate from my everyday job. I’ve done this throughout my career, and it’s a great way to be creative, learn and test new skills, and ge..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Frame-2100.png
+date: '2024-12-21'
+excerpt: Over the Thanksgiving break, I wanted to work on something separate from
+  my everyday job. I’ve done this throughout my career, and it’s a great way to be
+  creative, learn and test new skills, and ge...
+slug: introducing-frenchfryai-ai-tools-for-small-businesses
+status: published
+tags:
+- ai
+- business
+- operations
+- enterprise
+- data
+title: "Introducing FrenchFryAi: AI Tools for Small Businesses \U0001F35F\U0001F916\U0001F680"
 ---
 
 Over the Thanksgiving break, I wanted to work on something separate from my everyday tasks. Throughout my career, I've found it a great way to be creative, learn and test new skills, and get the mind thinking outside the normal day-to-day. This time, I decided to bring to life a spur-of-the-moment idea: creating an app for people who don't really know how to leverage the power of AI, specifically targeting small business owners. While pondering if they could already achieve what they needed using Chat-GPT, it occurred to me that part of the skill in using Chat-GPT is knowing how to prompt it correctly. This requires experience and time, which not everyone has.So, I thought, what if I could take what I've learned over the past year about interacting with AI and wrap it up in a useful app for small business owners, helping them more easily do things like write blog posts, brainstorm product ideas, write emails, take notes, evaluate their web pages, research their market, etc.? I bet an app like this, done the right way, would be very beneficial. So, I got to work and the result was [FrenchFryAi](https://frenchfryai.com)!
 
-![](/images/blog-images/blog-post-images/Frame-2100.png)#### **The Creation of **[**FrenchFryAI**](https://frenchfryai.com)
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Frame-2100.png)#### **The Creation of **[**FrenchFryAI**](https://frenchfryai.com)
 
 It wasn't long after I started coding that I decided to make a logo, and after seeing that cute little thing on the page, I was hooked. The result was 12 tools specifically designed for small business owners:
 

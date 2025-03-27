@@ -1,12 +1,18 @@
 ---
-title: "My Two-Week Adventure: Building a Personal Blog with Strapi, React, Netlify and most importantly Chat-GPT4"
-slug: "building-personal-blog-strapi-react-netlify-chat-gpt"
-category: "blog"
-tags: ['ai', 'data', 'learning']
-date: "2023-04-03"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/large_ragmann22_a_pixar_style_image_of_a_person_at_a_computer_with_co_1b0a5cdc_32cf_43e8_a296_489acb333c43_8e773f75a8.png"
-excerpt: "As my kids are getting older, I&#x27;m finding myself with more time on my hands. They are 13 and 14 now, so if you know, you know. I kid. They are amazing, and we have a great relationship. That said, ..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_ragmann22_a_pixar_style_image_of_a_person_at_a_computer_with_co_1b0a5cdc_32cf_43e8_a296_489acb333c43_8e773f75a8.png
+date: '2023-04-03'
+excerpt: As my kids are getting older, I&#x27;m finding myself with more time on my
+  hands. They are 13 and 14 now, so if you know, you know. I kid. They are amazing,
+  and we have a great relationship. That said, ...
+slug: building-personal-blog-strapi-react-netlify-chat-gpt
+status: published
+tags:
+- ai
+- data
+- learning
+title: 'My Two-Week Adventure: Building a Personal Blog with Strapi, React, Netlify
+  and most importantly Chat-GPT4'
 ---
 
 As my kids are getting older, I'm finding myself with more time on my hands. They are 13 and 14 now, so if you know, you know. I kid. They are amazing, and we have a great relationship. That said, their exploration of becoming adults doesn't involve me at times. Work keeps me extremely busy as well, but I've found myself wanting to get into something that is new and consuming to really give my brain a break from the usual things it's occupied with.
@@ -44,4 +50,3 @@ Throughout my journey, I encountered some issues related to environment variable
 After a thrilling two-week adventure, I successfully built a personal blog using Strapi, React, and Netlify. Through determination and a can-do attitude, I overcame challenges and gained valuable knowledge in the process. I hope my story inspires you to embark on your own web development journey and discover the power and flexibility of using Strapi and React together.
 
 **Happy coding!**
-

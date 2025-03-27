@@ -1,12 +1,19 @@
 ---
-title: "AI Adoption at data.world: Aligning with Industry Trends and Leading in Experimentation"
-slug: "ai-adoption-at-dataworld-aligning-with-industry-trends-and-leading-in-experimentation"
-category: "blog"
-tags: ['ai', 'technology', 'ai-operations', 'enterprise', 'data']
-date: "2024-11-11"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/7b724bc5-06d0-4bc6-983b-04224732c812.jpeg"
-excerpt: "At data.world, we’re embracing AI with a proactive approach that aligns closely with industry trends. Our focus on training, experimentation, and consistent usage of generative AI tools has led to ..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/7b724bc5-06d0-4bc6-983b-04224732c812.jpeg
+date: '2024-11-11'
+excerpt: At data.world, we’re embracing AI with a proactive approach that aligns closely
+  with industry trends. Our focus on training, experimentation, and consistent usage
+  of generative AI tools has led to ...
+slug: ai-adoption-at-dataworld-aligning-with-industry-trends-and-leading-in-experimentation
+status: published
+tags:
+- ai
+- technology
+- ai-operations
+- enterprise
+- data
+title: 'AI Adoption at data.world: Aligning with Industry Trends and Leading in Experimentation'
 ---
 
 As AI continues to evolve, enterprises worldwide are navigating the early years of generative AI adoption, refining strategies, and tackling the challenges that come with integrating cutting-edge technology. A recent report, [*Navigating Gen AI’s Early Years* by AI at Wharton and the GBK Collective](https://ai.wharton.upenn.edu/wp-content/uploads/2024/11/AI-Report_Full-Report.pdf), provides a valuable benchmark for understanding how companies are adopting AI, investing in training, and overcoming initial hesitations.
@@ -36,4 +43,3 @@ Our **investment in AI reflects both the excitement and realism around generativ
 Reflecting on our progress, it’s clear that data.world is tracking above the industry average in several key areas: experimentation, rollout, education, and consistent usage of generative AI. And with **Copilot metrics from our engineering team yet to be added**, our overall engagement with AI is only set to grow.
 
 The journey to fully integrated AI is ongoing, but data.world’s strategy aligns well with leading industry practices and, in many cases, exceeds them. Our approach to AI adoption, grounded in strong training, experimentation, and a commitment to responsible innovation, puts us on a promising path toward long-term AI success. As the technology matures, we’re excited to continue refining our AI strategies and leading in the adoption of generative AI.
-

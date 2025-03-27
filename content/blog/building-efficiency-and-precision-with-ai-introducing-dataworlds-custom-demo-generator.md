@@ -1,12 +1,20 @@
 ---
-title: "Building Efficiency and Precision with AI: Introducing data.world’s Custom Demo Generator"
-slug: "building-efficiency-and-precision-with-ai-introducing-dataworlds-custom-demo-generator"
-category: "blog"
-tags: ['ai', 'business', 'productivity', 'ai-driven-apps', 'ai-operations']
-date: "2024-11-11"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/demo-gen.png"
-excerpt: "At data.world, we’re always looking for ways to use AI to make our teams more productive and deliver value faster. Our latest innovation, the Custom Demo Generator, automates the creation of person..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/demo-gen.png
+date: '2024-11-11'
+excerpt: At data.world, we’re always looking for ways to use AI to make our teams
+  more productive and deliver value faster. Our latest innovation, the Custom Demo
+  Generator, automates the creation of person...
+slug: building-efficiency-and-precision-with-ai-introducing-dataworlds-custom-demo-generator
+status: published
+tags:
+- ai
+- business
+- productivity
+- ai-driven-apps
+- ai-operations
+title: 'Building Efficiency and Precision with AI: Introducing data.world’s Custom
+  Demo Generator'
 ---
 
 As the VP of AI Operations at data.world, I’m always focused on ways to leverage AI to make our employees more productive, empowered, and capable of delivering value to our clients faster. One recent innovation in this direction is a tool I developed called the **Custom Demo Generator**. This tool harnesses the power of AI to help our sales team create personalized demos for prospective customers in a fraction of the time it used to take.

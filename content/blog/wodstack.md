@@ -1,12 +1,19 @@
 ---
-title: "WODstack"
-slug: "wodstack"
-category: "blog"
-tags: ['ai', 'career', 'tutorial', 'data', 'learning']
-date: "2012-01-11"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/wodstack_d5d273ffce.png"
-excerpt: "In 2008 the markets crashed. It was bad. I was a financial advisor at Merrill Lynch and I had experienced some success. It was a hard climb from a rookie to sales manager but I learned a ton. That ..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/wodstack_d5d273ffce.png
+date: '2012-01-11'
+excerpt: In 2008 the markets crashed. It was bad. I was a financial advisor at Merrill
+  Lynch and I had experienced some success. It was a hard climb from a rookie to sales
+  manager but I learned a ton. That ...
+slug: wodstack
+status: published
+tags:
+- ai
+- career
+- tutorial
+- data
+- learning
+title: WODstack
 ---
 
 In 2008 the markets crashed. It was bad. I was a financial advisor at Merrill Lynch and I had experienced some success. It was a hard climb from a rookie to sales manager but I learned a ton. That journey forever changed me and very much made me who I am today. 
@@ -17,7 +24,7 @@ I was able to secure a great gig at that point at a big pay cut. I was thankful 
 
 I found myself in an intoxicating ritual of working, being a dad, and wrestling with learning to code. It was frustrating, rewarding, humbling, and empowering at the some time. I couldn’t get enough. In a few short months I had somehow hacked together what was essentially a blogging platform that allowed multiple authors (think Blogger) . The kicker was I called it WODstack. 
 
-![](/images/blog-images/blog-post-images/wodstack_d5d273ffce.png)About 6 months prior to all this I had taken a picture of myself as the P90X intro video instructed me to. Sure I was a bit out of shape but it wasn’t the way my body looked that caught my eye but the look on my face. I was tired. I was tired from trying really hard at being a new dad and entrepreneur. Lucky right after that picture was taken my wife introduced me to CrossFit. 
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/wodstack_d5d273ffce.png)About 6 months prior to all this I had taken a picture of myself as the P90X intro video instructed me to. Sure I was a bit out of shape but it wasn’t the way my body looked that caught my eye but the look on my face. I was tired. I was tired from trying really hard at being a new dad and entrepreneur. Lucky right after that picture was taken my wife introduced me to CrossFit. 
 
 I showed up to my first workout and was completely humbled and hooked at the same time. The following weeks found me with a renewed passion for working out. I was surrounded by people who encouraged and challenged me everyday. It was that demeanor that met my obsession with coding and lead to the creation of a website for CrossFitters to log their workouts. WODstack. 
 
@@ -27,8 +34,4 @@ In the coming two years we worked hard to find a way to monetize the app. It did
 
 Thought I didn’t know it I would soon get a job as a UX Consultant because of this project which would eventually launch me to a level of success that I didn’t see coming. We eventually sold WODstack for an amount that was way less than the value of the experience. 
 
-I haven’t talked about how much this project has meant to me in a long time. It feels good to relive it. Life has a funny way about it. Embrace your curiosities and the challenges they bring. 
-
-
-
-
+I haven’t talked about how much this project has meant to me in a long time. It feels good to relive it. Life has a funny way about it. Embrace your curiosities and the challenges they bring.

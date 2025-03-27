@@ -1,12 +1,19 @@
 ---
-title: "Four tips for writing good AI prompts"
-slug: "four-tips-for-writing-ai-prompts"
-category: "blog"
-tags: ['ai', 'technology', 'chatgpt', 'guide', 'data']
-date: "2023-10-20"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_person_typing_on_a_computer__2eb1f130-2ada-4d07-a080-e5f7635d3f95.png"
-excerpt: "Ever wondered how to get the most out of your interactions with a chatbot like ChatGPT? You&#x27;re not alone. As AI-powered chatbots continue to evolve, they offer a wealth of knowledge, assistance, an..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_person_typing_on_a_computer__2eb1f130-2ada-4d07-a080-e5f7635d3f95.png
+date: '2023-10-20'
+excerpt: Ever wondered how to get the most out of your interactions with a chatbot
+  like ChatGPT? You&#x27;re not alone. As AI-powered chatbots continue to evolve,
+  they offer a wealth of knowledge, assistance, an...
+slug: four-tips-for-writing-ai-prompts
+status: published
+tags:
+- ai
+- technology
+- chatgpt
+- guide
+- data
+title: Four tips for writing good AI prompts
 ---
 
 #### Introduction
@@ -40,6 +47,3 @@ Think of your interaction with the chatbot as an ongoing conversation where iter
 #### Conclusion
 
 Chatbots like ChatGPT offer a wealth of possibilities, from answering complex questions to assisting in creative projects. However, to make the most out of these interactions, some user-side tweaking can go a long way. By defining the bot's role, considering training for specific styles, providing ample context, and being unafraid to question, you can transform your chatbot conversations into truly enriching experiences. So go ahead—ask, iterate, and enjoy the ride!
-
-
-

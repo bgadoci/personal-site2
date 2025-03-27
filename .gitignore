@@ -39,3 +39,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# credentials
+/.credentials/
+*-credentials.json
+*-key.json
+
+# Python virtual environment
+/scripts/venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Migration logs and reports
+migration_report_*.yaml
+image_migration_*.log

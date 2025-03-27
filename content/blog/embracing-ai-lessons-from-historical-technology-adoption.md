@@ -1,12 +1,19 @@
 ---
-title: "Embracing AI: Lessons from Historical Technology Adoption"
-slug: "embracing-ai-lessons-from-historical-technology-adoption"
-category: "blog"
-tags: ['ai', 'business', 'artificial-intelligence', 'ai-operations', 'enterprise']
-date: "2025-02-05"
-status: "published"
-coverImage: "/images/blog-images/cover-images/13.png"
-excerpt: "Artificial intelligence (AI) is generating excitement across boardrooms, but many decision-makers still hesitate, waiting for a neatly defined, quantifiable return on investment (ROI). History, how..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/cover-images/13.png
+date: '2025-02-05'
+excerpt: Artificial intelligence (AI) is generating excitement across boardrooms,
+  but many decision-makers still hesitate, waiting for a neatly defined, quantifiable
+  return on investment (ROI). History, how...
+slug: embracing-ai-lessons-from-historical-technology-adoption
+status: published
+tags:
+- ai
+- business
+- artificial-intelligence
+- ai-operations
+- enterprise
+title: 'Embracing AI: Lessons from Historical Technology Adoption'
 ---
 
 Artificial intelligence (AI) is generating excitement across boardrooms, but many decision-makers still hesitate, waiting for a neatly defined, quantifiable return on investment (ROI). History, however, tells a different story. Transformative technologies—from email to the internet, cloud computing, mobile-first strategies, and cybersecurity—were adopted long before their full economic benefits could be precisely measured. In this post, we explore how these technologies changed the business landscape despite initial uncertainties, and why the same spirit of bold experimentation should apply to AI today.
@@ -117,5 +124,4 @@ As history shows, those who take bold, calculated risks with new technology are 
 [3] [Quarterly Public Cloud Computing Revenues](https://www.statista.com/statistics/273963/quarterly-number-of-public-cloud-computing-revenues/)
 [4] [Share of Website Traffic from Mobile Devices](https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/) 
 [5] [Cost of a Data Breach Report 2023](https://www.ibm.com/security/data-breach)
-[6] [AI Transformation and Business Impact Study 2024](https://www.bcg.com/publications/2024/ai-transformation) 
-
+[6] [AI Transformation and Business Impact Study 2024](https://www.bcg.com/publications/2024/ai-transformation)

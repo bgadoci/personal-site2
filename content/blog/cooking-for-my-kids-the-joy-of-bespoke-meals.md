@@ -1,12 +1,17 @@
 ---
-title: "Cooking for My Kids: The Joy of Bespoke Meals"
-slug: "cooking-for-my-kids-the-joy-of-bespoke-meals"
-category: "blog"
-tags: ['ai', 'data', 'family']
-date: "2024-01-30"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/pasta.png"
-excerpt: "As a father, there are few things I cherish more than creating a bespoke meal for my kids when they&#x27;re hungry, especially outside our regular meal times. In today&#x27;s fast-paced world, where services..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/pasta.png
+date: '2024-01-30'
+excerpt: As a father, there are few things I cherish more than creating a bespoke
+  meal for my kids when they&#x27;re hungry, especially outside our regular meal times.
+  In today&#x27;s fast-paced world, where services...
+slug: cooking-for-my-kids-the-joy-of-bespoke-meals
+status: published
+tags:
+- ai
+- data
+- family
+title: 'Cooking for My Kids: The Joy of Bespoke Meals'
 ---
 
 As a father, there are few things I cherish more than creating a bespoke meal for my kids when they're hungry, especially outside our regular meal times. In today's fast-paced world, where services like Instacart and Uber Eats are just a tap away, taking the time to cook a special dish for my children holds a unique place in my heart. It's an act that goes beyond mere nourishment; it's a gesture of love and care.
@@ -22,4 +27,3 @@ This act of cooking for my kids is about more than just feeding them; it's a way
 In an era where everything is available at the click of a button, taking the time to prepare a meal from scratch might seem old-fashioned to some. But to me, it's a crucial part of maintaining our family bond. It's a way to slow down, to focus on what's truly important, and to show my kids that they're worth the extra effort.
 
 Cooking for my kids during unscheduled times is a practice that I hold dear. It's not just about satiating hunger; it's a way of nurturing them with every chop, stir, and simmer. It's a reminder that in a world that often feels impersonal and rushed, there are still simple, loving gestures that can make all the difference. And when my kids look back on their childhood, I hope they remember these bespoke meals – not just for the food, but for the love that was served with every bite.
-

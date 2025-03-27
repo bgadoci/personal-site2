@@ -1,12 +1,17 @@
 ---
-title: "The Art of Authentic Connection in the LinkedIn Era"
-slug: "the-art-of-authentic-connection-in-a-linkedin-era"
-category: "blog"
-tags: ['ai', 'data', 'business']
-date: "2024-01-11"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/something.png"
-excerpt: "In the digital age, the way we form connections has transformed dramatically. Especially on platforms like LinkedIn, where a simple &#x27;connect&#x27; can mean the beginning of a professional relationship....."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/something.png
+date: '2024-01-11'
+excerpt: In the digital age, the way we form connections has transformed dramatically.
+  Especially on platforms like LinkedIn, where a simple &#x27;connect&#x27; can mean
+  the beginning of a professional relationship.....
+slug: the-art-of-authentic-connection-in-a-linkedin-era
+status: published
+tags:
+- ai
+- data
+- business
+title: The Art of Authentic Connection in the LinkedIn Era
 ---
 
 In the digital age, the way we form connections has transformed dramatically. Especially on platforms like LinkedIn, where a simple 'connect' can mean the beginning of a professional relationship... or sometimes, an immediate sales pitch. I've experienced this firsthand, a pattern so predictable it almost feels scripted.
@@ -48,4 +53,3 @@ Offer, don't impose: When the time is right, and you've established a connection
 #### Conclusion
 
 Networking isn't just about expanding your contact list; it's about building real relationships. It's time we shift our approach from transactional connections to meaningful interactions. Remember, people are more likely to do business with friends than with strangers. So, let's start by being a friend.
-

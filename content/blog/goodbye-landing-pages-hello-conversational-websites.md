@@ -1,12 +1,18 @@
 ---
-title: "Goodbye Landing Pages, Hello Conversational Websites"
-slug: "goodbye-landing-pages-hello-conversational-websites"
-category: "blog"
-tags: ['ai', 'data', 'learning', 'analytics']
-date: "2023-08-29"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_computer_with_a_chat_interfa_fd6750a5-276c-43aa-afb4-7da82f16d10a.png"
-excerpt: "Look, I&#x27;ve got a knack for spotting trends way before they become mainstream. Call it a sixth sense, but I&#x27;m usually about five years ahead of the game. Today, I&#x27;m letting you in on an idea that&#x27;s ..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_computer_with_a_chat_interfa_fd6750a5-276c-43aa-afb4-7da82f16d10a.png
+date: '2023-08-29'
+excerpt: Look, I&#x27;ve got a knack for spotting trends way before they become mainstream.
+  Call it a sixth sense, but I&#x27;m usually about five years ahead of the game.
+  Today, I&#x27;m letting you in on an idea that&#x27;s ...
+slug: goodbye-landing-pages-hello-conversational-websites
+status: published
+tags:
+- ai
+- data
+- learning
+- analytics
+title: Goodbye Landing Pages, Hello Conversational Websites
 ---
 
 Look, I've got a knack for spotting trends way before they become mainstream. Call it a sixth sense, but I'm usually about five years ahead of the game. Today, I'm letting you in on an idea that's primed to revolutionize the way we think about websites: conversational interfaces on your homepage, like chat-GPT, will be the future.
@@ -32,6 +38,3 @@ But wait, there's more. The magic isn't just happening on the front end; there's
 Finally, when it comes to engagement, you're ahead of the curve. You've been talking to these folks, in a way, from the moment they landed on your homepage. So by the time you're ready for more direct engagement, you've got a full dossier of what they're interested in, their pain points, and their questions. Trust me, that's a marketer's dream.
 
 We've recently hacked together a prototype of this idea, and the early results are mind-blowing. So mark my words: conversational homepages are the future, and you heard it here first.
-
-
-

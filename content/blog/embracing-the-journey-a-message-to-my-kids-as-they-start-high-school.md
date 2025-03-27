@@ -1,12 +1,16 @@
 ---
-title: "Embracing the Journey: A Message to My Kids as They Start High School"
-slug: "embracing-the-journey-a-message-to-my-kids-as-they-start-high-school"
-category: "blog"
-tags: ['ai', 'data']
-date: "2024-08-16"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/window.jpeg"
-excerpt: "The following is a text message I sent to my son and daughter the night before their sophmore and freshman year first day of school. I don’t share 99.9% of what I send them but for some reason this..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/window.jpeg
+date: '2024-08-16'
+excerpt: The following is a text message I sent to my son and daughter the night before
+  their sophmore and freshman year first day of school. I don’t share 99.9% of what
+  I send them but for some reason this...
+slug: embracing-the-journey-a-message-to-my-kids-as-they-start-high-school
+status: published
+tags:
+- ai
+- data
+title: 'Embracing the Journey: A Message to My Kids as They Start High School'
 ---
 
 The following is a text message I sent to my son and daughter the night before their sophmore and freshman year first day of school. I don’t share 99.9% of what I send them but for some reason this one felt like it might benefit others. So here it is…
@@ -26,4 +30,3 @@ As your dad, one of the hardest things is knowing that you can’t yet see the g
 I couldn’t be more proud to be your dad. Waking up might suck, but I hope this message gives you a spark of encouragement. You’re both on the right track. Don’t grow weary. Remember Roman’s 5:3-4: “We also glory in our sufferings, because we know that suffering produces perseverance; perseverance, character; and character, hope.” These words have lasted for thousands of years for a reason. Believe in them, believe in yourself, and know that God has a plan for you. And always remember, Mom and I are here for you, no matter what.
 
 I love you both more than you’ll ever know.
-

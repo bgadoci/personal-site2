@@ -1,12 +1,17 @@
 ---
-title: "How Learning React and Strapi Might Have Reignited My Passion for Creating"
-slug: "react-and-strapi-and-chat-gpt-reignited-my-passion-to-create"
-category: "blog"
-tags: ['ai', 'data', 'learning']
-date: "2023-04-17"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/large_Screenshot_2023_04_16_at_11_24_59_PM_46acc8d3d5.png"
-excerpt: "Recently, I decided to update my web presence and portfolio by using React and Strapi. I had no idea what those things were until I asked GPT how I could create my own database-backed site so that ..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_16_at_11_24_59_PM_46acc8d3d5.png
+date: '2023-04-17'
+excerpt: Recently, I decided to update my web presence and portfolio by using React
+  and Strapi. I had no idea what those things were until I asked GPT how I could create
+  my own database-backed site so that ...
+slug: react-and-strapi-and-chat-gpt-reignited-my-passion-to-create
+status: published
+tags:
+- ai
+- data
+- learning
+title: How Learning React and Strapi Might Have Reignited My Passion for Creating
 ---
 
 Recently, I decided to update my web presence and portfolio by using React and Strapi. I had no idea what those things were until I asked GPT how I could create my own database-backed site so that I didn't have to settle for a website creator. I've long had the ability to write HTML and CSS and at least copy and paste Javascript, though the latter was first learned during the days when jQuery was still a thing.
@@ -17,4 +22,4 @@ Over the last two weeks, I've found the [fitness](/fitness) section of my site t
 
 I'm still early here, but the spark might have just returned. I've always wanted to create, but I've always needed the help of others more skilled at coding than me. This might just be the time when I can create the thing by myself. We'll see. It's early. In my mind's eye, I have a vision of a platform that allows users to sign up, log their workouts, log fitness tests, and get insight about where they need to focus. I have no idea if it's a good idea or bad. I have no idea if the benefit I'm getting is one that others want. But I do have an idea again and feel confident (kinda) that I might be able to bring it to life faster and better than I have in the past.
 
-![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_16_at_11_24_59_PM_46acc8d3d5.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_16_at_11_25_09_PM_6efa5636a0.png)
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_16_at_11_24_59_PM_46acc8d3d5.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_16_at_11_25_09_PM_6efa5636a0.png)

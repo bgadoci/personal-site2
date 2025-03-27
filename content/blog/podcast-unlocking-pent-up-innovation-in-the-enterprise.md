@@ -1,12 +1,18 @@
 ---
-title: "Podcast: Unlocking pent-up innovation in the enterprise"
-slug: "podcast-unlocking-pent-up-innovation-in-the-enterprise"
-category: "blog"
-tags: ['ai', 'ai-operations', 'enterprise', 'data', 'innovation']
-date: "2024-05-23"
-status: "published"
-coverImage: "/images/blog-images/cover-images/5.png"
-excerpt: "My recent podcast appearance on Catalog &amp;amp; Cocktails where I talk about pent-up innovation in the enterprise and how GenAI is unlocking it."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/cover-images/5.png
+date: '2024-05-23'
+excerpt: My recent podcast appearance on Catalog &amp;amp; Cocktails where I talk
+  about pent-up innovation in the enterprise and how GenAI is unlocking it.
+slug: podcast-unlocking-pent-up-innovation-in-the-enterprise
+status: published
+tags:
+- ai
+- ai-operations
+- enterprise
+- data
+- innovation
+title: 'Podcast: Unlocking pent-up innovation in the enterprise'
 ---
 
 My recent podcast appearance on Catalog & Cocktails where I talk about pent-up innovation in the enterprise and how GenAI is unlocking it. 

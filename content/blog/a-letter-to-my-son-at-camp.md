@@ -1,19 +1,17 @@
 ---
-title: A letter to my son at camp
-slug: a-letter-to-my-son-at-camp
 category: blog
-tags:
-  - ai
-  - data
-  - learning
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_a_pixar_style_photo_of_a_teenage_boy_at_summer_camp_r_96a49aff_3e27_4a23_ae08_5f12af78204f_3571ab7a99.png
 date: '2023-06-26'
-status: published
-coverImage: >-
-  /images/blog-images/blog-post-images/ragmann22_a_pixar_style_photo_of_a_teenage_boy_at_summer_camp_r_96a49aff_3e27_4a23_ae08_5f12af78204f_3571ab7a99.png
-excerpt: >-
-  Taking my kids to summer camp is always bittersweet. I love spending time with
-  them so much. As for my son, it&#x27;s an extra challenge because he prefers
+excerpt: Taking my kids to summer camp is always bittersweet. I love spending time
+  with them so much. As for my son, it&#x27;s an extra challenge because he prefers
   being by himself. He&#x27;s definitely an introvert...
+slug: a-letter-to-my-son-at-camp
+status: published
+tags:
+- ai
+- data
+- learning
+title: A letter to my son at camp
 ---
 
 Taking my kids to summer camp is always bittersweet. I love spending time with them so much. As for my son, it's an extra challenge because he prefers being by himself. He's definitely an introvert. However, he made the decision to go again this year, pushing himself out of his comfort zone. He always claims to have a great time when he returns home. But that doesn't make the drop-off any easier. While he's away, we have the opportunity to send him two letters. Here's my first letter to him:
@@ -35,6 +33,3 @@ I'll write you again for Thursday but would love to hear how you are doing (and 
 Know that I am thinking about you and praying literally every hour of the day that I'm awake. I hope your stomach is better, and you are sleeping well. I hope you are laughing hard and having fun. I hope you are learning more about God and who He made you to be.
 
 I love you more than anything in this world. Have fun, Riley.
-
-
-

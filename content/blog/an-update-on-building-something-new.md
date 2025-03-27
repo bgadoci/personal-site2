@@ -1,20 +1,18 @@
 ---
-title: An update on building something new
-slug: an-update-on-building-something-new
 category: blog
-tags:
-  - ai
-  - data
-  - learning
-  - chatgpt
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_24_at_11_29_58_PM_396760948c.png
 date: '2023-04-25'
+excerpt: As some of you may have seen, I&#x27;m using ChatGPT to help me create my
+  personal website. It&#x27;s a bit more complicated than it seems, as I&#x27;m not
+  choosing to use a website builder. I&#x27;m actually creating...
+slug: an-update-on-building-something-new
 status: published
-coverImage: >-
-  /images/blog-images/blog-post-images/large_Screenshot_2023_04_24_at_11_29_58_PM_396760948c.png
-excerpt: >-
-  As some of you may have seen, I&#x27;m using ChatGPT to help me create my
-  personal website. It&#x27;s a bit more complicated than it seems, as I&#x27;m
-  not choosing to use a website builder. I&#x27;m actually creating...
+tags:
+- ai
+- data
+- learning
+- chatgpt
+title: An update on building something new
 ---
 
 As some of you may have seen, I'm using ChatGPT to help me create my personal website. It's a bit more complicated than it seems, as I'm not choosing to use a website builder. I'm actually creating a React App powered by a Headless CMS (Strapi) to do so. It's been great.
@@ -29,4 +27,4 @@ Today, I made the most progress yet and took my local efforts to a GitHub repo. 
 
 Given my station in life, I don't know how much further this project will get. I'm motivated, but at 45 with two teenagers and a demanding job, who knows. But for now, I'm proud of myself.
 
-![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_24_at_11_29_58_PM_396760948c.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_24_at_11_30_12_PM_8b4f045ebf.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_24_at_11_30_24_PM_a5bee4a9d7.png)
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_24_at_11_29_58_PM_396760948c.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_24_at_11_30_12_PM_8b4f045ebf.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_24_at_11_30_24_PM_a5bee4a9d7.png)

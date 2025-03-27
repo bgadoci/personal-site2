@@ -1,12 +1,19 @@
 ---
-title: "Harnessing AI for Better Customer Support: Building the AI Docs Bot at data.world"
-slug: "harnessing-ai-for-better-customer-support-building-the-ai-docs-bot-at-dataworld"
-category: "blog"
-tags: ['ai', 'ai-driven-apps', 'operations', 'ai-operations', 'data']
-date: "2024-08-07"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/Screenshot_2024-11-12_at_1.26.53_PM.png"
-excerpt: "Discover how data.world’s AI Docs Bot is transforming access to critical documentation. Built on our Vectorizer and seamlessly integrated into our documentation site, the AI Docs Bot uses vector se..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-11-12_at_1.26.53_PM.png
+date: '2024-08-07'
+excerpt: Discover how data.world’s AI Docs Bot is transforming access to critical
+  documentation. Built on our Vectorizer and seamlessly integrated into our documentation
+  site, the AI Docs Bot uses vector se...
+slug: harnessing-ai-for-better-customer-support-building-the-ai-docs-bot-at-dataworld
+status: published
+tags:
+- ai
+- ai-driven-apps
+- operations
+- ai-operations
+- data
+title: 'Harnessing AI for Better Customer Support: Building the AI Docs Bot at data.world'
 ---
 
 At data.world, we are constantly innovating to make data work for our team and our customers. One of our recent projects, the AI Docs Bot, has transformed how employees and customers find crucial information within our extensive documentation. Powered by a middleware RAG (Retrieval-Augmented Generation) application called the Vectorizer, this bot bridges our massive documentation library and users, answering questions and surfacing resources in a fraction of the time traditional searches require. Here’s how we built it, why it matters, and the impact it’s making.
@@ -40,4 +47,3 @@ For internal use, the bot has become an essential tool. It’s utilized for onbo
 The AI Docs Bot is more than just a tool; it’s an example of what AI Operations can achieve when it’s aligned with skilled human expertise and a clear operational goal. By combining the power of vectorized search, RAG, and prompt engineering—and embedding it directly within our documentation site—we’ve created an app that not only meets immediate needs but also provides a foundation for future AI-driven applications at data.world.
 
 As we look forward, the success of the AI Docs Bot fuels our ambition to develop even more intelligent, user-focused applications that bridge information and insight at the speed of data.
-

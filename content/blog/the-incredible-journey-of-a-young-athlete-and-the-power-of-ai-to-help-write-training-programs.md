@@ -1,12 +1,20 @@
 ---
-title: "The Incredible Journey of a Young Athlete and the Power of AI to help write training programs."
-slug: "the-incredible-journey-of-a-young-athlete-and-the-power-of-ai-to-help-write-training-programs"
-category: "blog"
-tags: ['ai', 'technology', 'guide', 'data', 'innovation']
-date: "2024-02-07"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/ai-workout.png"
-excerpt: "In a world where technology and human potential intersect, remarkable stories of determination and innovation often emerge. One such story is of my daughter, a 13-year-old athlete with aspirations ..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ai-workout.png
+date: '2024-02-07'
+excerpt: In a world where technology and human potential intersect, remarkable stories
+  of determination and innovation often emerge. One such story is of my daughter,
+  a 13-year-old athlete with aspirations ...
+slug: the-incredible-journey-of-a-young-athlete-and-the-power-of-ai-to-help-write-training-programs
+status: published
+tags:
+- ai
+- technology
+- guide
+- data
+- innovation
+title: The Incredible Journey of a Young Athlete and the Power of AI to help write
+  training programs.
 ---
 
 In a world where technology and human potential intersect, remarkable stories of determination and innovation often emerge. One such story is of my daughter, a 13-year-old athlete with aspirations that soar as high as her ambitions. Her journey towards aiming to compete in the CrossFit Games is a testament to her incredible work ethic and the supportive role technology can play in achieving one's dreams.
@@ -27,7 +35,7 @@ The implementation of this AI solution is a vivid example of how technology can 
 
 Here are some screenshots of the prompt and output but please know that the volume here is only possible because she’s been building up to this for 8 months. This is definitely not a program for 99% of the people out there. More, it was designed to give her a lot and she can pick and choose what she will do each day based on her location, recovery, and mental readiness. It tooks months of education and close parenting to make sure she is healthy mentally and physically to operate at this high level. More, this is being driven by her goals and desires and has nothing to do with us as parents intending or forcing her to do this. This is all her. She wants to be a champion and that goal requires a special level of commitment, understanding, and attention. 
 
-![](/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.42.26_PM.png)![](/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.42.43_PM.png)![](/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.42.58_PM.png)![](/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.43.17_PM.png)### Output: Custom Weekly Training Plan 
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.42.26_PM.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.42.43_PM.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.42.58_PM.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.43.17_PM.png)### Output: Custom Weekly Training Plan 
 
 #### **Monday: Focus on Energy Systems, Strength, and Olympic Lifting**
 
@@ -248,4 +256,3 @@ Ensure she takes this day off to fully recover, focusing on mobility work or lig
 This plan balances intensity and recovery, aiming to enhance all facets of her athletic performance while keeping her engaged and motivated. Adjustments may be necessary based on her progress and feedback.
 
 We are indeed living in amazing times, where the boundaries of what's possible are continually expanded by the synergy between human ambition and technological innovation. My daughter's story is a shining example of this synergy in action, highlighting the role of technology in supporting and amplifying the aspirations of the next generation of athletes. As she continues on her journey, the lessons learned and the tools employed will undoubtedly serve as a beacon for others, illustrating the power of determination, the importance of support, and the limitless potential of technology to transform dreams into reality.
-

@@ -1,19 +1,18 @@
 ---
-title: Playing Company
-slug: playing-company
 category: blog
-tags:
-  - ai
-  - data
-  - business
-  - career
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_playing_company_6b9d429ca6.png
 date: '2016-03-16'
+excerpt: When I was 10 years old, I got my two younger brothers into a room and told
+  them that we were going to start a company. We were going to call it BWG, Inc. (my
+  initials, of course). All I needed wer...
+slug: playing-company
 status: published
-coverImage: /images/blog-images/blog-post-images/large_playing_company_6b9d429ca6.png
-excerpt: >-
-  When I was 10 years old, I got my two younger brothers into a room and told
-  them that we were going to start a company. We were going to call it BWG, Inc.
-  (my initials, of course). All I needed wer...
+tags:
+- ai
+- data
+- business
+- career
+title: Playing Company
 ---
 
 *Don’t mind the mangled hands…AI generated photos are still working themselves out. heh.* 
@@ -33,4 +32,3 @@ As leaders of early stage companies that are growing rapidly, we would do well t
 As entrepreneurialism continues to get Hollywoodized and as the cost to create a company plummets, more and more people are starting companies. Most of them fail. Sometimes they fail because of a great idea but poor execution. Sometimes they fail because it was the wrong place or time. But, sometimes they fail because the founders and early employees were so interested in playing company, they missed the opportunity to actually become one.
 
 If things are going too smoothly for too long, have a closer look to make sure you aren’t playing company and you are doing the things to actually become one.
-

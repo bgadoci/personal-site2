@@ -1,17 +1,16 @@
 ---
-title: How Five Simple Questions Can Help You Develop Deeper Connections
-slug: how-five-simple-questions-can-help-you-develop-deeper-connections
 category: blog
-tags:
-  - ai
-  - data
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/hard_68e8da77de.png
 date: '2023-04-23'
-status: published
-coverImage: /images/blog-images/blog-post-images/hard_68e8da77de.png
-excerpt: >-
-  When my kids were young, I came up with five questions to ask them because I
-  wanted to know more about them. I didn&#x27;&#x27;t read about these somewhere
+excerpt: When my kids were young, I came up with five questions to ask them because
+  I wanted to know more about them. I didn&#x27;&#x27;t read about these somewhere
   or have them given to me as advice. They just sort ...
+slug: how-five-simple-questions-can-help-you-develop-deeper-connections
+status: published
+tags:
+- ai
+- data
+title: How Five Simple Questions Can Help You Develop Deeper Connections
 ---
 
 When my kids were young, I came up with five questions to ask them because I wanted to know more about them. I didn''t read about these somewhere or have them given to me as advice. They just sort of happened. It turns out they are not just great for kids but great for just about everyone. Here is how it happened and why it''s important.
@@ -76,5 +75,4 @@ I''ve had amazing results from this. I''ve tried to help a 65-year-old woman get
 
 Next time you are in a conversation with someone who you seem to be getting along with, take a chance and ask five simple questions. You''ll be surprised at the connection.
 
-![](/images/blog-images/blog-post-images/hard_68e8da77de.png)This is me on the hiking trip where I realized the 5 questions are the same for kids and adults. Probably the hardest trip of my life. 
-
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/hard_68e8da77de.png)This is me on the hiking trip where I realized the 5 questions are the same for kids and adults. Probably the hardest trip of my life.

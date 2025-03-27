@@ -1,12 +1,17 @@
 ---
-title: "You Can Now Follow People on FitPholio"
-slug: "follow-people-on-fitpholio"
-category: "blog"
-tags: ['ai', 'data', 'learning']
-date: "2023-05-18"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.37.55_PM.png"
-excerpt: "Sometimes, I question why I pour so much effort into, but I persist nonetheless. I think part of my motivation stems from the fact that its success or failure is completely up to me. I savor both t..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.37.55_PM.png
+date: '2023-05-18'
+excerpt: Sometimes, I question why I pour so much effort into, but I persist nonetheless.
+  I think part of my motivation stems from the fact that its success or failure is
+  completely up to me. I savor both t...
+slug: follow-people-on-fitpholio
+status: published
+tags:
+- ai
+- data
+- learning
+title: You Can Now Follow People on FitPholio
 ---
 
 Sometimes, I question why I pour so much effort into, but I persist nonetheless. I think part of my motivation stems from the fact that its success or failure is completely up to me. I savor both the failures and small victories. On average, I acquire a new user each day. Unfortunately, most of them sign up, never post anything, and don''t return. It''s somewhat disheartening, but that''s not what it''s really about.
@@ -19,4 +24,4 @@ The learning experience right now is incredible and enjoyable. This endeavor has
 
 As I move forward, I intend to continuously refine and develop FitPholio based on feedback and my own insights. Perhaps, soon, there will be more consistent engagement from users. Despite the challenges, I am excited about the future, and the possibility of creating a platform that not only I, but many others will find valuable. Here''s to more small wins and even the failures, for they are the stepping stones that pave the way towards success.
 
-![](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.37.55_PM.png)
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.37.55_PM.png)

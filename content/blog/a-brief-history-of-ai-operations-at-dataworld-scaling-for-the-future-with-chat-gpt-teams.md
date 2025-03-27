@@ -1,12 +1,20 @@
 ---
-title: "A Brief History of AI Operations at data.world: Scaling for the Future with Chat-GPT Teams"
-slug: "a-brief-history-of-ai-operations-at-dataworld-scaling-for-the-future-with-chat-gpt-teams"
-category: "blog"
-tags: ['ai', 'ai-operations', 'leadership', 'enterprise', 'data']
-date: "2024-08-15"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/image.png"
-excerpt: "The world of AI has seen rapid evolution, and at data.world, we&#x27;ve been at the forefront of this revolution. As we continue to grow and adapt to the ever-changing landscape, it&#x27;s essential to look ..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/image.png
+date: '2024-08-15'
+excerpt: The world of AI has seen rapid evolution, and at data.world, we&#x27;ve been
+  at the forefront of this revolution. As we continue to grow and adapt to the ever-changing
+  landscape, it&#x27;s essential to look ...
+slug: a-brief-history-of-ai-operations-at-dataworld-scaling-for-the-future-with-chat-gpt-teams
+status: published
+tags:
+- ai
+- ai-operations
+- leadership
+- enterprise
+- data
+title: 'A Brief History of AI Operations at data.world: Scaling for the Future with
+  Chat-GPT Teams'
 ---
 
 The world of AI has seen rapid evolution, and at data.world, we've been at the forefront of this revolution. As we continue to grow and adapt to the ever-changing landscape, it's essential to look back at where we started, understand the challenges we faced, and appreciate the solutions we've implemented to meet those challenges. This post will take you through the journey of AI Operations (AI Ops) at data.world, the need for scaling, and the pivotal role that Chat-GPT Teams has played as a front-end for our operations.
@@ -17,7 +25,7 @@ AI Ops at data.world officially began on August 23, 2023—a date that marked th
 
 But the true origin story of AI Ops, and specifically the development of one of our most important tools, began earlier during a leadership onsite. I found myself in a conversation with our co-founder and CTO, Bryon Jacob. I was lamenting an idea I had to make it easier for those interested in data.world to research us. The idea was that instead of asking potential customers and partners to hunt and peck around the website, we could offer them a chat experience that directed them to relevant resources while letting them control the interaction. This conversation laid the groundwork for what would eventually become "Conversations with Archie," a precursor to the tools we now rely on. Here's Bryon, less than 24 hours after I mentioned my idea to him, letting me know that he created a working version of it. As you can see, I'm excited!
 
-![](/images/blog-images/blog-post-images/image.png)"Conversations with Archie" was more than just a chatbot; it was an early attempt to democratize access to information about data.world. It allowed users to interact in a way that was natural, intuitive, and, most importantly, efficient. This concept of creating a more user-focused, AI-driven interface would later inspire many of the tools that now power our AI Ops.
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/image.png)"Conversations with Archie" was more than just a chatbot; it was an early attempt to democratize access to information about data.world. It allowed users to interact in a way that was natural, intuitive, and, most importantly, efficient. This concept of creating a more user-focused, AI-driven interface would later inspire many of the tools that now power our AI Ops.
 
 Our early efforts centered around Archie, and this phase was characterized by experimentation and a desire to democratize AI across the company. We wanted to talk to everyone, understand their needs, and develop tools that could address those needs effectively.
 
@@ -45,9 +53,9 @@ One of the most significant breakthroughs in scaling AI Ops at data.world was th
 
 The vectorizer revolutionized this process by centralizing all the resources into a single, unified system. Built on a Node.js Express backend, with a React front-end, and MongoDB Atlas serving as the database with vector search indexes, the vectorizer acts as the "enterprise brain" of our operations. This centralization allowed us to replace the separate JSON files with one central source that could be updated nightly, drastically improving efficiency and consistency across all tools. Instead of managing individual files, we now offered content via an API, making it accessible to all tools seamlessly.
 
-![](/images/blog-images/blog-post-images/Screenshot_2024-08-15_at_12.48.14_AM.png)But the vectorizer did more than just centralize resources. It expanded our capabilities from merely offering resources to providing deep knowledge. This advanced implementation of Retrieval-Augmented Generation (RAG) allows our tools to give not only accurate answers but also highly relevant resource recommendations. The vectorizer draws from a broad range of sources, including less obvious places like specific and detailed PDFs, which are integrated into the enterprise brain.
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-08-15_at_12.48.14_AM.png)But the vectorizer did more than just centralize resources. It expanded our capabilities from merely offering resources to providing deep knowledge. This advanced implementation of Retrieval-Augmented Generation (RAG) allows our tools to give not only accurate answers but also highly relevant resource recommendations. The vectorizer draws from a broad range of sources, including less obvious places like specific and detailed PDFs, which are integrated into the enterprise brain.
 
-![](/images/blog-images/blog-post-images/Screenshot_2024-08-15_at_12.48.25_AM.png)To achieve this, we employ several different chunking techniques and embedding approaches. These methods ensure that each source is optimally available for whatever tool is built on top of the vectorizer. For example, our **Article Search API** returns resources that the vectorizer scrapes from various sources across the enterprise, pulling in relevant articles, documents, and other materials. In contrast, our **Knowledge API** digs deeper, returning detailed knowledge based on the same scraped data plus specific PDFs and documents that we’ve intentionally added to the enterprise brain. This API is integral in delivering more in-depth and tailored responses.
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-08-15_at_12.48.25_AM.png)To achieve this, we employ several different chunking techniques and embedding approaches. These methods ensure that each source is optimally available for whatever tool is built on top of the vectorizer. For example, our **Article Search API** returns resources that the vectorizer scrapes from various sources across the enterprise, pulling in relevant articles, documents, and other materials. In contrast, our **Knowledge API** digs deeper, returning detailed knowledge based on the same scraped data plus specific PDFs and documents that we’ve intentionally added to the enterprise brain. This API is integral in delivering more in-depth and tailored responses.
 
 Additionally, the vectorizer's API allows for filtering and limiting to ensure the most accurate retrieval of information. This capability is crucial for maintaining the precision and relevance of the tools built on the vectorizer, ensuring that users get the best possible results with each query.
 
@@ -74,7 +82,7 @@ For example, a marketing team member could use a custom GPT to access the vector
 
 
 
-![](/images/blog-images/blog-post-images/Screenshot_2024-08-15_at_12.48.48_AM.png)#### The Three Legs of the AI Ops Stool
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-08-15_at_12.48.48_AM.png)#### The Three Legs of the AI Ops Stool
 
 At the core of AI Ops at data.world are three essential components: the vectorizer, the front-end interface (Chat-GPT Teams), and metrics and tracking. These three elements form the foundation upon which our AI operations are built.
 
@@ -92,11 +100,10 @@ The final leg of the AI Ops stool is metrics and tracking. To ensure that our AI
 
 Metrics and tracking also play a crucial role in maintaining the quality of our AI outputs. By continuously monitoring performance, we can quickly identify and address any issues, ensuring that our tools remain reliable and effective.
 
-![](/images/blog-images/blog-post-images/Screenshot_2024-08-15_at_12.51.09_AM.png)#### The Road Ahead: Continuous Improvement and Innovation
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-08-15_at_12.51.09_AM.png)#### The Road Ahead: Continuous Improvement and Innovation
 
 As we look to the future, the journey of AI Ops at data.world is far from over. We are committed to continuous improvement and innovation, always seeking new ways to leverage AI to drive productivity and efficiency across the organization.
 
 The introduction of Chat-GPT Teams and the development of our vectorizer have been significant milestones, but they are just the beginning. As we continue to refine our processes and expand our capabilities, we are confident that AI Ops will play an increasingly vital role in shaping the future of data.world.
 
 In conclusion, the story of AI Ops at data.world is one of growth, adaptation, and innovation. From humble beginnings to the implementation of cutting-edge solutions, we have come a long way in a short time. And as we continue to scale and evolve, one thing is certain: the best is yet to come.
-

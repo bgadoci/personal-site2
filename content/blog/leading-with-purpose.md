@@ -1,12 +1,18 @@
 ---
-title: "Leading with Purpose"
-slug: "leading-with-purpose"
-category: "blog"
-tags: ['ai', 'data', 'strategy', 'management']
-date: "2023-04-22"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/large_ragmann22_a_pixar_style_image_of_a_general_explaining_a_battle_0f0ab8d6_7f07_4cf6_8173_271f4e797419_34d424b5df.png"
-excerpt: "I have been managing groups of people for a long time now, and although it was never an explicit goal of mine, my individual pursuits have placed me in this position time and time again. From herdi..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_ragmann22_a_pixar_style_image_of_a_general_explaining_a_battle_0f0ab8d6_7f07_4cf6_8173_271f4e797419_34d424b5df.png
+date: '2023-04-22'
+excerpt: I have been managing groups of people for a long time now, and although it
+  was never an explicit goal of mine, my individual pursuits have placed me in this
+  position time and time again. From herdi...
+slug: leading-with-purpose
+status: published
+tags:
+- ai
+- data
+- strategy
+- management
+title: Leading with Purpose
 ---
 
 #### **Why Clear Next Steps and Motivation are Key to Achieving Your Goals**
@@ -40,6 +46,3 @@ All that said, this approach to management is easy to implement. Simply ask two 
 
 
 1. You will learn a ton from making that simple addition.
-
-
-

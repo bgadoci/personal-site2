@@ -1,12 +1,16 @@
 ---
-title: "Fitpholio update #1"
-slug: "fitpholio-update-number-1"
-category: "blog"
-tags: ['ai', 'data']
-date: "2023-04-28"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_14_42_PM_f305903938.png"
-excerpt: "I didn&#x27;t have much time today. My wife went out of town again, so I had work, kid pickup, and an impromptu trip to the orthodontist for my son&#x27;s broken braces. Despite this, I was able to make some..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_14_42_PM_f305903938.png
+date: '2023-04-28'
+excerpt: I didn&#x27;t have much time today. My wife went out of town again, so I
+  had work, kid pickup, and an impromptu trip to the orthodontist for my son&#x27;s
+  broken braces. Despite this, I was able to make some...
+slug: fitpholio-update-number-1
+status: published
+tags:
+- ai
+- data
+title: 'Fitpholio update #1'
 ---
 
 I didn't have much time today. My wife went out of town again, so I had work, kid pickup, and an impromptu trip to the orthodontist for my son's broken braces. Despite this, I was able to make some meaningful progress on Fitpholio.
@@ -31,4 +35,4 @@ Again, I have no idea if this will be anything significant, but the pursuit is r
 
 Stay tuned for more updates.
 
-![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_14_42_PM_f305903938.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_14_32_PM_cd26e203e4.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_14_20_PM_615cb85f18.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_23_25_PM_702d8c4545.png)
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_14_42_PM_f305903938.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_14_32_PM_cd26e203e4.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_14_20_PM_615cb85f18.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_27_at_11_23_25_PM_702d8c4545.png)

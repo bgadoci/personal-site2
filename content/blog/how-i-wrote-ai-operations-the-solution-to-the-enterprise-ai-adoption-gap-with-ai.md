@@ -1,12 +1,20 @@
 ---
-title: "How I Wrote AI Operations: The Solution to the Enterprise AI Adoption Gap with AI"
-slug: "how-i-wrote-ai-operations-the-solution-to-the-enterprise-ai-adoption-gap-with-ai"
-category: "blog"
-tags: ['ai', 'technology', 'strategy', 'ai-operations', 'enterprise']
-date: "2025-02-14"
-status: "published"
-coverImage: "/images/blog-images/cover-images/5.png"
-excerpt: "I wrote AI Operations: The Solution to the Enterprise AI Adoption Gap in just 10 days, but it took 20 months of learning to get to that point. Organizing years of knowledge, refining it, and workin..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/cover-images/5.png
+date: '2025-02-14'
+excerpt: 'I wrote AI Operations: The Solution to the Enterprise AI Adoption Gap in
+  just 10 days, but it took 20 months of learning to get to that point. Organizing
+  years of knowledge, refining it, and workin...'
+slug: how-i-wrote-ai-operations-the-solution-to-the-enterprise-ai-adoption-gap-with-ai
+status: published
+tags:
+- ai
+- technology
+- strategy
+- ai-operations
+- enterprise
+title: 'How I Wrote AI Operations: The Solution to the Enterprise AI Adoption Gap
+  with AI'
 ---
 
 I wrote *AI Operations: The Solution to the Enterprise AI Adoption Gap* in just **10 days**, but it took **20 months of learning** to get to that point. Organizing years of knowledge, refining it, and working alongside AI as a writing partner unlocked a completely new way of thinking. It wasn’t just faster—it was transformative. And what’s even more interesting is that this is the worst AI will ever be. As the technology improves, so will the ability to create at this pace, making the process even more seamless.
@@ -26,4 +34,3 @@ For visuals, I used a consistent prompt to generate images with a unified style.
 At various points, I was juggling different AI-driven tasks—using voice mode to brainstorm, running multiple Deep Research agents to explore new ideas, and testing different workflows to see what worked best. Writing this book became an experiment in AI-assisted creativity. It wasn’t just about what the book says but how it was made.
 
 If you’re interested in how enterprises can bridge the AI adoption gap and integrate AI effectively at scale, check out *AI Operations: The Solution to the Enterprise AI Adoption Gap* at [aioperationsbook.com](https://aioperationsbook.com).
-

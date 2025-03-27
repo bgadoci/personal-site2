@@ -1,12 +1,20 @@
 ---
-title: "Unveiling the Knowledge API: How Vectorizer-2 is Enhancing AI Accuracy &amp;amp; Depth for data.world"
-slug: "unveiling-the-knowledge-api-how-vectorizer-2-is-enhancing-ai-accuracy-and-depth-for-dataworld"
-category: "blog"
-tags: ['ai', 'ai-driven-apps', 'operations', 'ai-operations', 'enterprise']
-date: "2024-07-08"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/Screenshot_2024-07-08_at_1.25.19_PM.png"
-excerpt: "At data.world, we’re excited to announce the release of the Catalog &amp;amp; Cocktails Chat Experience, an innovative, mobile-friendly app that leverages our newly developed Knowledge API, part of the..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-07-08_at_1.25.19_PM.png
+date: '2024-07-08'
+excerpt: At data.world, we’re excited to announce the release of the Catalog &amp;amp;
+  Cocktails Chat Experience, an innovative, mobile-friendly app that leverages our
+  newly developed Knowledge API, part of the...
+slug: unveiling-the-knowledge-api-how-vectorizer-2-is-enhancing-ai-accuracy-and-depth-for-dataworld
+status: published
+tags:
+- ai
+- ai-driven-apps
+- operations
+- ai-operations
+- enterprise
+title: 'Unveiling the Knowledge API: How Vectorizer-2 is Enhancing AI Accuracy &amp;amp;
+  Depth for data.world'
 ---
 
 At data.world, we’re excited to announce the release of the Catalog & Cocktails Chat Experience, an innovative, mobile-friendly app that leverages our newly developed Knowledge API, part of the powerful Vectorizer-2 toolset. This new feature is designed to enhance the accuracy and depth of information our chatbot can provide, transforming how we manage and utilize content. Let’s dive into the technical details of this API and understand why it’s a game-changer for our AI operations.
@@ -21,7 +29,7 @@ Additionally, the Knowledge API allows us to upload PDFs, such as the AI Benchma
 
 Here’s a visual representation of how the Knowledge API integrates into our system:
 
-![](/images/blog-images/blog-post-images/Screenshot_2024-07-08_at_1.25.19_PM.png)#### The Workflow:
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-07-08_at_1.25.19_PM.png)#### The Workflow:
 
 1. **User Message**: The process begins when a user sends a message.
 
@@ -51,13 +59,13 @@ When the `chunk_summary` option is selected, the API returns a summary for each 
 
 Here’s a snippet.
 
-![](/images/blog-images/blog-post-images/ray-so-export__11_.png)#### Knowledge Summary
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ray-so-export__11_.png)#### Knowledge Summary
 
 Alternatively, the `knowledge_summary` option combines the content of multiple chunks into a single, comprehensive summary. This method allows the user to specify the number of chunks to include in the summary, making it adaptable to the scope of information needed. This aggregated approach helps create an informed system message, enhancing the bot's ability to provide thorough and contextually rich responses.
 
-![](/images/blog-images/blog-post-images/ray-so-export__12_.png)The `knowledge_summary` option in the Knowledge API goes a step further by making an additional call to OpenAI to classify and set the intent of the query. This process begins by analyzing the user’s input to determine the underlying intent behind the query, ensuring that the summary generated is not only comprehensive but also contextually relevant. By incorporating intent classification, the Knowledge API can tailor its responses to better address the specific needs and goals of the user, resulting in more accurate and meaningful interactions. This extra layer of understanding allows the system to generate a highly informed summary, enhancing the overall quality and precision of the information provided.
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ray-so-export__12_.png)The `knowledge_summary` option in the Knowledge API goes a step further by making an additional call to OpenAI to classify and set the intent of the query. This process begins by analyzing the user’s input to determine the underlying intent behind the query, ensuring that the summary generated is not only comprehensive but also contextually relevant. By incorporating intent classification, the Knowledge API can tailor its responses to better address the specific needs and goals of the user, resulting in more accurate and meaningful interactions. This extra layer of understanding allows the system to generate a highly informed summary, enhancing the overall quality and precision of the information provided.
 
-![](/images/blog-images/blog-post-images/ray-so-export__13_.png)### Why It’s Important
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ray-so-export__13_.png)### Why It’s Important
 
 The introduction of the Knowledge API is a pivotal enhancement to our AI operations for several reasons:
 
@@ -71,11 +79,10 @@ The introduction of the Knowledge API is a pivotal enhancement to our AI operati
 
 
 
-![](/images/blog-images/blog-post-images/Screenshot_2024-07-08_at_1.34.38_PM.png)### Looking Ahead
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-07-08_at_1.34.38_PM.png)### Looking Ahead
 
 In the coming weeks, we’ll be updating our existing apps with the Knowledge API feature, further enhancing their capabilities. This step is part of our ongoing effort to build a culture of AI usage within data.world, empowering our employees to leverage AI in their daily tasks, streamline processes, and drive innovation.
 
 By integrating the Knowledge API into our operations, we're not just keeping pace with technological advancements but setting the stage for a more efficient and AI-driven future. Stay tuned as we continue to innovate and expand our AI capabilities, making data.world a leader in AI operations.
 
 For more detailed insights on the development of our AI tools, you can refer to our post on building the data.world Vectorizer. It highlights the technical backbone and the journey we undertook to develop this robust infrastructure, which is now further enhanced by the Knowledge API. Together, these tools exemplify our commitment to harnessing the power of AI to transform traditional workflows and create new opportunities within our enterprise.
-

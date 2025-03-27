@@ -1,12 +1,19 @@
 ---
-title: "Empowering Learning with AI: Introducing Owl Genius"
-slug: "empowering-learning-with-ai-introducing-owl-genius"
-category: "blog"
-tags: ['ai', 'productivity', 'management', 'ai-driven-apps', 'ai-operations']
-date: "2024-11-11"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/owl-gen.png"
-excerpt: "Owl Genius is data.world’s latest AI-powered app, developed as part of our AI Champions initiative. By combining OpenAI’s language capabilities with our in-house Vectorizer middleware, Owl Genius d..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/owl-gen.png
+date: '2024-11-11'
+excerpt: Owl Genius is data.world’s latest AI-powered app, developed as part of our
+  AI Champions initiative. By combining OpenAI’s language capabilities with our in-house
+  Vectorizer middleware, Owl Genius d...
+slug: empowering-learning-with-ai-introducing-owl-genius
+status: published
+tags:
+- ai
+- productivity
+- management
+- ai-driven-apps
+- ai-operations
+title: 'Empowering Learning with AI: Introducing Owl Genius'
 ---
 
 At data.world, we’re committed to leveraging AI to build applications that drive productivity and enhance learning experiences across our organization. One recent example of this commitment is an app called **Owl Genius**. Developed as part of an initiative I led—the **AI Champions**—Owl Genius leverages AI to deliver highly personalized, targeted learning plans, tapping into the knowledge infrastructure we’ve built to support AI-powered learning.

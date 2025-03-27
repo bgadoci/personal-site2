@@ -1,12 +1,16 @@
 ---
-title: "More Than a Game: Building Character When the Odds Are Against You"
-slug: "more-than-a-game-building-character-with-odds-against-you"
-category: "blog"
-tags: ['ai', 'data']
-date: "2023-09-10"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_fit_coaching_talking_to_his__a20dba7b-c92e-4607-b0d4-eb10c5e040ac.png"
-excerpt: "Today I felt like the old cliche of being thrown into the deep end without a life jacket. Trust me, it was the epitome of chaos—kids playing without their uniforms, an almost-empty bench, and a sco..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_fit_coaching_talking_to_his__a20dba7b-c92e-4607-b0d4-eb10c5e040ac.png
+date: '2023-09-10'
+excerpt: Today I felt like the old cliche of being thrown into the deep end without
+  a life jacket. Trust me, it was the epitome of chaos—kids playing without their
+  uniforms, an almost-empty bench, and a sco...
+slug: more-than-a-game-building-character-with-odds-against-you
+status: published
+tags:
+- ai
+- data
+title: 'More Than a Game: Building Character When the Odds Are Against You'
 ---
 
 Today I felt like the old cliche of being thrown into the deep end without a life jacket. Trust me, it was the epitome of chaos—kids playing without their uniforms, an almost-empty bench, and a scoreboard that felt like it was laughing at us. I felt like I was navigating a sinking ship with only a plastic spoon to bail us out. But, here's the kicker: it turned out to be an experience that taught us all more than any "by-the-books" game ever could.
@@ -43,7 +47,4 @@ Coaching isn't just about getting your team to win. It’s about teaching kids h
 
 In the grand scheme of things, the game's outcome was less important than the life lessons we all learned. I was honored to be a part of that journey. Even in its messiness, it was a beautiful reminder that some of the best coaching moments come when you least expect them—when you're knee-deep in chaos, turning a "shitshow" into a showcase of character and resilience.
 
-So the next time you find yourself in the deep end, remember: it's more than just a game, and you've got more than just a plastic spoon to bail you out. You've got grit, determination, and the chance to turn a tough situation into a defining moment. More importantly you have the opportunity to lead others to realize that very thing. 
-
-
-
+So the next time you find yourself in the deep end, remember: it's more than just a game, and you've got more than just a plastic spoon to bail you out. You've got grit, determination, and the chance to turn a tough situation into a defining moment. More importantly you have the opportunity to lead others to realize that very thing.

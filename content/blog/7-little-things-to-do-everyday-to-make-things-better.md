@@ -1,20 +1,18 @@
 ---
-title: 7 little things to do everyday to make things better
-slug: 7-little-things-to-do-everyday-to-make-things-better
 category: blog
-tags:
-  - ai
-  - data
-  - technology
-  - business
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_person_sitting_at_a_desk_che_21c17aa0-21ae-49ef-9c32-1dc3168b4c0c.png
 date: '2013-04-09'
+excerpt: Most of the items we place in our todo lists are tactical and specific in
+  nature. Because of this, we sometimes we lose our broader perspective. In order
+  to ensure the minutia is aligned with our m...
+slug: 7-little-things-to-do-everyday-to-make-things-better
 status: published
-coverImage: >-
-  /images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_person_sitting_at_a_desk_che_21c17aa0-21ae-49ef-9c32-1dc3168b4c0c.png
-excerpt: >-
-  Most of the items we place in our todo lists are tactical and specific in
-  nature. Because of this, we sometimes we lose our broader perspective. In
-  order to ensure the minutia is aligned with our m...
+tags:
+- ai
+- data
+- technology
+- business
+title: 7 little things to do everyday to make things better
 ---
 
 Most of the items we place in our todo lists are tactical and specific in nature. Because of this, we sometimes we lose our broader perspective. In order to ensure the minutia is aligned with our mission, here are some things to do every day.
@@ -64,6 +62,3 @@ With all we strive to accomplish it’s easy to get intoxicated with the unimpor
 > Teach us to number our days, that we may gain a heart of wisdom.
 
 – Psalm 90:20
-
-
-

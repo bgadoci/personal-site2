@@ -1,18 +1,17 @@
 ---
-title: Sunsetting Fitpholio
-slug: sunsetting-fitpholio
 category: blog
-tags:
-  - ai
-  - data
-  - ai-driven-apps
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.42_PM.png
 date: '2023-08-14'
+excerpt: If you&#x27;ve been following my blog or tweets, you might have seen that
+  back in April, May, and June, I launched a website called Fitpholio. It was an experiment
+  in using AI to help me create my own d...
+slug: sunsetting-fitpholio
 status: published
-coverImage: /images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.42_PM.png
-excerpt: >-
-  If you&#x27;ve been following my blog or tweets, you might have seen that back
-  in April, May, and June, I launched a website called Fitpholio. It was an
-  experiment in using AI to help me create my own d...
+tags:
+- ai
+- data
+- ai-driven-apps
+title: Sunsetting Fitpholio
 ---
 
 If you've been following my blog or tweets, you might have seen that back in April, May, and June, I launched a website called Fitpholio. It was an experiment in using AI to help me create my own data-driven application. It was an amazing experience, and I was able to complete the project entirely on my own with the assistance of Chat-GPT. 
@@ -26,4 +25,4 @@ However, over the past six months, I've struggled to attract and retain users fo
 
 Despite these challenges, the overall experience of creating Fitpholio was fantastic, and I felt incredibly proud to have built something from scratch and given it a chance to succeed, even if it was only for a brief period. I hope that someday, when I have more time, I'll be able to create my next product, and I'm genuinely excited about the prospect.
 
-![Screenshot 2023-08-14 at 3.49.42 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.42_PM.png)![Screenshot 2023-08-14 at 3.49.42 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.42_PM.png)![Screenshot 2023-08-14 at 3.49.54 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.54_PM.png)![Screenshot 2023-08-14 at 3.49.54 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.54_PM.png)![Screenshot 2023-08-14 at 3.50.02 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.02_PM.png)![Screenshot 2023-08-14 at 3.50.02 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.02_PM.png)![Screenshot 2023-08-14 at 3.50.12 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.12_PM.png)![Screenshot 2023-08-14 at 3.50.12 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.12_PM.png)![Screenshot 2023-08-14 at 3.50.27 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.27_PM.png)![Screenshot 2023-08-14 at 3.50.27 PM.png](/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.27_PM.png)
+![Screenshot 2023-08-14 at 3.49.42 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.42_PM.png)![Screenshot 2023-08-14 at 3.49.42 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.42_PM.png)![Screenshot 2023-08-14 at 3.49.54 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.54_PM.png)![Screenshot 2023-08-14 at 3.49.54 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.54_PM.png)![Screenshot 2023-08-14 at 3.50.02 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.02_PM.png)![Screenshot 2023-08-14 at 3.50.02 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.02_PM.png)![Screenshot 2023-08-14 at 3.50.12 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.12_PM.png)![Screenshot 2023-08-14 at 3.50.12 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.12_PM.png)![Screenshot 2023-08-14 at 3.50.27 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.27_PM.png)![Screenshot 2023-08-14 at 3.50.27 PM.png](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.50.27_PM.png)

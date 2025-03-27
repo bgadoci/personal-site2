@@ -1,12 +1,20 @@
 ---
-title: "The Role of AI Operations in Marrying AI Technology with Human Expertise: A Case Study in Materials Science"
-slug: "the-role-of-ai-operations-in-marrying-ai-technology-with-human-expertise-a-case-study-in-materials-science"
-category: "blog"
-tags: ['ai', 'technology', 'artificial-intelligence', 'ai-operations', 'data']
-date: "2024-11-12"
-status: "published"
-coverImage: "/images/blog-images/cover-images/1.png"
-excerpt: "In a groundbreaking study on AI’s role in scientific discovery, Aidan Toner-Rodgers explores how a specialized AI tool transformed materials innovation in a leading U.S. R&amp;amp;D lab. While AI-assis..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/cover-images/1.png
+date: '2024-11-12'
+excerpt: In a groundbreaking study on AI’s role in scientific discovery, Aidan Toner-Rodgers
+  explores how a specialized AI tool transformed materials innovation in a leading
+  U.S. R&amp;amp;D lab. While AI-assis...
+slug: the-role-of-ai-operations-in-marrying-ai-technology-with-human-expertise-a-case-study-in-materials-science
+status: published
+tags:
+- ai
+- technology
+- artificial-intelligence
+- ai-operations
+- data
+title: 'The Role of AI Operations in Marrying AI Technology with Human Expertise:
+  A Case Study in Materials Science'
 ---
 
 Artificial Intelligence (AI) is transforming industries across the board, with some of the most striking developments occurring in scientific research and materials innovation. A recent paper by Aidan Toner-Rodgers from MIT provides a compelling example of how AI can revolutionize discovery in the materials science field while underscoring the critical role of AI Operations in ensuring these technologies are effectively integrated with human expertise. [Read the full paper here.](https://aidantr.github.io/files/AI_innovation.pdf)
@@ -40,4 +48,3 @@ As Dyevre points out, Toner-Rodgers’ study is remarkable for its detailed task
 Dyevre rightly describes this study as a triumph for both economic theory and applied AI research, proving that while AI can accelerate innovation, it still requires skilled scientists to interpret and refine AI outputs. AI Operations is the bridge that makes this possible, ensuring that AI technologies not only improve productivity but align with the workforce and adapt to their evolving needs. As Dyevre puts it, AI is not a homogeneous technology; it’s a suite of tools that can impact tasks across all skill levels and domains differently.
 
 For those interested in this groundbreaking research, you can read Toner-Rodgers' full paper on AI, scientific discovery, and innovation [here](https://aidantr.github.io/files/AI_innovation.pdf). As we look toward the future, it’s clear that AI Operations will be essential in unlocking AI’s true potential across diverse fields.
-

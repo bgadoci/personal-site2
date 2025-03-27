@@ -1,12 +1,20 @@
 ---
-title: "Transforming the Enterprise Sales Landscape: The Unveiling of Our Conversational Website"
-slug: "launching-conversational-website-to-change-enterprise-sales"
-category: "blog"
-tags: ['ai', 'ai-driven-apps', 'operations', 'ai-operations', 'enterprise']
-date: "2023-09-12"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/Screenshot_2023-09-11_at_10.30.13_PM.png"
-excerpt: "Not long ago, I had an idea that I couldn&#x27;t shake. It was one of those lightbulb moments that I just had to share. So, I sat down with Bryon Jacob, a data.world co-founder and our CTO, to hash it o..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2023-09-11_at_10.30.13_PM.png
+date: '2023-09-12'
+excerpt: Not long ago, I had an idea that I couldn&#x27;t shake. It was one of those
+  lightbulb moments that I just had to share. So, I sat down with Bryon Jacob, a data.world
+  co-founder and our CTO, to hash it o...
+slug: launching-conversational-website-to-change-enterprise-sales
+status: published
+tags:
+- ai
+- ai-driven-apps
+- operations
+- ai-operations
+- enterprise
+title: 'Transforming the Enterprise Sales Landscape: The Unveiling of Our Conversational
+  Website'
 ---
 
 Not long ago, I had an idea that I couldn't shake. It was one of those lightbulb moments that I just had to share. So, I sat down with Bryon Jacob, a data.world co-founder and our CTO, to hash it out. By the end of our conversation I felt I did a good job communicating my idea and was happy that he was engaged. I didn’t expect what was next. 
@@ -26,4 +34,3 @@ So, the team kicked into high gear. We iterated, refined, and launched the final
 Give our Conversational Website a spin. It’s featured prominently on our homepage. Whether you're casually browsing or deep into evaluating data cataloging, governance, or DataOps solutions, we want to hear from you.
 
 I can’t close without a massive shoutout to Bryon. His ability to translate a rough idea into a polished MVP in such a short time is nothing short of incredible. And kudos to the entire data.world team for their unwavering commitment to innovation. This isn’t just an incremental step forward; it’s a giant leap into a promising future for enterprise sales. And let me tell you, we’re just getting started.
-

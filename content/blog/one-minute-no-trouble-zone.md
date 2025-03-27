@@ -1,12 +1,17 @@
 ---
-title: "One Minute No Trouble Zone"
-slug: "one-minute-no-trouble-zone"
-category: "blog"
-tags: ['ai', 'data', 'family']
-date: "2023-04-17"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/large_ragmann22_A_pixar_style_image_of_a_strong_father_sitting_at_a_d_8da9e31f_58c2_4160_b4c8_cf89d92f7e9a_00378f5ae0.png"
-excerpt: "I cannot recall if I heard this idea from someone else or if I came up with it myself. However, regardless of its origin, it has proven to be effective, and I hope that by sharing it, it can be ben..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_ragmann22_A_pixar_style_image_of_a_strong_father_sitting_at_a_d_8da9e31f_58c2_4160_b4c8_cf89d92f7e9a_00378f5ae0.png
+date: '2023-04-17'
+excerpt: I cannot recall if I heard this idea from someone else or if I came up with
+  it myself. However, regardless of its origin, it has proven to be effective, and
+  I hope that by sharing it, it can be ben...
+slug: one-minute-no-trouble-zone
+status: published
+tags:
+- ai
+- data
+- family
+title: One Minute No Trouble Zone
 ---
 
 I cannot recall if I heard this idea from someone else or if I came up with it myself. However, regardless of its origin, it has proven to be effective, and I hope that by sharing it, it can be beneficial to others as well.
@@ -26,4 +31,3 @@ As time has passed, I receive texts from my kids asking for a "One-Minute No Tro
 When they were younger, they confessed to minor things such as bad thoughts or frustrations. As they have grown, the "trouble" has become of greater import, and when I see the three dots in their text response indicating their response, I am on the edge of a heart attack. Thankfully, nothing they have confessed thus far has been earth-shattering, but the point remains the same. This little safe space has created a way for my kids to trust me with their concerns, stressors, secrets, and insecurities. 
 
 I may not always have the right answer, but I appreciate the opportunity to participate in the conversation.
-

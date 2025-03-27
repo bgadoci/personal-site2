@@ -1,27 +1,26 @@
 ---
-title: Unlocking Future Investment with Key Performance Indicators for AI Operations
-slug: unlocking-future-investment-with-key-performance-indicators-for-ai-operations
 category: blog
-tags:
-  - ai
-  - business
-  - ai-operations
-  - leadership
-  - data
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/KPI-owl.png
 date: '2024-02-07'
+excerpt: In the turbulent and rapidly evolving landscape of AI, companies are increasingly
+  recognizing the need for dedicated leadership to steer their AI strategies. As the
+  newly appointed Vice President o...
+slug: unlocking-future-investment-with-key-performance-indicators-for-ai-operations
 status: published
-coverImage: /images/blog-images/blog-post-images/KPI-owl.png
-excerpt: >-
-  In the turbulent and rapidly evolving landscape of AI, companies are
-  increasingly recognizing the need for dedicated leadership to steer their AI
-  strategies. As the newly appointed Vice President o...
+tags:
+- ai
+- business
+- ai-operations
+- leadership
+- data
+title: Unlocking Future Investment with Key Performance Indicators for AI Operations
 ---
 
 In the turbulent and rapidly evolving landscape of AI, companies are increasingly recognizing the need for [dedicated leadership](https://medium.com/datadotworld/help-wanted-why-your-ai-strategy-needs-a-dedicated-executive-d6c5b0765b8d) to steer their AI strategies. As the newly appointed Vice President of AI Operations at data.world, I've been navigating these uncharted waters, focusing on integrating AI to boost productivity and foster innovation. A critical aspect of my role involves defining and tracking Key Performance Indicators (KPIs), or OKRs, that not only gauge the effectiveness of our AI initiatives but also pave the way for future investment.
 
 I was recently asked in a [tweet](https://x.com/damn_ethan/status/1754954721578618944?s=20) what KPIs should be used by companies investing in AI Operations. It’s a timely and relevant question.
 
-![](/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.22.00_PM.png) In my view, the answer lies in balancing both soft and hard ROI to demonstrate value and drive adoption across the organization. Here's how I see it:
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-02-06_at_10.22.00_PM.png) In my view, the answer lies in balancing both soft and hard ROI to demonstrate value and drive adoption across the organization. Here's how I see it:
 
 1. **Productivity Increase by Department (Soft ROI):** One of the foremost indicators of successful AI integration is the measurable uplift in departmental productivity. By automating routine tasks and optimizing processes, AI can free up valuable time for employees to focus on more strategic activities. Tracking improvements in operational efficiency, time saved, and overall workflow enhancements can provide tangible evidence of AI's impact.
 
@@ -40,4 +39,3 @@ In establishing these KPIs, it's essential to maintain a balance between short-t
 As we navigate the complexities of integrating AI into our operations, it's clear that the role of AI Operations executives is both strategic and operational. By focusing on the right KPIs, we can not only measure our progress but also inspire confidence among stakeholders in AI's potential to transform the business landscape.
 
 While the journey to defining and achieving the right KPIs for AI Operations is ongoing, the focus on productivity, adoption, and revenue contribution offers a solid foundation. These metrics provide clear indicators of AI's value, driving both internal and external investment in AI initiatives. As we continue to explore and expand the boundaries of what AI can achieve, these KPIs will be instrumental in guiding our efforts and ensuring that AI remains a central pillar of our strategic vision.
-

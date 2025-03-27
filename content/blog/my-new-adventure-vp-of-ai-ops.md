@@ -1,12 +1,19 @@
 ---
-title: "The AI Revolution Within: My Journey as VP of AI Operations at data.world"
-slug: "my-new-adventure-vp-of-ai-ops"
-category: "blog"
-tags: ['ai', 'productivity', 'operations', 'ai-operations', 'data']
-date: "2024-01-03"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/owl_1.png"
-excerpt: "2024 marks a significant turning point in my professional journey as I embrace the role of Vice President of AI Operations at data.world. This isn’t just about external advancements in AI; it’s abo..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/owl_1.png
+date: '2024-01-03'
+excerpt: 2024 marks a significant turning point in my professional journey as I embrace
+  the role of Vice President of AI Operations at data.world. This isn’t just about
+  external advancements in AI; it’s abo...
+slug: my-new-adventure-vp-of-ai-ops
+status: published
+tags:
+- ai
+- productivity
+- operations
+- ai-operations
+- data
+title: 'The AI Revolution Within: My Journey as VP of AI Operations at data.world'
 ---
 
 2024 marks a significant turning point in my professional journey as I embrace the role of Vice President of AI Operations at data.world. This isn’t just about external advancements in AI; it’s about an internal revolution, using AI to supercharge our team's capabilities across all departments.
@@ -39,4 +46,3 @@ I approach this with a mix of excitement and humility. Yes, the possibilities ar
 This role is a testament to data.world’s commitment not just to harnessing AI for our products but to embedding it into our organizational DNA. It's about enhancing our productivity, creativity, and job satisfaction, preparing us not just for the challenges of today but for the opportunities of tomorrow.
 
 To my co-workers, partners, and the broader tech community, let’s embrace this AI revolution. Let’s use AI not just to do more but to be more. Here’s to a transformative and exciting 2024!
-

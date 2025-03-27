@@ -1,18 +1,16 @@
 ---
-title: Fitpholio Metrics are live
-slug: fitpholio-metrics-are-live
 category: blog
-tags:
-  - ai
-  - data
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_05_07_at_10_26_14_PM_6e06ddd91d.png
 date: '2023-05-08'
+excerpt: An update to let you know that version 2.0 of Fitpholio statistics is now
+  live! After adding metrics to the home page, I found myself wanting more insights.
+  So, I&#x27;&#x27;ve implemented a quick and dirty ...
+slug: fitpholio-metrics-are-live
 status: published
-coverImage: >-
-  /images/blog-images/blog-post-images/large_Screenshot_2023_05_07_at_10_26_14_PM_6e06ddd91d.png
-excerpt: >-
-  An update to let you know that version 2.0 of Fitpholio statistics is now
-  live! After adding metrics to the home page, I found myself wanting more
-  insights. So, I&#x27;&#x27;ve implemented a quick and dirty ...
+tags:
+- ai
+- data
+title: Fitpholio Metrics are live
 ---
 
 An update to let you know that version 2.0 of Fitpholio statistics is now live! After adding metrics to the home page, I found myself wanting more insights. So, I''ve implemented a quick and dirty solution.
@@ -23,4 +21,4 @@ To make things easier, I''ve included a fast-follow feature on the post form fro
 
 I hope you like these new changes, and stay tuned for more updates to come!
 
-![](/images/blog-images/blog-post-images/large_Screenshot_2023_05_07_at_10_26_14_PM_6e06ddd91d.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_05_07_at_10_26_26_PM_450d8ebc03.png)
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_05_07_at_10_26_14_PM_6e06ddd91d.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_05_07_at_10_26_26_PM_450d8ebc03.png)

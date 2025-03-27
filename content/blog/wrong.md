@@ -1,12 +1,17 @@
 ---
-title: "Wrong"
-slug: "wrong"
-category: "blog"
-tags: ['ai', 'data', 'leadership']
-date: "2013-10-03"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/ragmann22_A_pixar_style_image_of_someone_upset_in_an_office_bec_7c34a80b-2a24-4b9b-a32e-0e6547c79b1f.png"
-excerpt: "Being wrong is such an important part of being right. Our product offering is likely wrong, but we have a product offering. Our sales process is probably not right, but we have a process. The newsl..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_A_pixar_style_image_of_someone_upset_in_an_office_bec_7c34a80b-2a24-4b9b-a32e-0e6547c79b1f.png
+date: '2013-10-03'
+excerpt: Being wrong is such an important part of being right. Our product offering
+  is likely wrong, but we have a product offering. Our sales process is probably not
+  right, but we have a process. The newsl...
+slug: wrong
+status: published
+tags:
+- ai
+- data
+- leadership
+title: Wrong
 ---
 
 Being wrong is such an important part of being right. Our product offering is likely wrong, but we have a product offering. Our sales process is probably not right, but we have a process. The newsletter frequency and content could be improved, but we have a daily and weekly newsletter. Our blog content should be more frequent, but we have blog content. Inbound marketing could be optimized, but we have inbound leads. We probably need to track different metrics than we are now, but we are tracking metrics. You get my point.
@@ -30,4 +35,3 @@ When the need to iterate rapidly increases, so does the need for communication. 
 Change is a stressor, and unexpected change is the worst kind. In an environment where you know that the rate of change is going to increase, make sure to organize it the best you can. Ask engineering to increase their releases, but make sure it’s known when those days and times are safe. Ask Sales to give a daily or weekly update instead of monthly. Let people know when and where they can go to find out what is happening. It will help them properly process progress and create a feeling of purpose and organization.
 
 In the busy battle of making wrong right, fighting confusion should be the leadership’s top priority. As much as we all hate words like “process” and “playbook”, there are times when directing attention to them makes sense. If you are brave enough to launch a product or service, you will likely be wrong in one area or another. Don’t be scared of being wrong, be scared of the inability to get it right.
-

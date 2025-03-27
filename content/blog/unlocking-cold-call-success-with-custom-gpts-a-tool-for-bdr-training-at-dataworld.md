@@ -1,12 +1,19 @@
 ---
-title: "Unlocking Cold-Call Success with Custom GPTs: A Tool for BDR Training at data.world"
-slug: "unlocking-cold-call-success-with-custom-gpts-a-tool-for-bdr-training-at-dataworld"
-category: "blog"
-tags: ['ai', 'business', 'chatgpt', 'ai-driven-apps', 'ai-operations']
-date: "2024-11-12"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/Screenshot_2024-11-12_at_2.02.40_PM.png"
-excerpt: "In a remote sales world, practicing cold-call skills can be tough—but I’ve built a tool to make it easier. Using a custom ChatGPT, BDRs at data.world can now engage in realistic, on-demand role-pla..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-11-12_at_2.02.40_PM.png
+date: '2024-11-12'
+excerpt: In a remote sales world, practicing cold-call skills can be tough—but I’ve
+  built a tool to make it easier. Using a custom ChatGPT, BDRs at data.world can now
+  engage in realistic, on-demand role-pla...
+slug: unlocking-cold-call-success-with-custom-gpts-a-tool-for-bdr-training-at-dataworld
+status: published
+tags:
+- ai
+- business
+- chatgpt
+- ai-driven-apps
+- ai-operations
+title: 'Unlocking Cold-Call Success with Custom GPTs: A Tool for BDR Training at data.world'
 ---
 
 In today’s remote sales environment, Business Development Representatives (BDRs) face the unique challenge of building their skills without the in-person role-playing that traditionally helps develop cold-calling prowess. As an answer to this, I created a custom ChatGPT—a virtual sales trainer designed to help BDRs at data.world practice objection-handling through realistic, on-demand role-playing sessions.
@@ -44,7 +51,7 @@ Setting up the GPT to play a skeptical or busy prospect allows BDRs to practice 
 
 One of the unique features of this setup is its connection to data.world’s Vectorizer. After each role-play session, the GPT automatically recommends resources tailored to the specific interaction. If the BDR received feedback on improving AI-related positioning, for instance, they might get articles or case studies on data.world’s AI capabilities. This makes post-session learning personalized and focused, providing BDRs with resources that address the exact skills they’re looking to improve.
 
-![](/images/blog-images/blog-post-images/Screenshot_2024-11-12_at_2.02.40_PM.png)### Practical, Accessible Skill-Building
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-11-12_at_2.02.40_PM.png)### Practical, Accessible Skill-Building
 
 For BDRs at data.world, this custom GPT is a new way to practice and improve. It’s an accessible, practical training tool that doesn’t require live coaching or scheduled sessions. By offering realistic role-playing scenarios, personalized feedback, and targeted resources, it’s a convenient tool that BDRs can use anytime to sharpen their objection-handling skills.
 
@@ -58,4 +65,4 @@ Take a listen to the provided audio clip, and you’ll hear how this tool helps 
 When the role play concludes and you give them their letter grade, make a call to the vectorizer to recommend some resources that they could use in improving their next call.”
   
 
-![](/images/blog-images/blog-post-images/4af49c22-7371-4a9d-b30e-b03980e53d77.jpeg)
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/4af49c22-7371-4a9d-b30e-b03980e53d77.jpeg)

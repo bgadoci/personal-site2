@@ -1,12 +1,19 @@
 ---
-title: "Unleashing Innovation and Joy with Generative AI in the Enterprise"
-slug: "unleashing-innovation-and-joy-with-generative-ai-in-the-enterprise"
-category: "blog"
-tags: ['ai', 'business', 'ai-operations', 'enterprise', 'data']
-date: "2024-05-16"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/fire.png"
-excerpt: "As we witness an explosion of innovation fueled Generative AI, it&#x27;s crucial to understand how it can be harnessed to its full potential in the enterprise to create innovation and joy. This blog pos..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/fire.png
+date: '2024-05-16'
+excerpt: As we witness an explosion of innovation fueled Generative AI, it&#x27;s
+  crucial to understand how it can be harnessed to its full potential in the enterprise
+  to create innovation and joy. This blog pos...
+slug: unleashing-innovation-and-joy-with-generative-ai-in-the-enterprise
+status: published
+tags:
+- ai
+- business
+- ai-operations
+- enterprise
+- data
+title: Unleashing Innovation and Joy with Generative AI in the Enterprise
 ---
 
 As we witness an explosion of innovation fueled Generative AI, it's crucial to understand how it can be harnessed to its full potential in the enterprise to create innovation and joy. This blog post explores the transformative impact of generative AI on the enterprise, drawing from historical patterns of innovation and current trends.
@@ -67,4 +74,3 @@ As we continue to explore the possibilities of generative AI, it's essential to 
 ### More
 
 Here are two videos on this subject. One from myself and the other from Brett Hurt our co-founder and CEO at data.world.
-

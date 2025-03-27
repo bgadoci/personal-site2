@@ -21,9 +21,11 @@ export async function generateMetadata({ params }: SlugParams) {
   
   // Determine the image URL
   const imageUrl = post.coverImage 
-    ? (post.coverImage.startsWith('/') 
-        ? `https://brandongadoci.com${post.coverImage}` 
-        : `https://brandongadoci.com/images/research-images/cover-images/${post.coverImage}`)
+    ? (post.coverImage.startsWith('https://') 
+        ? post.coverImage 
+        : post.coverImage.startsWith('/') 
+          ? `https://brandongadoci.com${post.coverImage}` 
+          : `https://brandongadoci.com/images/research-images/cover-images/${post.coverImage}`)
     : 'https://brandongadoci.com/images/website-images/avatar-circle.png';
   
   return {
@@ -112,7 +114,7 @@ export default async function ResearchPostPage({ params }: SlugParams) {
         {post.coverImage && (
           <div className={`w-full h-64 md:h-80 lg:h-96 mb-6 ${styles.coverImage}`}>
             <img 
-              src={post.coverImage.startsWith('/') ? post.coverImage : `/images/research-images/cover-images/${post.coverImage}`} 
+              src={post.coverImage.startsWith('https://') ? post.coverImage : post.coverImage.startsWith('/') ? post.coverImage : `/images/research-images/cover-images/${post.coverImage}`} 
               alt={`Cover image for ${post.title}`}
               className="w-full h-full object-cover"
             />

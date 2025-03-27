@@ -1,12 +1,19 @@
 ---
-title: "The Automated Coding Dilemma"
-slug: "the-automated-coding-dilemma"
-category: "blog"
-tags: ['ai', 'technology', 'machine-learning', 'ai-operations', 'enterprise']
-date: "2025-02-03"
-status: "published"
-coverImage: "/images/blog-images/cover-images/7.png"
-excerpt: "AI-driven coding assistants like GitHub Copilot, OpenAI’s ChatGPT, and newer tools (e.g. Jolt AI) are increasingly being integrated into software engineering workflows. These AI tools can generate ..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/cover-images/7.png
+date: '2025-02-03'
+excerpt: AI-driven coding assistants like GitHub Copilot, OpenAI’s ChatGPT, and newer
+  tools (e.g. Jolt AI) are increasingly being integrated into software engineering
+  workflows. These AI tools can generate ...
+slug: the-automated-coding-dilemma
+status: published
+tags:
+- ai
+- technology
+- machine-learning
+- ai-operations
+- enterprise
+title: The Automated Coding Dilemma
 ---
 
 *Credit to *[*Lydia Guarino*](https://www.linkedin.com/in/lydia-guarino-8a4b6a15/)* and her *[*LinkedIn post*](https://www.linkedin.com/feed/update/urn:li:activity:7291103755083694081/)* and subsequent conversation with me to help understand and shape the problem I’m writing about in this post.* 
@@ -128,6 +135,3 @@ In summary, the role of AI in software engineering is expanding, but it is doing
 1. ZoomInfo Copilot Study (arXiv 2501.13282), *“Experience with GitHub Copilot at ZoomInfo,”* – details on acceptance rates and developer feedback [arxiv.org](https://arxiv.org/html/2501.13282v1#:~:text=Over,in%20favor%20of%20quicker%20implementation)
 
 .
-
-
-

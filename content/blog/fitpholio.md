@@ -1,12 +1,16 @@
 ---
-title: "Fitpholio"
-slug: "fitpholio"
-category: "blog"
-tags: ['ai', 'data']
-date: "2023-04-26"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/large_Screenshot_2023_04_26_at_1_20_34_AM_4978f6ffac.png"
-excerpt: "As I&#x27;ve mentioned in my previous posts, working with GPT has allowed me to not only create this site but also explore what creating a database-backed site might look like on my own. Combining React..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_26_at_1_20_34_AM_4978f6ffac.png
+date: '2023-04-26'
+excerpt: As I&#x27;ve mentioned in my previous posts, working with GPT has allowed
+  me to not only create this site but also explore what creating a database-backed
+  site might look like on my own. Combining React...
+slug: fitpholio
+status: published
+tags:
+- ai
+- data
+title: Fitpholio
 ---
 
 As I've mentioned in my previous posts, working with GPT has allowed me to not only create this site but also explore what creating a database-backed site might look like on my own. Combining React and Strapi has enabled me to make quick progress. The inspiration for this new site was based on the fitness logging and metrics features of my personal site and yesterday I shared a few screenshots of my local build without any CSS styles. I've learned that I would rather get the thing working first before messing with padding, line-height, and fonts, as much as I enjoy spending my time there.
@@ -19,4 +23,4 @@ So there you have it. The working name is Fitpholio. Today, I made significant p
 
 Here are some screenshots of the profile page again without any styles.
 
-![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_26_at_1_20_34_AM_4978f6ffac.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_25_at_11_58_06_PM_0272e8aea6.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_25_at_11_58_32_PM_1689c4fe25.png)![](/images/blog-images/blog-post-images/large_Screenshot_2023_04_25_at_11_58_17_PM_609ef87903.png)
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_26_at_1_20_34_AM_4978f6ffac.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_25_at_11_58_06_PM_0272e8aea6.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_25_at_11_58_32_PM_1689c4fe25.png)![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_Screenshot_2023_04_25_at_11_58_17_PM_609ef87903.png)

@@ -1,18 +1,17 @@
 ---
-title: What Nintendo taught me about being a dad
-slug: what-nintendo-taught-me-about-being-a-dad
 category: blog
-tags:
-  - ai
-  - data
-  - technology
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Frame_2.png
 date: '2016-11-24'
+excerpt: About a week ago a co-worker sent me a .zip file of Nintendo ringtones that
+  took me down memory lane. I giggled and reminisced as I heard the old but familiar
+  sounds of Super Mario Bros., Mike Tyso...
+slug: what-nintendo-taught-me-about-being-a-dad
 status: published
-coverImage: /images/blog-images/blog-post-images/Frame_2.png
-excerpt: >-
-  About a week ago a co-worker sent me a .zip file of Nintendo ringtones that
-  took me down memory lane. I giggled and reminisced as I heard the old but
-  familiar sounds of Super Mario Bros., Mike Tyso...
+tags:
+- ai
+- data
+- technology
+title: What Nintendo taught me about being a dad
 ---
 
 About a week ago a co-worker sent me a .zip file of Nintendo ringtones that took me down memory lane. I giggled and reminisced as I heard the old but familiar sounds of Super Mario Bros., Mike Tyson’s Punch-Out, Excitebike, and many more. 
@@ -48,4 +47,3 @@ In all, I found it interesting that purchasing of technology gave me an opportun
 It’s interesting that we are now in a world in which technology is starting to remind us to be more human. I actually see this trend happening on both sides of the spectrum: older technologies are reminding us of a time when things weren’t so easy and newer technologies are aiming to be more integrated with real life. In all, I’m in favor of these shifts.
 
 In any case I’m enjoying the heck out of being a dad and I’m really excited that I’m at the stage where I can start to relive some of my own childhood joys with my son. I hope these simple games give him and me some neat memories together, and I hope that throughout the process I have more opportunities to teach him what has always been, and always will be, important.
-

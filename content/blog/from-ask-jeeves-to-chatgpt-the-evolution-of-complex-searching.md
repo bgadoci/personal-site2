@@ -1,21 +1,19 @@
 ---
-title: 'From Ask Jeeves to ChatGPT: The Evolution of Complex Searching'
-slug: from-ask-jeeves-to-chatgpt-the-evolution-of-complex-searching
 category: blog
-tags:
-  - ai
-  - technology
-  - chatgpt
-  - generative-ai
-  - data
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_person_looking_at_their_lapt_d86253fc-56b9-4583-bd70-138ae924fe73.png
 date: '2023-08-21'
+excerpt: Remember the days of Ask Jeeves, Yahoo, and the early stages of Google? Those
+  were the times when searching for information online was a simple, linear process.
+  But as technology has evolved, so ha...
+slug: from-ask-jeeves-to-chatgpt-the-evolution-of-complex-searching
 status: published
-coverImage: >-
-  /images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_person_looking_at_their_lapt_d86253fc-56b9-4583-bd70-138ae924fe73.png
-excerpt: >-
-  Remember the days of Ask Jeeves, Yahoo, and the early stages of Google? Those
-  were the times when searching for information online was a simple, linear
-  process. But as technology has evolved, so ha...
+tags:
+- ai
+- technology
+- chatgpt
+- generative-ai
+- data
+title: 'From Ask Jeeves to ChatGPT: The Evolution of Complex Searching'
 ---
 
 #### The Evolution of Complex Searching: A New Era with ChatGPT
@@ -49,4 +47,3 @@ As we move forward, the role of generative AI in our daily lives will likely con
 I'm excited for the future, and you should be too. The way we interact with information is changing, and it's changing for the better. With tools like ChatGPT, we are stepping into a new era of information retrieval, one that promises to be more efficient, more engaging, and more enlightening.
 
 So next time you find yourself pondering a complex question, whether it's about culinary traditions or quantum physics, remember that the future of information retrieval is here, and it's called ChatGPT.
-

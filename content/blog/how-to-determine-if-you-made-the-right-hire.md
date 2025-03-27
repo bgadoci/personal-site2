@@ -1,12 +1,16 @@
 ---
-title: "The First 30 Days: How to Determine If You&#x27;ve Made the Right Hire"
-slug: "how-to-determine-if-you-made-the-right-hire"
-category: "blog"
-tags: ['ai', 'data']
-date: "2023-02-23"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/large_ragmann22_a_pixar_style_image_of_a_boss_having_a_tough_conversa_3a97d081_5d08_454d_90eb_648d6260f325_3d42cdfd86.png"
-excerpt: "We all know that hiring is important. We design job descriptions, interview questions, and final presentations because of this. Sometimes the need to get someone in the seat can cloud our decision-..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_ragmann22_a_pixar_style_image_of_a_boss_having_a_tough_conversa_3a97d081_5d08_454d_90eb_648d6260f325_3d42cdfd86.png
+date: '2023-02-23'
+excerpt: We all know that hiring is important. We design job descriptions, interview
+  questions, and final presentations because of this. Sometimes the need to get someone
+  in the seat can cloud our decision-...
+slug: how-to-determine-if-you-made-the-right-hire
+status: published
+tags:
+- ai
+- data
+title: 'The First 30 Days: How to Determine If You&#x27;ve Made the Right Hire'
 ---
 
 We all know that hiring is important. We design job descriptions, interview questions, and final presentations because of this. Sometimes the need to get someone in the seat can cloud our decision-making process. We can't let that happen, and here's why.
@@ -82,4 +86,3 @@ It's really hard to discern these nuances in a hiring process. I've been involve
 There is only one way to measure a new hire. They either meaningfully move your team forward in a short time or they don't. Another way to put that is they very quickly make your life easier or more complicated. You won't know everything when you send the offer letter, but be vigilant in those first few weeks regarding the above points.
 
 It's never enjoyable to admit you were wrong about a hire, but it's even worse to hold on to hope. Find the right people and invest in them. Otherwise, admit your mistakes and help them move on to something better for both them and you.
-

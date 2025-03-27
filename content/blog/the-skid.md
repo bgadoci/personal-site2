@@ -1,17 +1,16 @@
 ---
-title: The Skid
-slug: the-skid
 category: blog
-tags:
-  - ai
-  - data
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/large_skid_615769b02b_1.png
 date: '2017-11-07'
+excerpt: Last week my mother and father-in-law bought my son his first bike. You know,
+  the two-wheel kind. He’s had a couple of tricycles and a scooter but it was the
+  right time to move up the big leagues. ...
+slug: the-skid
 status: published
-coverImage: /images/blog-images/blog-post-images/large_skid_615769b02b_1.png
-excerpt: >-
-  Last week my mother and father-in-law bought my son his first bike. You know,
-  the two-wheel kind. He’s had a couple of tricycles and a scooter but it was
-  the right time to move up the big leagues. ...
+tags:
+- ai
+- data
+title: The Skid
 ---
 
 Last week my mother and father-in-law bought my son his first bike. You know, the two-wheel kind. He’s had a couple of tricycles and a scooter but it was the right time to move up the big leagues. It wasn’t long before he learned how to “skid”. Watching him perfect it made me happy, and made me think.
@@ -31,4 +30,3 @@ Our lives as adults are plagued with “what’s that for”, “what does that 
 It was getting close to dinner time and Riley needed to go wash up. Like most parents I started giving him a countdown. “Five more minutes Riley.” “Two more minutes Riley and we have to go inside.” I couldn’t help but think I was representing some bigger clock. Some clock that eventually will have no time left for skids. I need to remember that when I rush my kids from one innocent moment to the next.
 
 Maybe a couple more minutes would do us both some good.
-

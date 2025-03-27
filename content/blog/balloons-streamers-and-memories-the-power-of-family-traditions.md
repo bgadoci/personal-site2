@@ -1,19 +1,17 @@
 ---
-title: 'Balloons, Streamers, and Memories: The Power of Family Traditions'
-slug: balloons-streamers-and-memories-the-power-of-family-traditions
 category: blog
-tags:
-  - ai
-  - data
-  - family
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/367_DAD_80_B39_C_4345_BAC_3_992_E3_AAD_253_C_64a1428c8c.jpeg
 date: '2023-04-20'
+excerpt: As parents, we often strive to create special moments and memories for our
+  children, especially on their birthdays. From parties to gifts, there are countless
+  ways to make the day memorable. Howeve...
+slug: balloons-streamers-and-memories-the-power-of-family-traditions
 status: published
-coverImage: >-
-  /images/blog-images/blog-post-images/367_DAD_80_B39_C_4345_BAC_3_992_E3_AAD_253_C_64a1428c8c.jpeg
-excerpt: >-
-  As parents, we often strive to create special moments and memories for our
-  children, especially on their birthdays. From parties to gifts, there are
-  countless ways to make the day memorable. Howeve...
+tags:
+- ai
+- data
+- family
+title: 'Balloons, Streamers, and Memories: The Power of Family Traditions'
 ---
 
 **Strengthening Bonds and Creating a Sense of Belonging**
@@ -28,4 +26,4 @@ What''s remarkable about this tradition is that it wasn''t planned; it just happ
 
 Traditions are a way to create a sense of belonging that can''t be found anywhere else. 
 
-![](/images/blog-images/blog-post-images/367_DAD_80_B39_C_4345_BAC_3_992_E3_AAD_253_C_64a1428c8c.jpeg)
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/367_DAD_80_B39_C_4345_BAC_3_992_E3_AAD_253_C_64a1428c8c.jpeg)

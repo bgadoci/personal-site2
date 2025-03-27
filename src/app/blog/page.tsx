@@ -52,7 +52,7 @@ export default async function BlogPage(props: BlogPageProps) {
               {post.coverImage && (
                 <div className="w-full h-48 overflow-hidden">
                   <img 
-                    src={post.coverImage.startsWith('/') ? post.coverImage : `/images/blog-images/cover-images/${post.coverImage}`} 
+                    src={post.coverImage.startsWith('https://') ? post.coverImage : post.coverImage.startsWith('/') ? post.coverImage : `/images/blog-images/cover-images/${post.coverImage}`} 
                     alt={`Cover image for ${post.title}`}
                     className="w-full h-full object-cover transition-transform hover:scale-105"
                   />

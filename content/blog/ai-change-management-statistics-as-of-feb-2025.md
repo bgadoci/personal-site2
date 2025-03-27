@@ -1,12 +1,19 @@
 ---
-title: "AI & Change Management Statistics as of Feb. 2025"
-slug: "ai-change-management-statistics-as-of-feb-2025"
-category: "blog"
-tags: ['ai', 'technology', 'business', 'enterprise', 'data']
-date: "2025-02-14"
-status: "published"
-coverImage: "/images/blog-images/cover-images/2.png"
-excerpt: "Below is a list of statistics I used while writing my AI Operations book. Here is a list of AI statistics that Deep Research (from OpenAI) produced along the journey of writing this book (and as of..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/cover-images/2.png
+date: '2025-02-14'
+excerpt: Below is a list of statistics I used while writing my AI Operations book.
+  Here is a list of AI statistics that Deep Research (from OpenAI) produced along
+  the journey of writing this book (and as of...
+slug: ai-change-management-statistics-as-of-feb-2025
+status: published
+tags:
+- ai
+- technology
+- business
+- enterprise
+- data
+title: AI & Change Management Statistics as of Feb. 2025
 ---
 
 Below is a list of statistics I used while writing my [AI Operations book](https://aioperationsbook.com). 
@@ -288,6 +295,3 @@ Here is a list of Change Management statistics that Deep Research (from OpenAI) 
 
 
 - **Forbes Insights (2018)**: [User Buy-In Fail Factor](https://www.forbes.com/sites/forbestechcouncil/2018/08/30/why-digital-transformations-fail-and-how-to-avoid-becoming-a-statistic/)
-
-
-

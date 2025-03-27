@@ -1,12 +1,19 @@
 ---
-title: "Creating Fedbot: An AI-Driven Solution for the Federal Space"
-slug: "creating-fedbot-an-ai-driven-solution-for-the-federal-space"
-category: "blog"
-tags: ['ai', 'technology', 'ai-driven-apps', 'ai-operations', 'data']
-date: "2024-08-16"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/Screenshot_2024-11-12_at_1.18.53_PM.png"
-excerpt: "Learn how data.world developed Fedbot, an AI-driven chatbot tailored specifically for the federal sector. Embedded on a partner’s site, Fedbot leverages our Vectorizer with a custom Knowledge API t..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/Screenshot_2024-11-12_at_1.18.53_PM.png
+date: '2024-08-16'
+excerpt: Learn how data.world developed Fedbot, an AI-driven chatbot tailored specifically
+  for the federal sector. Embedded on a partner’s site, Fedbot leverages our Vectorizer
+  with a custom Knowledge API t...
+slug: creating-fedbot-an-ai-driven-solution-for-the-federal-space
+status: published
+tags:
+- ai
+- technology
+- ai-driven-apps
+- ai-operations
+- data
+title: 'Creating Fedbot: An AI-Driven Solution for the Federal Space'
 ---
 
 At data.world, we’re committed to creating tailored AI-driven experiences that make data exploration easier and more meaningful for our users. One of our latest innovations, Fedbot, is designed specifically for federal agencies and stakeholders looking to understand how data.world can work for them. Hosted on a dedicated federal partner site, this app is a one-stop solution for federal users to get precise, contextual answers about our platform’s capabilities and compliance with government standards. Here’s a closer look at how we built it, the unique challenges it addressed, and its transformative impact.
@@ -34,4 +41,3 @@ Fedbot is more than a chatbot; it’s a customized learning hub for the federal 
 Fedbot has set a new benchmark for how we deliver targeted knowledge experiences at data.world. By enhancing the Vectorizer with the Knowledge API, we’re now able to create chat experiences that offer precise answers based on highly specific content collections. This technology opens up exciting possibilities for future use cases, where targeted knowledge retrieval is essential.
 
 As we continue to develop AI-driven solutions, the success of Fedbot reaffirms our commitment to designing tools that cater to the unique needs of our diverse user base, providing tailored solutions that bridge information gaps and deliver value at the speed of data.
-

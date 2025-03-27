@@ -1,12 +1,17 @@
 ---
-title: "The Adolescence of Adulthood: A Midlife Perspective"
-slug: "adolescence-of-adulthood"
-category: "blog"
-tags: ['ai', 'data', 'guide']
-date: "2023-08-23"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_fit_middle-aged_man_stressin_d3ca3433-55a9-49ba-b02c-2622d296878e.png"
-excerpt: "Remember those weird, crazy days of adolescence? Of course you do. It&#x27;s that unforgettable time between childhood and adulthood, where your body is doing all sorts of weird things, hormones are rag..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_fit_middle-aged_man_stressin_d3ca3433-55a9-49ba-b02c-2622d296878e.png
+date: '2023-08-23'
+excerpt: Remember those weird, crazy days of adolescence? Of course you do. It&#x27;s
+  that unforgettable time between childhood and adulthood, where your body is doing
+  all sorts of weird things, hormones are rag...
+slug: adolescence-of-adulthood
+status: published
+tags:
+- ai
+- data
+- guide
+title: 'The Adolescence of Adulthood: A Midlife Perspective'
 ---
 
 Remember those weird, crazy days of adolescence? Of course you do. It's that unforgettable time between childhood and adulthood, where your body is doing all sorts of weird things, hormones are raging, and you're trying to figure out who you are.
@@ -27,7 +32,7 @@ For some context, check out the book "The Happiness Curve: Why Life Gets Better 
 
 ### Life's Happiness Curve: A Stage by Stage Guide
 
-![](/images/blog-images/blog-post-images/image_3.jpg)#### Age 0-20: Childhood's End
+![](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/image_3.jpg)#### Age 0-20: Childhood's End
 
 As a kid, everything is awesome! But then comes school, social pressures, and adolescence. It's still good, but not as shiny.
 
@@ -52,4 +57,3 @@ And then we reach a phase where we're just happy to be doing anything. Gratitude
 More and more, I see this transition as inevitable. It's not a crisis; it's a part of the journey. Recognizing it as normal might just help us avoid any real "crisis."
 
 So next time someone mentions the "mid-life crisis," maybe just smile and think, "Nah, it's just the adolescence of adulthood." And as always, trust the process. It's all part of the plan.
-

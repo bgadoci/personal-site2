@@ -1,12 +1,19 @@
 ---
-title: "C and C Chat: AI Operations Bringing Catalog and Cocktails to Life"
-slug: "cc-chat-ai-operations-bringing-catalog-cocktails-tolife"
-category: "blog"
-tags: ['ai', 'business', 'ai-driven-apps', 'artificial-intelligence', 'ai-operations']
-date: "2024-07-26"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/8479fcf804dec8e8f76996700c2546b8_1.png"
-excerpt: "Juan and Tim’s engaging conversations on enterprise data just got even more interactive – with our new app. Ask questions, explore episodes, and dive into discussions with your favorite guests, all..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/8479fcf804dec8e8f76996700c2546b8_1.png
+date: '2024-07-26'
+excerpt: Juan and Tim’s engaging conversations on enterprise data just got even more
+  interactive – with our new app. Ask questions, explore episodes, and dive into discussions
+  with your favorite guests, all...
+slug: cc-chat-ai-operations-bringing-catalog-cocktails-tolife
+status: published
+tags:
+- ai
+- business
+- ai-driven-apps
+- artificial-intelligence
+- ai-operations
+title: 'C and C Chat: AI Operations Bringing Catalog and Cocktails to Life'
 ---
 
 Juan and Tim’s engaging conversations on enterprise data just got even more interactive – with our new app. Ask questions, explore episodes, and dive into discussions with your favorite guests, all powered by data.world's cutting-edge AI Operations. Ready to chat? Jump in now!
@@ -33,5 +40,4 @@ Lastly, this little chat app has one more surprise. As conversations happen, it�
 
 ### **AI Operations is worth it**
 
-As you can see, this fun and useful app is deploying a lot of pretty powerful technology and previous investment in infrastructure. At data.world, this commitment to AI for not just our product but also our customers and everyone at our company has us moving really fast and having a lot of fun creating powerful, useful solutions. Give C&C Chat a spin and let us know what you think. 
-
+As you can see, this fun and useful app is deploying a lot of pretty powerful technology and previous investment in infrastructure. At data.world, this commitment to AI for not just our product but also our customers and everyone at our company has us moving really fast and having a lot of fun creating powerful, useful solutions. Give C&C Chat a spin and let us know what you think.

@@ -1,21 +1,19 @@
 ---
-title: Will the AI advancement leave room for my code aspiring son?
-slug: will-the-ai-advancement-leave-room-for-my-code-aspiring-son
 category: blog
-tags:
-  - ai
-  - family
-  - technology
-  - career
-  - data
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_computer_screen_with_code_be_48164684-d19a-471b-837b-2092c60609c6.png
 date: '2023-04-06'
+excerpt: During dinner tonight, I asked my 14-year-old son and almost 13-year-old
+  daughter if they had any updated thoughts on what they wanted to do when they grew
+  up. Whenever we have dinner together, I t...
+slug: will-the-ai-advancement-leave-room-for-my-code-aspiring-son
 status: published
-coverImage: >-
-  /images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_computer_screen_with_code_be_48164684-d19a-471b-837b-2092c60609c6.png
-excerpt: >-
-  During dinner tonight, I asked my 14-year-old son and almost 13-year-old
-  daughter if they had any updated thoughts on what they wanted to do when they
-  grew up. Whenever we have dinner together, I t...
+tags:
+- ai
+- family
+- technology
+- career
+- data
+title: Will the AI advancement leave room for my code aspiring son?
 ---
 
 During dinner tonight, I asked my 14-year-old son and almost 13-year-old daughter if they had any updated thoughts on what they wanted to do when they grew up. Whenever we have dinner together, I try to blend fun with real questions. This is not new to them, and they are mostly uninterested in my efforts by now. They'll appreciate it all later, I hope. However, tonight was different as my son hit me with a question that I wasn't quite ready to answer.
@@ -31,4 +29,3 @@ My initial internal response was "Oh man, don't worry, there will always be a ne
 It took me a minute to figure out how to respond. I jabbed here and there about how there will always be a need for people to compose vs. create. The world values those who can compile complex information systems and relate them to the real needs of people. The world will always need those who can provide a way forward. While reassuring and true, it doesn't solve his very real concern. Should he invest the next years of his life preparing for a career that might not be as lucrative as it once was?
 
 Life moves fast, and AI moves faster. Here's to trying to keep up
-

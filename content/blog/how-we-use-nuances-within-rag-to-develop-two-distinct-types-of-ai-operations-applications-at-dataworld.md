@@ -1,12 +1,20 @@
 ---
-title: "How we use nuances within RAG to develop two distinct types of AI Operations applications at data.world"
-slug: "how-we-use-nuances-within-rag-to-develop-two-distinct-types-of-ai-operations-applications-at-dataworld"
-category: "blog"
-tags: ['ai', 'productivity', 'artificial-intelligence', 'ai-operations', 'data']
-date: "2024-01-27"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/two-owls.png"
-excerpt: "In the realm of artificial intelligence, the intricacies of AI app development, particularly in AI Operations, are becoming crucial. At data.world, we&#x27;re at the forefront of this domain, distinguis..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/two-owls.png
+date: '2024-01-27'
+excerpt: In the realm of artificial intelligence, the intricacies of AI app development,
+  particularly in AI Operations, are becoming crucial. At data.world, we&#x27;re at
+  the forefront of this domain, distinguis...
+slug: how-we-use-nuances-within-rag-to-develop-two-distinct-types-of-ai-operations-applications-at-dataworld
+status: published
+tags:
+- ai
+- productivity
+- artificial-intelligence
+- ai-operations
+- data
+title: How we use nuances within RAG to develop two distinct types of AI Operations
+  applications at data.world
 ---
 
 In the realm of artificial intelligence, the intricacies of AI app development, particularly in AI Operations, are becoming crucial. At data.world, we're at the forefront of this domain, distinguishing subtle yet impactful differences in our approach to AI, specifically between what we call Semantic Index and RAG Index. These distinctions are not merely theoretical; they are practical, significantly influencing the effectiveness and utility of our tools.
@@ -44,4 +52,3 @@ In essence, by skillfully managing these nuances, we can achieve a high level of
 As we continue to explore and define the realm of AI Operations, recognizing and harnessing the subtle differences between approaches like Semantic Index and RAG Index is essential. This understanding allows us to create more effective, user-centric AI tools, enhancing productivity and driving innovation at data.world.
 
 We hope this insight into our approach at data.world aids you in developing AI apps for your AI Operations programs. These seemingly minor adjustments in development strategy can significantly impact the effectiveness and user satisfaction of AI tools. In the world of AI, often, it's the smallest details that make the biggest difference.
-

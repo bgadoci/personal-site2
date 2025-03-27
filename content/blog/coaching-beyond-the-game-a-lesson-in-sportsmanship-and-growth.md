@@ -1,12 +1,18 @@
 ---
-title: "Coaching Beyond the Game: A Lesson in Sportsmanship and Growth"
-slug: "coaching-beyond-the-game-a-lesson-in-sportsmanship-and-growth"
-category: "blog"
-tags: ['ai', 'data', 'learning', 'guide']
-date: "2023-08-21"
-status: "published"
-coverImage: "/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_coach_having_a_tough_convers_3bcaad05-ad29-4724-9d67-b4c7dae0ca56.png"
-excerpt: "Coaching a soccer game is more than just guiding a team to victory; it&#x27;s about shaping young minds and instilling values that will last a lifetime. Recently, I had the opportunity to coach a new te..."
+category: blog
+coverImage: https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/ragmann22_a_pixar_style_image_of_a_coach_having_a_tough_convers_3bcaad05-ad29-4724-9d67-b4c7dae0ca56.png
+date: '2023-08-21'
+excerpt: Coaching a soccer game is more than just guiding a team to victory; it&#x27;s
+  about shaping young minds and instilling values that will last a lifetime. Recently,
+  I had the opportunity to coach a new te...
+slug: coaching-beyond-the-game-a-lesson-in-sportsmanship-and-growth
+status: published
+tags:
+- ai
+- data
+- learning
+- guide
+title: 'Coaching Beyond the Game: A Lesson in Sportsmanship and Growth'
 ---
 
 **Coaching Beyond the Game: A Lesson in Integrity and Teamwork**
@@ -48,4 +54,3 @@ Soccer is more than just a game; it's a platform to teach essential life skills 
 The challenge I gave those players was not just about improving their game; it was about helping them find their way in the world. By calling them out and then rewarding them with praise and encouragement, I showed them that growth is possible, and positive change is always within reach.
 
 In the end, we all learned something valuable. The players learned about integrity, teamwork, and the importance of self-improvement. And I learned that being a coach is not just about winning games; it's about shaping the future, one player at a time.
-
