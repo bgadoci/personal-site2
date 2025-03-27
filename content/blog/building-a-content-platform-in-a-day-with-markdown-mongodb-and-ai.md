@@ -1,5 +1,5 @@
 ---
-title: "Building a Content Platform in a Day with Windsurf and Claude"
+title: "Building a Content Platform in a Day with Windsurf, Claude, and MongoDB"
 slug: "building-a-content-platform-in-a-day-with-markdown-mongodb-and-ai"
 category: "blog"
 tags: ["AI", "Next.js", "MongoDB", "content management", "Windsurf", "Claude", "flat-file CMS", "productivity"]
@@ -8,8 +8,6 @@ status: "published"
 coverImage: "https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/rocket-ship.png"
 excerpt: "How I leveraged Windsurf and Claude 3.7 Sonnet to build a complete content platform in a single day, combining the simplicity of markdown files with the power of MongoDB and Next.js to create a flexible, powerful publishing system."
 ---
-
-# Building a Content Platform in a Day with Windsurf, Claude, and MongoDB
 
 I recently sent this message to a friend:
 
