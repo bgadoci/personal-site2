@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
-import { BookOpenIcon, TagIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { BookOpenIcon, TagIcon, Bars3Icon, XMarkIcon, ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
 import { PostMetadata } from '@/lib/markdown';
 
 // Function to generate table of contents from posts
@@ -65,9 +65,18 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
         <div className="max-w-3xl mx-auto text-center relative z-20">
           <h1 className="text-6xl font-bold text-white mb-4">SHAIPE</h1>
           <h2 className="text-2xl font-medium text-emerald-300 mb-4">A guide to creating superhuman AI-powered employees through AI Operations in the enterprise</h2>
-          <p className="text-lg text-slate-200 mb-8">
+          <p className="text-lg text-slate-200 mb-6">
             By Brandon Gadoci, VP of AI Operations at data.world
           </p>
+          <div className="flex justify-center">
+            <Link 
+              href="/book/chat" 
+              className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg transition-colors shadow-lg"
+            >
+              <ChatBubbleLeftRightIcon className="h-5 w-5" />
+              Chat with SHAIPE
+            </Link>
+          </div>
         </div>
       </section>
       
