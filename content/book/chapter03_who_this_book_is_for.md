@@ -113,25 +113,37 @@ AI success is not just about tools—it's about people. Every organization compr
 
 Emma is excited about AI's potential to innovate and streamline processes. She's eager to experiment and often becomes an internal advocate for AI adoption.
 
+![Energetic Emma](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/personas/Energetic%20Emma.png)
+
 ### Skeptical Sam: The Analytical Questioner
 
 Sam takes a cautious approach, asking critical questions about feasibility and ROI. He ensures that AI projects are well-considered and aligned with organizational objectives.
+
+![Skeptical Sam](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/personas/Skeptical%20Sam.png)
 
 ### Cautious Chris: The Concerned Employee
 
 Chris is worried about job security and how AI will affect their role. Clarity and reassurance about AI's purpose within the organization are essential for Chris to feel comfortable.
 
+![Cautious Chris](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/personas/Cautious%20Chris.png)
+
 ### Curious Clara: The Intrigued Observer
 
 Clara watches AI developments with interest but hesitates to engage fully. With encouragement, she can become an important contributor to AI projects.
+
+![Curious Clara](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/personas/Curious%20Clara.png)
 
 ### Traditionalist Tim: The Resistant Traditionalist
 
 Tim is deeply rooted in existing workflows and may resist AI-driven changes. He values stability and prefers sticking to familiar processes.
 
+![Traditionalist Tim](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/personas/Traditionalist%20Tim.png)
+
 ### Principled Pat: The Ethical Objector
 
 Pat holds moral, ethical, or religious concerns about AI. They focus on ensuring that AI aligns with the organization's values and contributes responsibly to society.
+
+![Principled Pat](https://storage.googleapis.com/bgadoci-blog-images/blog-images/images/blog-images/blog-post-images/personas/Principled%20Pat.png)
 
 These personas reflect diverse perspectives, emphasizing that AI adoption is a people-centric journey. Acknowledging and addressing these viewpoints is critical to fostering collaboration and engagement.
 
