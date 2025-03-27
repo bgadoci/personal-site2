@@ -25,18 +25,26 @@ Before the chat feature can work, you need to generate embeddings for the book c
 
 ```bash
 # Process all book chapters
-node scripts/generate_book_embeddings.js
+node scripts/generate_book_embeddings_direct.js
 
 # Process a specific chapter only
-node scripts/generate_book_embeddings.js --chapter=chapter01_why_ai_operations
+node scripts/generate_book_embeddings_direct.js --chapter=chapter01
 
 # Test without storing embeddings
-node scripts/generate_book_embeddings.js --dry-run
+node scripts/generate_book_embeddings_direct.js --dry-run
 ```
+
+**Note:** The script uses OpenAI's `text-embedding-3-small` model, which offers excellent performance at a very cost-effective rate (approximately 62,500 pages per dollar).
 
 ### 3. MongoDB Configuration
 
-The embeddings are stored in a MongoDB collection called `book_embeddings`. The script will automatically create the necessary indexes, including a vector search index if your MongoDB instance supports it.
+The embeddings are stored in a MongoDB collection called `book_embeddings`. The script will automatically create the necessary indexes, including a vector search index.
+
+**Important:** Vector search requires MongoDB Atlas with vector search capability enabled. You'll need to create a vector search index with the following configuration:
+- Index name: `vector_index`
+- Field path: `embedding`
+- Dimensions: `1536`
+- Similarity metric: `cosine`
 
 ## How It Works
 
@@ -44,10 +52,10 @@ The embeddings are stored in a MongoDB collection called `book_embeddings`. The 
 
 1. User asks a question on the chat interface
 2. The question is sent to the `/api/book-chat` endpoint
-3. The API generates an embedding for the question
-4. MongoDB finds the most similar content chunks
+3. The API generates an embedding for the question using `text-embedding-3-small`
+4. MongoDB finds the most similar content chunks using vector search
 5. The API sends the question and relevant chunks to OpenAI
-6. OpenAI generates an answer with citations
+6. OpenAI's `gpt-4o` model generates an answer with citations
 7. The answer and sources are displayed to the user
 
 ### Content Processing
