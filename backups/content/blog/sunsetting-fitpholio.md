@@ -1,18 +1,12 @@
 ---
-title: Sunsetting Fitpholio
-slug: sunsetting-fitpholio
-category: blog
-tags:
-  - ai
-  - data
-  - ai-driven-apps
-date: '2023-08-14'
-status: published
-coverImage: /images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.42_PM.png
-excerpt: >-
-  If you&#x27;ve been following my blog or tweets, you might have seen that back
-  in April, May, and June, I launched a website called Fitpholio. It was an
-  experiment in using AI to help me create my own d...
+title: "Sunsetting Fitpholio"
+slug: "sunsetting-fitpholio"
+category: "blog"
+tags: ['ai', 'data', 'ai-driven-apps']
+date: "2023-08-14"
+status: "published"
+coverImage: "/images/blog-images/blog-post-images/Screenshot_2023-08-14_at_3.49.42_PM.png"
+excerpt: "If you&#x27;ve been following my blog or tweets, you might have seen that back in April, May, and June, I launched a website called Fitpholio. It was an experiment in using AI to help me create my own d..."
 ---
 
 If you've been following my blog or tweets, you might have seen that back in April, May, and June, I launched a website called Fitpholio. It was an experiment in using AI to help me create my own data-driven application. It was an amazing experience, and I was able to complete the project entirely on my own with the assistance of Chat-GPT. 
