@@ -69,8 +69,10 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:text-slate-50`}>
         <Navigation />
         
-        <main className="flex-grow container mx-auto px-4 md:px-6 py-8 max-w-7xl">
+        <main className="flex-grow">
+          <div className="container mx-auto px-4 py-8 max-w-7xl">
           {children}
+          </div>
         </main>
         
         <footer className="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-6">
