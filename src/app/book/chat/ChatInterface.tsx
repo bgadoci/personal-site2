@@ -229,7 +229,7 @@ export default function ChatInterface() {
   return (
     <div className="flex flex-col h-full w-full bg-white dark:bg-slate-800 overflow-hidden rounded-lg shadow-sm">
       {/* Back link and page title */}
-      <div className="px-6 pt-3 pb-2">
+      <div className="px-6 pt-6 pb-2">
         <Link 
           href="/book" 
           className="text-sm text-emerald-600 dark:text-emerald-400 hover:underline font-medium flex items-center mb-2"
