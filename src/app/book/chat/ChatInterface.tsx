@@ -4,6 +4,10 @@ import { useState, useRef, useEffect } from 'react';
 import { PaperAirplaneIcon, ArrowPathIcon, BookOpenIcon, UserIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import SourceCitation from '@/app/book/chat/SourceCitation';
+import { remark } from 'remark';
+import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
+import styles from './chat.module.css';
 
 // Define types for chat messages
 type MessageRole = 'user' | 'assistant' | 'system';
@@ -20,6 +24,22 @@ type Message = {
   sources?: Source[];
   timestamp: Date;
   id?: string; // Added for tracking streaming messages
+};
+
+// Function to format markdown content to HTML
+const formatMarkdown = (content: string): string => {
+  try {
+    // Simple synchronous version for client-side rendering
+    const processedContent = remark()
+      .use(html)
+      .use(remarkGfm)
+      .processSync(content);
+    
+    return processedContent.toString();
+  } catch (error) {
+    console.error('Error formatting markdown:', error);
+    return content; // Return original content if there's an error
+  }
 };
 
 export default function ChatInterface() {
@@ -212,7 +232,7 @@ export default function ChatInterface() {
                   </div>
                 </div>
                 <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
-                  <div className="whitespace-pre-wrap">{message.content}</div>
+                  <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
               </div>
             );
@@ -221,7 +241,7 @@ export default function ChatInterface() {
             return (
               <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "center", columnGap: "12px" }}>
                 <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
-                  <div className="whitespace-pre-wrap">{message.content}</div>
+                  <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
                 <div className="flex-shrink-0 ml-3">
                   <div className="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
@@ -245,7 +265,7 @@ export default function ChatInterface() {
                   </div>
                 </div>
                 <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
-                  <div className="whitespace-pre-wrap">{message.content || ' '}</div>
+                  <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content || ' ') }}></div>
                   
                   {/* Show sources if available */}
                   {message.sources && message.sources.length > 0 && (
