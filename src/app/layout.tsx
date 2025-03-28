@@ -70,13 +70,13 @@ export default function RootLayout({
         <Navigation />
         
         <main className="flex-grow">
-          <div className="container mx-auto px-4 py-8 max-w-7xl 2xl:max-w-7xl">
+          <div className="container mx-auto px-4 py-8 max-w-7xl" style={{ maxWidth: '80rem' }}>
           {children}
           </div>
         </main>
         
         <footer className="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-6">
-          <div className="container mx-auto px-4 max-w-7xl 2xl:max-w-7xl md:px-6">
+          <div className="container mx-auto px-4 max-w-7xl md:px-6" style={{ maxWidth: '80rem' }}>
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-slate-500 dark:text-slate-400 text-sm">
                 © {new Date().getFullYear()} Brandon Gadoci | VP of AI Operations at data.world
