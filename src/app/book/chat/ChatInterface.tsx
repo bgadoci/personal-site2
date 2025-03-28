@@ -227,7 +227,7 @@ export default function ChatInterface() {
   };
   
   return (
-    <div className="flex flex-col h-full bg-white dark:bg-slate-800 overflow-hidden rounded-lg shadow-sm" style={{ width: '100%', maxWidth: '100%' }}>
+    <div className="flex flex-col h-full w-full bg-white dark:bg-slate-800 overflow-hidden rounded-lg shadow-sm">
       {/* Back link and page title */}
       <div className="px-6 pt-3 pb-2">
         <Link 
