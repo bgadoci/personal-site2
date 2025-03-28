@@ -74,7 +74,7 @@ export default function RootLayout({
         </main>
         
         <footer className="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-6">
-          <div className="container mx-auto px-4 max-w-4xl md:px-6">
+          <div className="container mx-auto px-4 max-w-7xl md:px-6">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-slate-500 dark:text-slate-400 text-sm">
                 © {new Date().getFullYear()} Brandon Gadoci | VP of AI Operations at data.world
