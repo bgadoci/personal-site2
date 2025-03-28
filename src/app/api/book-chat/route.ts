@@ -2,8 +2,14 @@ import { NextRequest, NextResponse } from 'next/server';
 import { OpenAIEmbeddings } from '@/lib/openai';
 import { findSimilarChunks } from '@/lib/embeddings';
 import { createOpenAIStream } from '@/lib/openai-stream';
+import { OpenAIChat } from '@/lib/openai';
 
-// Define response type for non-streaming responses
+// Define types for chat messages and response
+type ChatMessage = {
+  role: 'user' | 'assistant' | 'system';
+  content: string;
+};
+
 type ChatResponse = {
   answer: string;
   sources: {
@@ -17,7 +23,13 @@ export async function POST(request: NextRequest) {
   try {
     // Parse the request body
     const body = await request.json();
-    const { question, stream = true } = body;
+    const { question, stream = true, history = [] } = body;
+    
+    // Validate history if provided
+    const chatHistory: ChatMessage[] = Array.isArray(history) ? history : [];
+    
+    // Debug: Log received chat history
+    console.log('Received chat history:', chatHistory);
     
     // Validate input
     if (!question || typeof question !== 'string') {
@@ -44,13 +56,26 @@ export async function POST(request: NextRequest) {
       } as ChatResponse);
     }
     
-    // Format context for the AI
-    const context = relevantChunks.map(chunk => {
+    // Format book context from relevant chunks
+    const bookContext = relevantChunks.map(chunk => {
       return `
 From ${chunk.citation.display_text}:
 "${chunk.content}"
 `;
     }).join("\n\n");
+    
+    // We'll use the chat history directly in the OpenAI API call
+    // But we'll also keep a text version for the non-streaming fallback
+    const historyContext = chatHistory.length > 0 
+      ? "\n\nPrevious conversation history (IMPORTANT - refer to this when answering follow-up questions):\n" + 
+        chatHistory.map((msg: ChatMessage) => `${msg.role === 'user' ? 'User' : 'Assistant'}: ${msg.content}`).join("\n")
+      : "";
+    
+    // Debug: Log formatted history context
+    console.log('Formatted history context:', historyContext);
+    
+    // For non-streaming fallback, combine book context and chat history as text
+    const context = bookContext;
     
     // Format sources for the response
     const sources = relevantChunks.map(chunk => ({
@@ -59,14 +84,26 @@ From ${chunk.citation.display_text}:
       link: chunk.citation.url_path
     }));
     
+    // Determine if sources should be shown
+    const chat = new OpenAIChat();
+    const shouldShowSources = await chat.shouldShowSources(question, context);
+    
+    // Only include sources if they should be shown
+    const finalSources = shouldShowSources ? sources : [];
+    
     // If streaming is requested
     if (stream) {
       try {
-        // Create a streaming response
-        const openAIStream = await createOpenAIStream(question, context);
+        // Create a streaming response with chat history as separate messages
+        const openAIStream = await createOpenAIStream(question, context, {
+          chatHistory: chatHistory.map(msg => ({
+            role: msg.role as 'user' | 'assistant' | 'system',
+            content: msg.content
+          }))
+        });
         
         // Return the stream along with the sources as a header
-        const sourcesHeader = encodeURIComponent(JSON.stringify(sources));
+        const sourcesHeader = encodeURIComponent(JSON.stringify(finalSources));
         
         return new Response(openAIStream, {
           headers: {
@@ -79,11 +116,11 @@ From ${chunk.citation.display_text}:
       } catch (streamError) {
         console.error('Error in streaming response:', streamError);
         // Fall back to non-streaming response
-        return fallbackToNonStreaming(question, context, sources, streamError);
+        return fallbackToNonStreaming(question, context, finalSources, streamError);
       }
     } else {
       // Non-streaming response (fallback)
-      return fallbackToNonStreaming(question, context, sources);
+      return fallbackToNonStreaming(question, context, finalSources, undefined, chatHistory);
     }
     
   } catch (error) {
@@ -104,15 +141,21 @@ async function fallbackToNonStreaming(
   question: string, 
   context: string, 
   sources: any[], 
-  error?: any
+  error?: any,
+  chatHistory?: ChatMessage[]
 ) {
   try {
     // Import OpenAIChat only when needed (for fallback)
     const { OpenAIChat } = await import('@/lib/openai');
     const chat = new OpenAIChat();
     
-    // Generate AI response with context
-    const answer = await chat.generateChatResponse(question, context);
+    // Generate AI response with context and chat history
+    const answer = await chat.generateChatResponse(question, context, {
+      chatHistory: chatHistory?.map(msg => ({
+        role: msg.role as 'user' | 'assistant' | 'system',
+        content: msg.content
+      }))
+    });
     
     // Return the response
     return NextResponse.json({

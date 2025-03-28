@@ -7,6 +7,7 @@ export async function createOpenAIStream(
   options: {
     temperature?: number;
     max_tokens?: number;
+    chatHistory?: Array<{role: 'user' | 'assistant' | 'system', content: string}>;
   } = {}
 ) {
   const encoder = new TextEncoder();
@@ -35,13 +36,21 @@ export async function createOpenAIStream(
             
 When referencing information from the book, include citations like [Chapter X: Title, Section: Y].
 Base your answers strictly on the provided context. If the answer is not in the context, say "I don't have enough information about that in the book."
-Be concise and helpful.`
+
+IMPORTANT: If previous conversation history is provided, use it to maintain context and answer follow-up questions appropriately. Refer back to earlier exchanges when needed.
+
+Be concise and helpful but creative in your responses blending the knowledge of the book with your own recommendations.`
         },
+        // Include chat history as separate messages if provided
+        ...(options.chatHistory?.map(msg => ({
+          role: msg.role as 'user' | 'assistant' | 'system',
+          content: msg.content
+        })) || []),
         {
           role: 'user',
           content: `The user has asked: "${prompt}"
 
-Based on the following excerpts from the book:
+Based on the following information from the book:
 
 ${context}`
         }

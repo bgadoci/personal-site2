@@ -62,6 +62,9 @@ export default function ChatInterface() {
   // State to track if streaming has started
   const [isStreaming, setIsStreaming] = useState(false);
   
+  // State to track which message is currently streaming
+  const [streamingMessageId, setStreamingMessageId] = useState<string | null>(null);
+  
   // State for error messages
   const [error, setError] = useState<string | null>(null);
   
@@ -106,13 +109,30 @@ export default function ChatInterface() {
     setMessages(prev => [...prev, assistantMessage]);
     
     try {
-      // Call the book chat API with streaming enabled
+      // Prepare chat history (excluding system message and current message)
+      // Include more messages (up to 10) to provide better context
+      const chatHistory = messages
+        .filter(msg => msg.role !== 'system' && msg.content.trim() !== '')
+        .slice(-10) // Include up to 10 previous messages for better context
+        .map(msg => ({
+          role: msg.role,
+          content: msg.content
+        }));
+      
+      // Debug: Log chat history being sent
+      console.log('Sending chat history:', chatHistory);
+      
+      // Call the book chat API with streaming enabled and include chat history
       const response = await fetch('/api/book-chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ question: input, stream: true }),
+        body: JSON.stringify({ 
+          question: input, 
+          stream: true,
+          history: chatHistory
+        }),
       });
       
       if (!response.ok) {
@@ -158,6 +178,7 @@ export default function ChatInterface() {
           // Mark streaming as started when we get the first chunk
           if (!isStreaming) {
             setIsStreaming(true);
+            setStreamingMessageId(assistantMessageId);
           }
           
           // Update the assistant message with the new chunk
@@ -201,6 +222,7 @@ export default function ChatInterface() {
     } finally {
       setIsLoading(false);
       setIsStreaming(false);
+      setStreamingMessageId(null);
     }
   };
   
@@ -270,8 +292,8 @@ export default function ChatInterface() {
                 <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content || ' ') }}></div>
                   
-                  {/* Show sources if available */}
-                  {message.sources && message.sources.length > 0 && (
+                  {/* Show sources if available and message is not currently streaming */}
+                  {message.sources && message.sources.length > 0 && message.id !== streamingMessageId && (
                     <div className="mt-4 pt-4 border-t border-slate-300 dark:border-slate-600">
                       <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2 mt-2">
                         Sources:
