@@ -234,7 +234,7 @@ export default function ChatInterface() {
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
               </div>
@@ -247,8 +247,8 @@ export default function ChatInterface() {
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
                 <div className="flex-shrink-0 ml-3">
-                  <div className="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
-                    <UserIcon className="w-5 h-5 text-emerald-500 dark:text-emerald-400" />
+                  <div className="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
+                    <UserIcon className="w-5 h-5 text-slate-600 dark:text-slate-300" />
                   </div>
                 </div>
               </div>
@@ -267,16 +267,16 @@ export default function ChatInterface() {
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content || ' ') }}></div>
                   
                   {/* Show sources if available */}
                   {message.sources && message.sources.length > 0 && (
-                    <div className="mt-3 pt-2 border-t border-slate-300 dark:border-slate-600">
-                      <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2">
+                    <div className="mt-4 pt-4 border-t border-slate-300 dark:border-slate-600">
+                      <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2 mt-2">
                         Sources:
                       </p>
-                      <div className="space-y-2">
+                      <div>
                         {message.sources.map((source, idx) => (
                           <SourceCitation key={idx} source={source} />
                         ))}
@@ -297,7 +297,7 @@ export default function ChatInterface() {
                 <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
               </div>
             </div>
-            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
               <div className="flex items-center space-x-2">
                 <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin" />
                 <p>Thinking...</p>
