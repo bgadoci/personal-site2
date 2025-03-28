@@ -227,7 +227,7 @@ export default function ChatInterface() {
   };
   
   return (
-    <div className="flex flex-col min-h-[650px] h-full bg-white dark:bg-slate-800 overflow-hidden rounded-lg">
+    <div className="flex flex-col h-full bg-white dark:bg-slate-800 overflow-hidden rounded-lg shadow-sm">
       {/* Back link and page title */}
       <div className="px-6 pt-3 pb-2">
         <Link 
@@ -254,7 +254,7 @@ export default function ChatInterface() {
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '10px 16px 12px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
               </div>
@@ -263,7 +263,7 @@ export default function ChatInterface() {
             // User message (right side)
             return (
               <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "flex-start", columnGap: "12px" }}>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
+                <div style={{ borderRadius: '0.5rem', padding: '10px 16px 12px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
                 <div className="flex-shrink-0 ml-3">
@@ -287,7 +287,7 @@ export default function ChatInterface() {
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '10px 16px 12px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content || ' ') }}></div>
                   
                   {/* Show sources if available and message is not currently streaming */}
@@ -317,7 +317,7 @@ export default function ChatInterface() {
                 <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
               </div>
             </div>
-            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+            <div style={{ borderRadius: '0.5rem', padding: '10px 16px 12px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
               <div className="flex items-center">
                 <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin mr-3" />
                 <p>Thinking...</p>
