@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { PaperAirplaneIcon, ArrowPathIcon, BookOpenIcon, UserIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 import SourceCitation from '@/app/book/chat/SourceCitation';
 import { remark } from 'remark';
 import html from 'remark-html';
@@ -204,11 +205,13 @@ export default function ChatInterface() {
   };
   
   return (
-    <div className="flex flex-col h-[650px] bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
+    <div className="flex flex-col h-[650px] bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
       {/* Chat header */}
       <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
-        <div className="flex items-center space-x-3">
-          <BookOpenIcon className="h-6 w-6 text-emerald-500" />
+        <div className="flex items-center space-x-4">
+          <div className="w-6 h-6 rounded-full overflow-hidden">
+            <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={24} height={24} className="object-cover" />
+          </div>
           <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Chat with SHAIPE</h2>
         </div>
         <Link 
@@ -225,13 +228,13 @@ export default function ChatInterface() {
           if (message.role === 'system') {
             // System message styled like a bot message
             return (
-              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "center", columnGap: "12px" }}>
+              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "flex-start", columnGap: "12px" }}>
                 <div className="flex-shrink-0 mr-3">
-                  <div className="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-600 flex items-center justify-center">
-                    <BookOpenIcon className="w-5 h-5 text-slate-500 dark:text-slate-400" />
+                  <div className="w-8 h-8 rounded-full overflow-hidden">
+                    <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
               </div>
@@ -239,8 +242,8 @@ export default function ChatInterface() {
           } else if (message.role === 'user') {
             // User message (right side)
             return (
-              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "center", columnGap: "12px" }}>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
+              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "flex-start", columnGap: "12px" }}>
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
                 <div className="flex-shrink-0 ml-3">
@@ -258,13 +261,13 @@ export default function ChatInterface() {
             }
             
             return (
-              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "center", columnGap: "12px" }}>
+              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "flex-start", columnGap: "12px" }}>
                 <div className="flex-shrink-0 mr-3">
-                  <div className="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-600 flex items-center justify-center">
-                    <BookOpenIcon className="w-5 h-5 text-slate-500 dark:text-slate-400" />
+                  <div className="w-8 h-8 rounded-full overflow-hidden">
+                    <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content || ' ') }}></div>
                   
                   {/* Show sources if available */}
@@ -288,13 +291,13 @@ export default function ChatInterface() {
         
         {/* Loading indicator - only show when loading but not yet streaming */}
         {isLoading && !isStreaming && (
-          <div style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "center", columnGap: "12px" }}>
+          <div style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "flex-start", columnGap: "12px" }}>
             <div className="flex-shrink-0 mr-3">
-              <div className="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-600 flex items-center justify-center">
-                <BookOpenIcon className="w-5 h-5 text-slate-500 dark:text-slate-400" />
+              <div className="w-8 h-8 rounded-full overflow-hidden">
+                <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
               </div>
             </div>
-            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
               <div className="flex items-center space-x-2">
                 <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin" />
                 <p>Thinking...</p>
