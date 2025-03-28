@@ -205,11 +205,13 @@ export default function ChatInterface() {
           if (message.role === 'system') {
             // System message styled like a bot message
             return (
-              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "center" }}>
-                <div className="min-w-[20px] min-h-[20px] flex-shrink-0 mr-2">
-                  <BookOpenIcon className="w-5 h-5 text-slate-500 dark:text-slate-400" />
+              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "center", columnGap: "12px" }}>
+                <div className="flex-shrink-0 mr-3">
+                  <div className="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-600 flex items-center justify-center">
+                    <BookOpenIcon className="w-5 h-5 text-slate-500 dark:text-slate-400" />
+                  </div>
                 </div>
-                <div className="px-4 py-2 rounded-2xl max-w-[70%] text-sm shadow bg-slate-200 dark:bg-slate-700 text-slate-900 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className="whitespace-pre-wrap">{message.content}</div>
                 </div>
               </div>
@@ -217,12 +219,14 @@ export default function ChatInterface() {
           } else if (message.role === 'user') {
             // User message (right side)
             return (
-              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "center" }}>
-                <div className="px-4 py-2 rounded-2xl max-w-[70%] text-sm shadow bg-emerald-500 dark:bg-emerald-600 text-white">
+              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "center", columnGap: "12px" }}>
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
                   <div className="whitespace-pre-wrap">{message.content}</div>
                 </div>
-                <div className="min-w-[20px] min-h-[20px] flex-shrink-0 ml-2">
-                  <UserIcon className="w-5 h-5 text-emerald-500 dark:text-emerald-400" />
+                <div className="flex-shrink-0 ml-3">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
+                    <UserIcon className="w-5 h-5 text-emerald-500 dark:text-emerald-400" />
+                  </div>
                 </div>
               </div>
             );
@@ -234,11 +238,13 @@ export default function ChatInterface() {
             }
             
             return (
-              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "center" }}>
-                <div className="min-w-[20px] min-h-[20px] flex-shrink-0 mr-2">
-                  <BookOpenIcon className="w-5 h-5 text-slate-500 dark:text-slate-400" />
+              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "center", columnGap: "12px" }}>
+                <div className="flex-shrink-0 mr-3">
+                  <div className="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-600 flex items-center justify-center">
+                    <BookOpenIcon className="w-5 h-5 text-slate-500 dark:text-slate-400" />
+                  </div>
                 </div>
-                <div className="px-4 py-2 rounded-2xl max-w-[70%] text-sm shadow bg-slate-200 dark:bg-slate-700 text-slate-900 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className="whitespace-pre-wrap">{message.content || ' '}</div>
                   
                   {/* Show sources if available */}
@@ -262,11 +268,13 @@ export default function ChatInterface() {
         
         {/* Loading indicator - only show when loading but not yet streaming */}
         {isLoading && !isStreaming && (
-          <div style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "center" }}>
-            <div className="min-w-[20px] min-h-[20px] flex-shrink-0 mr-2">
-              <BookOpenIcon className="w-5 h-5 text-slate-500 dark:text-slate-400" />
+          <div style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "center", columnGap: "12px" }}>
+            <div className="flex-shrink-0 mr-3">
+              <div className="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-600 flex items-center justify-center">
+                <BookOpenIcon className="w-5 h-5 text-slate-500 dark:text-slate-400" />
+              </div>
             </div>
-            <div className="px-4 py-2 rounded-2xl max-w-[70%] text-sm shadow bg-slate-200 dark:bg-slate-700 text-slate-900 dark:text-slate-200">
+            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
               <div className="flex items-center space-x-2">
                 <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin" />
                 <p>Thinking...</p>
