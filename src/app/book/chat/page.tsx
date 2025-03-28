@@ -9,10 +9,7 @@ export const metadata = {
 
 export default function BookChatPage() {
   return (
-    <div className="container mx-auto px-4 py-4 max-w-3xl" style={{ 
-      height: 'calc(100vh - 160px)',
-      maxWidth: '48rem'
-    }}>
+    <div className="container mx-auto px-0 md:px-4 py-4 max-w-4xl" >
       <ChatInterface />
     </div>
   );

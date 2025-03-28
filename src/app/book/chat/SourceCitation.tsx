@@ -21,7 +21,7 @@ export default function SourceCitation({ source }: SourceCitationProps) {
   return (
     <div className="text-xs border border-slate-200 dark:border-slate-600 rounded-md overflow-hidden my-2">
       <div 
-        className="flex items-center justify-between bg-slate-50 dark:bg-slate-800 px-3 py-2.5 cursor-pointer" 
+        className="flex items-center justify-between bg-white dark:bg-slate-800 px-3 py-2.5 cursor-pointer" 
         onClick={() => setExpanded(!expanded)}
       >
         <Link 
