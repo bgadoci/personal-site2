@@ -226,24 +226,36 @@ export default function ChatInterface() {
     }
   };
   
+  // State to track if we're on the standalone chat page
+  const [isStandaloneChatPage, setIsStandaloneChatPage] = useState(false);
+  
+  // Check if we're on the standalone chat page
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsStandaloneChatPage(window.location.pathname === '/book/chat');
+    }
+  }, []);
+
   return (
-    <div className="flex flex-col min-h-[550px] border border-slate-200 dark:border-slate-700 h-full shadow-sm w-full bg-white dark:bg-slate-800 overflow-hidden rounded-lg" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-      {/* Back link and page title */}
-      <div className="px-6 pt-3 pb-4 border-b border-slate-200 dark:border-slate-700">
-        <Link 
-          href="/book" 
-          className="text-sm text-emerald-600 dark:text-emerald-400 hover:underline font-medium flex items-center mb-2 mt-4"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          Back to Book
-        </Link>
-        <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Chat with SHAIPE</h1>
-      </div>
+    <div className="flex flex-col h-full w-full bg-white dark:bg-slate-800 overflow-hidden" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+      {/* Back link - show only when not in slide-out panel */}
+      {isStandaloneChatPage && (
+        <div className="px-6 pt-3 pb-4 border-b border-slate-200 dark:border-slate-700">
+          <Link 
+            href="/book" 
+            className="text-sm text-emerald-600 dark:text-emerald-400 hover:underline font-medium flex items-center mb-2 mt-4"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Book
+          </Link>
+          <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Chat with SHAIPE</h1>
+        </div>
+      )}
       
       {/* Chat messages */}
-      <div className="flex-1 p-4 space-y-4" style={{ flex: '1 1 auto', overflowY: 'auto', minHeight: '400px', maxHeight: 'calc(100% - 160px)' }}>
+      <div className="flex-1 p-4 space-y-4" style={{ flex: '1 1 auto', overflowY: 'auto', maxHeight: isStandaloneChatPage ? 'calc(100% - 160px)' : '100%' }}>
         {messages.map((message, index) => {
           if (message.role === 'system') {
             // System message styled like a bot message
@@ -254,7 +266,7 @@ export default function ChatInterface() {
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', wordWrap: 'break-word', overflowWrap: 'break-word' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
               </div>
@@ -263,7 +275,7 @@ export default function ChatInterface() {
             // User message (right side)
             return (
               <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "flex-start", columnGap: "12px" }}>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', wordWrap: 'break-word', overflowWrap: 'break-word' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
                 <div className="flex-shrink-0 ml-3">
@@ -287,7 +299,7 @@ export default function ChatInterface() {
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', wordWrap: 'break-word', overflowWrap: 'break-word' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content || ' ') }}></div>
                   
                   {/* Show sources if available and message is not currently streaming */}
@@ -317,9 +329,9 @@ export default function ChatInterface() {
                 <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
               </div>
             </div>
-            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', wordWrap: 'break-word', overflowWrap: 'break-word' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
               <div className="flex items-center">
-                <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin mr-3" />
+                <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin mr-6" />
                 <p>Thinking...</p>
               </div>
             </div>

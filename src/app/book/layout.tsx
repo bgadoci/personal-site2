@@ -6,5 +6,9 @@ export const metadata = {
 };
 
 export default function BookLayout({ children }: { children: ReactNode }) {
-  return children;
+  return (
+    <div className="book-layout">
+      {children}
+    </div>
+  );
 }

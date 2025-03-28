@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 import { BookOpenIcon, TagIcon, Bars3Icon, XMarkIcon, ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
 import { PostMetadata } from '@/lib/markdown';
+import SlideOutChatPanel from './SlideOutChatPanel';
 
 // Function to generate table of contents from posts
 const generateTableOfContents = (posts: PostMetadata[]) => {
@@ -30,6 +31,8 @@ type TableOfContentsItem = {
 export default function BookContent({ posts }: { posts: PostMetadata[] }) {
   // State for mobile TOC dropdown
   const [tocOpen, setTocOpen] = useState(false);
+  // State for chat panel
+  const [chatPanelOpen, setChatPanelOpen] = useState(false);
   const tocRef = useRef<HTMLDivElement>(null);
   
   // Debug: Log posts data to see if summary is included
@@ -46,6 +49,16 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
       mainContent.style.scrollPaddingTop = '80px';
     }
   }, []);
+
+  // Function to toggle chat panel
+  const toggleChatPanel = () => {
+    setChatPanelOpen(!chatPanelOpen);
+  };
+
+  // Function to close chat panel
+  const closeChatPanel = () => {
+    setChatPanelOpen(false);
+  };
 
   return (
     <div>
@@ -69,13 +82,14 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
             By Brandon Gadoci, VP of AI Operations at data.world
           </p>
           <div className="flex justify-center">
-            <Link 
-              href="/book/chat" 
+            <button 
+              onClick={toggleChatPanel}
               className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg transition-colors shadow-lg"
+              style={{ cursor: 'pointer' }}
             >
               <ChatBubbleLeftRightIcon className="h-5 w-5" />
               Chat with SHAIPE
-            </Link>
+            </button>
           </div>
         </div>
       </section>
@@ -216,6 +230,9 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
           </div>
         </div>
       </div>
+
+      {/* Slide-out chat panel */}
+      <SlideOutChatPanel isOpen={chatPanelOpen} onClose={closeChatPanel} />
     </div>
   );
 }
