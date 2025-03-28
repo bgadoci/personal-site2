@@ -227,21 +227,19 @@ export default function ChatInterface() {
   };
   
   return (
-    <div className="flex flex-col h-[650px] bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
-      {/* Chat header */}
-      <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
-        <div className="flex items-center space-x-4">
-          <div className="w-6 h-6 rounded-full overflow-hidden">
-            <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={24} height={24} className="object-cover" />
-          </div>
-          <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Chat with SHAIPE</h2>
-        </div>
+    <div className="flex flex-col h-[650px] bg-white dark:bg-slate-800 overflow-hidden">
+      {/* Back link and page title */}
+      <div className="px-6 pt-3 pb-2">
         <Link 
           href="/book" 
-          className="text-sm text-emerald-600 dark:text-emerald-400 hover:underline font-medium"
+          className="text-sm text-emerald-600 dark:text-emerald-400 hover:underline font-medium flex items-center mb-2"
         >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
           Back to Book
         </Link>
+        <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Chat with SHAIPE</h1>
       </div>
       
       {/* Chat messages */}
@@ -256,7 +254,7 @@ export default function ChatInterface() {
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
               </div>
@@ -265,7 +263,7 @@ export default function ChatInterface() {
             // User message (right side)
             return (
               <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "flex-start", columnGap: "12px" }}>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
                 <div className="flex-shrink-0 ml-3">
@@ -289,7 +287,7 @@ export default function ChatInterface() {
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
                 </div>
-                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content || ' ') }}></div>
                   
                   {/* Show sources if available and message is not currently streaming */}
@@ -319,9 +317,9 @@ export default function ChatInterface() {
                 <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
               </div>
             </div>
-            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
-              <div className="flex items-center space-x-2">
-                <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin" />
+            <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+              <div className="flex items-center">
+                <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin mr-3" />
                 <p>Thinking...</p>
               </div>
             </div>
@@ -342,20 +340,20 @@ export default function ChatInterface() {
       </div>
       
       {/* Chat input */}
-      <div className="border-t border-slate-200 dark:border-slate-700 p-4">
+      <div className="p-4">
         <form onSubmit={handleSubmit} className="flex space-x-3">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask about the book..."
-            className="flex-1 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 px-4 py-3 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:focus:ring-emerald-600 shadow-sm"
+            className="flex-1 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 px-4 py-3 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:focus:ring-emerald-600"
             disabled={isLoading}
           />
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className="rounded-lg bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 dark:disabled:bg-emerald-800 text-white p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-colors shadow-sm"
+            className="rounded-lg bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 dark:disabled:bg-emerald-800 text-white p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-colors"
             aria-label="Send message"
           >
             <PaperAirplaneIcon className="h-5 w-5" />
