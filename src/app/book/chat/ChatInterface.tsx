@@ -227,7 +227,7 @@ export default function ChatInterface() {
   };
   
   return (
-    <div className="flex flex-col h-[650px] bg-white dark:bg-slate-800 overflow-hidden">
+    <div className="flex flex-col min-h-[650px] h-full bg-white dark:bg-slate-800 overflow-hidden rounded-lg">
       {/* Back link and page title */}
       <div className="px-6 pt-3 pb-2">
         <Link 
@@ -243,7 +243,7 @@ export default function ChatInterface() {
       </div>
       
       {/* Chat messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4 min-h-[400px]">
         {messages.map((message, index) => {
           if (message.role === 'system') {
             // System message styled like a bot message
@@ -341,24 +341,26 @@ export default function ChatInterface() {
       
       {/* Chat input */}
       <div className="p-4">
-        <form onSubmit={handleSubmit} className="flex space-x-3">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask about the book..."
-            className="flex-1 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 px-4 py-3 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:focus:ring-emerald-600"
-            disabled={isLoading}
-          />
-          <button
-            type="submit"
-            disabled={isLoading || !input.trim()}
-            className="rounded-lg bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 dark:disabled:bg-emerald-800 text-white p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-colors"
-            aria-label="Send message"
-          >
-            <PaperAirplaneIcon className="h-5 w-5" />
-          </button>
-        </form>
+        <div className="rounded-lg overflow-hidden">
+          <form onSubmit={handleSubmit} className="relative flex w-full">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Ask about the book..."
+              className="flex-1 bg-slate-200 dark:bg-slate-600 text-slate-800 dark:text-white px-4 py-3 pr-12 focus:outline-none w-full h-[48px]"
+              disabled={isLoading}
+            />
+            <button
+              type="submit"
+              disabled={isLoading || !input.trim()}
+              className="absolute right-0 top-0 bottom-0 h-full bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-400 text-white flex items-center justify-center min-w-[48px] focus:outline-none transition-colors border-0 m-0 p-0 px-3"
+              aria-label="Send message"
+            >
+              <PaperAirplaneIcon className="h-5 w-5" />
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
