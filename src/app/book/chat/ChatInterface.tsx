@@ -19,6 +19,7 @@ type Message = {
   content: string;
   sources?: Source[];
   timestamp: Date;
+  id?: string; // Added for tracking streaming messages
 };
 
 export default function ChatInterface() {
@@ -67,14 +68,26 @@ export default function ChatInterface() {
     setIsLoading(true);
     setError(null);
     
+    // Create a placeholder for the assistant's message
+    const assistantMessageId = Date.now().toString();
+    const assistantMessage: Message = {
+      role: 'assistant',
+      content: '',
+      timestamp: new Date(),
+      id: assistantMessageId
+    };
+    
+    // Add the empty assistant message to the chat
+    setMessages(prev => [...prev, assistantMessage]);
+    
     try {
-      // Call the book chat API
+      // Call the book chat API with streaming enabled
       const response = await fetch('/api/book-chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ question: input }),
+        body: JSON.stringify({ question: input, stream: true }),
       });
       
       if (!response.ok) {
@@ -82,20 +95,79 @@ export default function ChatInterface() {
         throw new Error(errorData.message || 'Failed to get a response');
       }
       
-      const data = await response.json();
+      // Check if the response is a stream or JSON
+      const contentType = response.headers.get('Content-Type') || '';
       
-      // Add assistant message to chat
-      const assistantMessage: Message = {
-        role: 'assistant',
-        content: data.answer,
-        sources: data.sources,
-        timestamp: new Date()
-      };
-      
-      setMessages(prev => [...prev, assistantMessage]);
+      if (contentType.includes('text/event-stream')) {
+        // Handle streaming response
+        const reader = response.body?.getReader();
+        const decoder = new TextDecoder();
+        
+        // Get sources from header if available
+        const sourcesHeader = response.headers.get('X-Sources');
+        let sources = [];
+        
+        if (sourcesHeader) {
+          try {
+            sources = JSON.parse(decodeURIComponent(sourcesHeader));
+          } catch (e) {
+            console.error('Error parsing sources from header:', e);
+          }
+        }
+        
+        if (!reader) {
+          throw new Error('Failed to get response reader');
+        }
+        
+        // Read the stream
+        while (true) {
+          const { done, value } = await reader.read();
+          
+          if (done) {
+            break;
+          }
+          
+          // Decode the chunk and update the message content
+          const chunk = decoder.decode(value, { stream: true });
+          
+          // Update the assistant message with the new chunk
+          setMessages(prev => {
+            return prev.map(msg => {
+              if (msg.id === assistantMessageId) {
+                return {
+                  ...msg,
+                  content: msg.content + chunk,
+                  sources: sources.length > 0 ? sources : msg.sources
+                };
+              }
+              return msg;
+            });
+          });
+        }
+      } else {
+        // Handle non-streaming JSON response (fallback)
+        const data = await response.json();
+        
+        // Update the assistant message with the complete response
+        setMessages(prev => {
+          return prev.map(msg => {
+            if (msg.id === assistantMessageId) {
+              return {
+                ...msg,
+                content: data.answer,
+                sources: data.sources
+              };
+            }
+            return msg;
+          });
+        });
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');
       console.error('Error in chat:', err);
+      
+      // Remove the assistant message if there was an error
+      setMessages(prev => prev.filter(msg => msg.id !== assistantMessageId));
     } finally {
       setIsLoading(false);
     }

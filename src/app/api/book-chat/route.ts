@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { OpenAIEmbeddings, OpenAIChat } from '@/lib/openai';
+import { OpenAIEmbeddings } from '@/lib/openai';
 import { findSimilarChunks } from '@/lib/embeddings';
+import { createOpenAIStream } from '@/lib/openai-stream';
 
-// Define response type
+// Define response type for non-streaming responses
 type ChatResponse = {
   answer: string;
   sources: {
@@ -16,7 +17,7 @@ export async function POST(request: NextRequest) {
   try {
     // Parse the request body
     const body = await request.json();
-    const { question } = body;
+    const { question, stream = true } = body;
     
     // Validate input
     if (!question || typeof question !== 'string') {
@@ -26,9 +27,8 @@ export async function POST(request: NextRequest) {
       );
     }
     
-    // Initialize OpenAI clients
+    // Initialize OpenAI embeddings
     const embeddings = new OpenAIEmbeddings();
-    const chat = new OpenAIChat();
     
     // Generate embedding for the question
     const questionEmbedding = await embeddings.embedText(question);
@@ -52,9 +52,6 @@ From ${chunk.citation.display_text}:
 `;
     }).join("\n\n");
     
-    // Generate AI response with context
-    const answer = await chat.generateChatResponse(question, context);
-    
     // Format sources for the response
     const sources = relevantChunks.map(chunk => ({
       text: truncateText(chunk.content, 150),
@@ -62,11 +59,32 @@ From ${chunk.citation.display_text}:
       link: chunk.citation.url_path
     }));
     
-    // Return the response
-    return NextResponse.json({
-      answer,
-      sources
-    } as ChatResponse);
+    // If streaming is requested
+    if (stream) {
+      try {
+        // Create a streaming response
+        const openAIStream = await createOpenAIStream(question, context);
+        
+        // Return the stream along with the sources as a header
+        const sourcesHeader = encodeURIComponent(JSON.stringify(sources));
+        
+        return new Response(openAIStream, {
+          headers: {
+            'Content-Type': 'text/event-stream',
+            'Cache-Control': 'no-cache',
+            'Connection': 'keep-alive',
+            'X-Sources': sourcesHeader
+          }
+        });
+      } catch (streamError) {
+        console.error('Error in streaming response:', streamError);
+        // Fall back to non-streaming response
+        return fallbackToNonStreaming(question, context, sources, streamError);
+      }
+    } else {
+      // Non-streaming response (fallback)
+      return fallbackToNonStreaming(question, context, sources);
+    }
     
   } catch (error) {
     console.error('Error in book chat API:', error);
@@ -75,6 +93,41 @@ From ${chunk.citation.display_text}:
       { 
         error: 'An error occurred while processing your question.',
         message: error instanceof Error ? error.message : 'Unknown error'
+      },
+      { status: 500 }
+    );
+  }
+}
+
+// Fallback to non-streaming response
+async function fallbackToNonStreaming(
+  question: string, 
+  context: string, 
+  sources: any[], 
+  error?: any
+) {
+  try {
+    // Import OpenAIChat only when needed (for fallback)
+    const { OpenAIChat } = await import('@/lib/openai');
+    const chat = new OpenAIChat();
+    
+    // Generate AI response with context
+    const answer = await chat.generateChatResponse(question, context);
+    
+    // Return the response
+    return NextResponse.json({
+      answer,
+      sources,
+      streamed: false,
+      fallbackReason: error ? (error instanceof Error ? error.message : 'Unknown error') : 'Streaming disabled'
+    } as ChatResponse);
+  } catch (fallbackError) {
+    console.error('Error in fallback response:', fallbackError);
+    
+    return NextResponse.json(
+      { 
+        error: 'Failed to generate a response.',
+        message: fallbackError instanceof Error ? fallbackError.message : 'Unknown error'
       },
       { status: 500 }
     );
