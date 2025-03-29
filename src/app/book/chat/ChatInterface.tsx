@@ -331,7 +331,7 @@ export default function ChatInterface() {
             </div>
             <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', wordWrap: 'break-word', overflowWrap: 'break-word' }} className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
               <div className="flex items-center">
-                <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin mr-6" />
+                <ArrowPathIcon className="h-4 w-4 text-emerald-500 animate-spin mr-3" />
                 <p>Thinking...</p>
               </div>
             </div>
