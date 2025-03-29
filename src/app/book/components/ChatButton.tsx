@@ -54,7 +54,7 @@ const ChatButton: React.FC<ChatButtonProps> = ({
     >
       <ChatBubbleLeftRightIcon style={{ width: '16px', height: '16px' }} />
       {showText && (
-        <span className="hidden sm:inline" style={{ marginLeft: '2px' }}>{text}</span>
+        <span style={{ marginLeft: '2px' }}>{text}</span>
       )}
     </button>
   );
