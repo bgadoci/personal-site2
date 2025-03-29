@@ -260,8 +260,8 @@ export default function ChatInterface() {
           if (message.role === 'system') {
             // System message styled like a bot message
             return (
-              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "flex-start", columnGap: "12px" }}>
-                <div className="flex-shrink-0 mr-3">
+              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "flex-start", gap: "16px" }}>
+                <div className="flex-shrink-0" style={{ marginRight: "0" }}>
                   <div className="w-8 h-8 rounded-full overflow-hidden">
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
@@ -274,11 +274,11 @@ export default function ChatInterface() {
           } else if (message.role === 'user') {
             // User message (right side)
             return (
-              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "flex-start", columnGap: "12px" }}>
+              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-end", alignItems: "flex-start", gap: "16px" }}>
                 <div style={{ borderRadius: '0.5rem', padding: '12px 16px', paddingTop: '10px', maxWidth: '70%', fontSize: '0.875rem', wordWrap: 'break-word', overflowWrap: 'break-word' }} className="bg-emerald-500 text-white dark:bg-emerald-600">
                   <div className={styles['markdown-content']} dangerouslySetInnerHTML={{ __html: formatMarkdown(message.content) }}></div>
                 </div>
-                <div className="flex-shrink-0 ml-3">
+                <div className="flex-shrink-0" style={{ marginLeft: "0" }}>
                   <div className="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
                     <UserIcon className="w-5 h-5 text-slate-600 dark:text-slate-300" />
                   </div>
@@ -293,8 +293,8 @@ export default function ChatInterface() {
             }
             
             return (
-              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "flex-start", columnGap: "12px" }}>
-                <div className="flex-shrink-0 mr-3">
+              <div key={index} style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "flex-start", gap: "16px" }}>
+                <div className="flex-shrink-0" style={{ marginRight: "0" }}>
                   <div className="w-8 h-8 rounded-full overflow-hidden">
                     <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
                   </div>
@@ -323,8 +323,8 @@ export default function ChatInterface() {
         
         {/* Loading indicator - only show when loading but not yet streaming */}
         {isLoading && !isStreaming && (
-          <div style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "flex-start", columnGap: "12px" }}>
-            <div className="flex-shrink-0 mr-3">
+          <div style={{ display: "flex", width: "100%", marginBottom: "1rem", justifyContent: "flex-start", alignItems: "flex-start", gap: "16px" }}>
+            <div className="flex-shrink-0" style={{ marginRight: "0" }}>
               <div className="w-8 h-8 rounded-full overflow-hidden">
                 <Image src="/images/website-images/bot-chat-icon.png" alt="Bot" width={32} height={32} className="object-cover" />
               </div>
