@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
-import { BookOpenIcon, TagIcon, Bars3Icon, XMarkIcon, ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
+import { BookOpenIcon, TagIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import ChatButton from './components/ChatButton';
 import { PostMetadata } from '@/lib/markdown';
 import SlideOutChatPanel from './SlideOutChatPanel';
 
@@ -82,14 +83,12 @@ export default function BookContent({ posts }: { posts: PostMetadata[] }) {
             By Brandon Gadoci, VP of AI Operations at data.world
           </p>
           <div className="flex justify-center">
-            <button 
-              onClick={toggleChatPanel}
-              className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg transition-colors shadow-lg"
-              style={{ cursor: 'pointer' }}
-            >
-              <ChatBubbleLeftRightIcon className="h-5 w-5" />
-              Chat with SHAIPE
-            </button>
+            <ChatButton 
+              onClick={toggleChatPanel} 
+              showText={true} 
+              text="Chat with SHAIPE" 
+              className="px-4 py-2 shadow-lg"
+            />
           </div>
         </div>
       </section>

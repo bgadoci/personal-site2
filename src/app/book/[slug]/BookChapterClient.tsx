@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { PostMetadata } from '@/lib/markdown';
-import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
 import SlideOutChatPanel from '../SlideOutChatPanel';
+import ChatButton from '../components/ChatButton';
 
 type BookChapterClientProps = {
   post: PostMetadata & { content: string };
@@ -35,16 +35,11 @@ export default function BookChapterClient({ post, previousChapter, nextChapter, 
           </Link>{' '}
           / {post.title}
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex justify-between" style={{ alignItems: 'flex-start' }}>
           <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-50 mb-4">{post.title}</h1>
-          <button 
-            onClick={toggleChatPanel}
-            className="inline-flex items-center gap-1 bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors shadow-sm text-sm"
-            aria-label="Chat with SHAIPE"
-          >
-            <ChatBubbleLeftRightIcon className="h-4 w-4" />
-            <span className="hidden sm:inline">Chat</span>
-          </button>
+          <div style={{ marginTop: '4px' }}>
+            <ChatButton onClick={toggleChatPanel} showText={true} />
+          </div>
         </div>
         
         {/* Date and status */}
