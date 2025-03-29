@@ -177,58 +177,31 @@ export default function Home() {
               <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-50">Recent Research</h2>
             </div>
             
-            <div className="space-y-4">
+            <div className="divide-y divide-slate-200 dark:divide-slate-700">
               {latestResearchPosts.length > 0 ? (
                 latestResearchPosts.map((post) => (
-                  <div 
-                    key={post.slug}
-                    className="bg-white dark:bg-slate-800 rounded-lg shadow-sm overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-600 transition-all p-5"
-                  >
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      {post.coverImage && (
-                        <div className="sm:w-1/4 h-32 sm:h-auto overflow-hidden rounded-md">
-                          <img 
-                            src={post.coverImage.startsWith('https://') ? post.coverImage : post.coverImage.startsWith('/') ? post.coverImage : `/images/research-images/cover-images/${post.coverImage}`} 
-                            alt={`Cover image for ${post.title}`}
-                            className="w-full h-full object-cover transition-transform hover:scale-105"
-                          />
-                        </div>
-                      )}
+                  <div key={post.slug} className="py-4">
+                    <div className="flex flex-col sm:flex-row justify-between gap-2">
                       <div className="flex-1">
-                        <div className="flex items-center gap-1.5 text-xs font-medium text-emerald-500 dark:text-emerald-400 uppercase tracking-wider mb-1">
-                          <BeakerIcon className="h-4 w-4" />
-                          <span>Research</span>
-                        </div>
                         <Link 
                           href={`/research/${post.slug}`}
-                          className="text-lg font-semibold text-slate-900 dark:text-slate-50 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+                          className="text-lg font-medium text-slate-900 dark:text-slate-50 hover:text-emerald-600 dark:hover:text-emerald-400 hover:underline"
                         >
                           {post.title}
+                          {post.status === 'draft' && (
+                            <span className="ml-2 inline-block bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 text-xs font-medium px-2 py-0.5 rounded">
+                              Draft
+                            </span>
+                          )}
                         </Link>
-                        <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
-                          {new Date(post.date).toLocaleDateString('en-US', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                          })}
-                        </p>
-                        {post.description && (
-                          <p className="text-slate-600 dark:text-slate-300 text-sm mt-2 line-clamp-2">
-                            {post.description}
-                          </p>
-                        )}
-                        <div className="flex flex-wrap gap-2 mt-3">
-                          {post.tags.slice(0, 3).map((tag) => (
-                            <Link 
-                              key={tag}
-                              href={`/tags/${tag.toLowerCase()}`}
-                              className="flex items-center gap-1 text-xs bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-2 py-1 rounded hover:bg-emerald-50 dark:hover:bg-emerald-900/30 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-                            >
-                              <TagIcon className="h-3 w-3" />
-                              <span>{tag}</span>
-                            </Link>
-                          ))}
-                        </div>
+                      </div>
+                      
+                      <div className="text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap">
+                        {new Date(post.date).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric'
+                        })}
                       </div>
                     </div>
                   </div>
