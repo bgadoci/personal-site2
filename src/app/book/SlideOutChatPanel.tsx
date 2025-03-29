@@ -82,7 +82,7 @@ export default function SlideOutChatPanel({ isOpen, onClose }: SlideOutChatPanel
     >
       {/* Backdrop with fade transition */}
       <div 
-        className="absolute inset-0 bg-slate-900 backdrop-blur-sm"
+        className="absolute inset-0 bg-slate-900"
         style={{ 
           opacity: isOpen ? 0.5 : 0,
           transition: 'opacity 300ms ease-in-out',
@@ -111,10 +111,9 @@ export default function SlideOutChatPanel({ isOpen, onClose }: SlideOutChatPanel
           {/* Panel content with enhanced shadow */}
           <div 
             ref={panelRef} 
-            className="flex h-full flex-col overflow-hidden rounded-l-xl bg-white dark:bg-slate-800"
+            className="flex h-full flex-col overflow-hidden bg-white dark:bg-slate-800 w-full rounded-l-lg"
             style={{ 
               boxShadow: '-8px 0 30px rgba(0, 0, 0, 0.25)',
-              width: '100%',
               maxWidth: '850px'
             }}
           >
