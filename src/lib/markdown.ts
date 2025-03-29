@@ -319,10 +319,12 @@ export function getAllTags(includeUnpublished: boolean = false): { name: string;
     });
   });
   
-  return Object.entries(tagCounts).map(([_, data]) => ({
-    name: data.originalCase,
-    count: data.count,
-  }));
+  return Object.entries(tagCounts)
+    .map(([_, data]) => ({
+      name: data.originalCase,
+      count: data.count,
+    }))
+    .sort((a, b) => b.count - a.count); // Sort by count in descending order
 }
 
 // Helper function to count occurrences of a specific tag case

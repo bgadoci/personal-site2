@@ -43,9 +43,14 @@ export default async function ResearchPage(props: ResearchPageProps) {
           <BeakerIcon className="h-8 w-8 text-emerald-500 dark:text-emerald-400" />
           <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-50">Research</h1>
         </div>
-        <p className="text-lg text-slate-700 dark:text-slate-300">
-          In-depth exploration and analysis on various topics.
-        </p>
+        
+        {/* Research disclaimer info section */}
+        <div className="mb-4 p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-md border-l-4 border-emerald-500">
+          <p className="text-slate-700 dark:text-slate-200">
+            Research articles are raw form dumps of explorations I've taken using AI research products. They are not thoroughly read through and checked. I use them to learn and write other content. I share them here in case others are interested.
+          </p>
+        </div>
+        
         <p className="text-slate-500 dark:text-slate-400 mt-2">{allPosts.length} {allPosts.length === 1 ? 'exploration' : 'explorations'} in total</p>
       </div>
 

@@ -98,7 +98,7 @@ export default async function ResearchPostPage({ params }: SlugParams) {
         
         {/* Tags on their own line, left-justified */}
         <div className="mb-5">
-          <div className="flex flex-wrap gap-2 pb-6">
+          <div className="flex flex-wrap gap-2 pb-3">
             {post.tags.map((tag) => (
               <Link 
                 key={tag} 
@@ -108,6 +108,13 @@ export default async function ResearchPostPage({ params }: SlugParams) {
                 {tag}
               </Link>
             ))}
+          </div>
+          
+          {/* Research disclaimer info section */}
+          <div className="mt-4 mb-3 p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-md border-l-4 border-emerald-500">
+            <p className="text-slate-700 dark:text-slate-200">
+              Research articles are raw form dumps of explorations I've taken using AI research products. They are not thoroughly read through and checked. I use them to learn and write other content. I share them here in case others are interested.
+            </p>
           </div>
         </div>
         
@@ -127,35 +134,28 @@ export default async function ResearchPostPage({ params }: SlugParams) {
       </div>
       
       <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
-        <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mb-4">Related Research</h2>
+        <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mb-4">Recent Research</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {getAllPosts()
             .filter(p => p.category === 'research' && p.slug !== post.slug)
             .slice(0, 2)
             .map(relatedPost => (
-              <div key={relatedPost.slug} className="bg-white dark:bg-slate-800 rounded-lg shadow-sm overflow-hidden border border-slate-200 dark:border-slate-700 p-6">
-                <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-50 mb-2">
-                  <Link 
-                    href={`/research/${relatedPost.slug}`} 
-                    className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors"
-                  >
-                    {relatedPost.title}
-                  </Link>
+              <Link 
+                key={relatedPost.slug}
+                href={`/research/${relatedPost.slug}`}
+                className="block group bg-white dark:bg-slate-800 rounded-lg shadow-sm hover:shadow-md overflow-hidden border border-slate-200 dark:border-slate-700 p-6 hover:border-emerald-300 dark:hover:border-emerald-600 transition-all duration-200"
+              >
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-50 mb-2 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors">
+                  {relatedPost.title}
                 </h3>
-                <p className="text-slate-500 dark:text-slate-400 text-sm mb-4">
+                <p className="text-slate-500 dark:text-slate-400 text-sm">
                   {new Date(relatedPost.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric'
                   })}
                 </p>
-                <Link 
-                  href={`/research/${relatedPost.slug}`}
-                  className="text-emerald-500 hover:text-emerald-600 dark:text-emerald-400 dark:hover:text-emerald-300 font-medium transition-colors"
-                >
-                  Read paper →
-                </Link>
-              </div>
+              </Link>
             ))}
         </div>
       </div>
